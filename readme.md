@@ -22,3 +22,7 @@ This project focuses on the integration of artificial intelligence techniques in
 - **OpenCV**
 - **YOLO (You Only Look Once) for object detection**
 - **Speech recognition and synthesis models**
+
+
+## references
+- https://www.cis.upenn.edu/~jshi/ped_html/
