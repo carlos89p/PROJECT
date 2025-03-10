@@ -22,8 +22,3 @@ This project focuses on the integration of artificial intelligence techniques in
 - **OpenCV**
 - **YOLO (You Only Look Once) for object detection**
 - **Speech recognition and synthesis models**
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/autonomous-driving-ai.git
