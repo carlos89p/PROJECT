@@ -15,7 +15,7 @@ result = model.transcribe(audio_path)
 transcription = result["text"]
 
 # Definir nombre del archivo CSV
-csv_file = "transcripciones.csv"
+csv_file = "transcriptions.csv"
 
 # Verificar si el archivo existe para escribir encabezados solo si es la primera vez
 file_exists = os.path.isfile(csv_file)
@@ -27,5 +27,5 @@ df = pd.DataFrame({"Texto": [transcription]})
 df.to_csv(csv_file, mode='a', header=not file_exists, index=False, encoding='utf-8')
 
 # Imprimir la transcripción
-print("Transcripción agregada a 'transcripciones.csv':")
+print("Transcripción agregada a 'transcriptions.csv':")
 print(transcription)
