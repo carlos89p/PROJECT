@@ -26,3 +26,8 @@ This project focuses on the integration of artificial intelligence techniques in
 
 ## references
 - https://www.cis.upenn.edu/~jshi/ped_html/
+
+
+
+## Some pacages:
+- **ffmpeg**
