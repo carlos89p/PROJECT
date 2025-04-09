@@ -50,7 +50,7 @@ Xinzo_de_Limia,42.0631,-7.7264
 Allariz,42.1889,-7.8014
 A_Estrada,42.6833,-8.4833
 Lalin,42.6606,-8.1125
-O_Porrino,42.1000,-8.6167
+Porrino,42.1000,-8.6167
 Mos,42.1833,-8.6333
 O_Carballino,42.4294,-8.0778
 Vilalba,43.3000,-7.6833
@@ -96,8 +96,8 @@ Vigo,Redondela,13
 Vigo,Tui,31
 Vigo,Nigran,15
 Vigo,Baiona,27
-Vigo,O_Porrino,15
-Tui,O_Porrino,10
+Vigo,Porrino,15
+Tui,Porrino,10
 Monforte,O_Barco,90
 Monforte,Verin,75
 Monforte,Pontes,93
@@ -130,7 +130,7 @@ Xinzo_de_Limia,Verin,38
 Allariz,Ourense,18
 A_Estrada,Santiago,33
 Lalin,Santiago,55
-O_Porrino,Mos,6
+Porrino,Mos,6
 Mos,Vigo,12
 O_Carballino,Ourense,28
 Vilalba,Lugo,40
