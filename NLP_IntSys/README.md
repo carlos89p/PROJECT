@@ -30,7 +30,6 @@ Opcionalmente:
 ## 📁 Estructura actual del proyecto
 
 - `notebook_final.ipynb`: Contiene la implementación actual del reconocimiento de entidades y extracción de ciudades desde texto.
-- `whisper_token.ipynb`: Incluye un ejemplo de transcripción con Whisper (si se integra audio).
   
 ---
 
@@ -39,7 +38,7 @@ Opcionalmente:
 Instala las dependencias necesarias:
 
 ```bash
-pip install transformers torch
+pip3 install transformers torch
 
 ---
 
