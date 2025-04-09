@@ -40,6 +40,7 @@ Instala las dependencias necesarias:
 ```bash
 pip3 install transformers torch
 
+```
 ---
 
 ## 🧪 Ejemplo de uso
