@@ -1,2 +1,6 @@
 /archive.zip
 /archive
+/yolo_dataset
+/runs
+
+*.mp4
