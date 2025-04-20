@@ -1,0 +1,2163 @@
+/Users/carlosillanaldariz/Code/FINAL_PROJECT/Light_defin/semaforos
+├── README.dataset.txt
+├── README.roboflow.txt
+├── data.yaml
+├── test
+│   ├── images
+│   │   ├── 1677427459652_jpg.rf.72962dc37035134ad380b4294965fd46.jpg
+│   │   ├── 87_jpg.rf.3519cb1f750fe1096822f2e1f89f7c92.jpg
+│   │   ├── Tlight-528-_png_jpg.rf.a80e57a106c3ccd548af1f2bac5f478e.jpg
+│   │   ├── Tlight-530-_png_jpg.rf.a62c76ce45c2ab06b5aacba5a126acdf.jpg
+│   │   ├── Tlight-548-_png_jpg.rf.781d18aa5c184ee31501c4fec98c3b2a.jpg
+│   │   ├── Tlight-555-_png_jpg.rf.8401b04ed4db8b93de8bfab81f368b5c.jpg
+│   │   ├── Tlight-556-_png_jpg.rf.e34705228511a7a921e133e52fed6018.jpg
+│   │   ├── Tlight-585-_png_jpg.rf.35899d6df4a3fc73d3dab2bb01effb95.jpg
+│   │   ├── Tlight-589-_png_jpg.rf.6d1144e11e1b45df164d82f0ea0b6a27.jpg
+│   │   ├── Tlight-617-_png_jpg.rf.d5039036da3c15a6c165c1700d37bd1a.jpg
+│   │   ├── Tlight-641-_png_jpg.rf.2e0224afc3324171300e88849f0aa487.jpg
+│   │   ├── Tlight-650-_png_jpg.rf.1c5c7f84d3f89c36e2c0c4dd0f3a2d1a.jpg
+│   │   ├── Tlight-652-_png_jpg.rf.ef82b6e72bdb4958cfd319e491d7be54.jpg
+│   │   ├── Tlight-673-_png_jpg.rf.2087a4686c8e8a24dc9d13ec50a493ec.jpg
+│   │   ├── Tlight-706-_png_jpg.rf.92bdb8e65d2b6337dfa958ae4730bae6.jpg
+│   │   ├── Tlight-714-_png_jpg.rf.fd60bfe36701d488a9ac270bad0fa5fc.jpg
+│   │   ├── Tlight-765-_png_jpg.rf.a26e6edec56f4f31322c7bb519ac9f21.jpg
+│   │   ├── Tlight-800-_png_jpg.rf.e8cd5ac38508b77c36deec94c8214c6a.jpg
+│   │   ├── Tlight-83-_png_jpg.rf.e45f2dd12394d4911c01c29f40ee491b.jpg
+│   │   ├── VID_20230214_095146_000014_jpg.rf.c8464cc0c09828f141f3918fb0a00bf0.jpg
+│   │   ├── images-13-_jpg.rf.76131e9f4d2d3d2d93a8b546f0d6cd75.jpg
+│   │   ├── images-24-_jpg.rf.85d15e87c827d00f24f27b9123889803.jpg
+│   │   ├── images-4-_jpg.rf.717b5bd9cbc606c15976c4ede174c750.jpg
+│   │   ├── temporary-traffic-lights-street-england-34609671_jpg.rf.90d977d5ae5d7fbfd0fad465c27cfd36.jpg
+│   │   ├── traffic-light-112-_jpg.rf.6a8ed298820d89a806aa1a021dab8b87.jpg
+│   │   ├── traffic-light-322-_jpg.rf.d3a468f987ffd4f6434d5ab16e68815b.jpg
+│   │   ├── traffic-light-333-_jpg.rf.01962c29fb2c0157733b3d763cd17d33.jpg
+│   │   ├── traffic-light-349-_jpg.rf.10b76165116871856483ea449c6d7187.jpg
+│   │   ├── traffic-light-356-_jpg.rf.fd3476a4153aeac0fa3d3abccdd81751.jpg
+│   │   ├── traffic-light-357-_jpg.rf.3a24d7ab0360657a4e34a84a7f259f90.jpg
+│   │   ├── traffic-light-37-_jpg.rf.b651177bf0990bd12fd9a96433bba2fe.jpg
+│   │   ├── traffic-light-382-_jpg.rf.14501d31dda5bf47e08221f651888a7e.jpg
+│   │   ├── traffic-light-387-_jpg.rf.2feb45dfed14cdf54514b0ae7cbb3513.jpg
+│   │   ├── traffic-light-387-_jpg.rf.fc5b20b7f4826597323739ff2dcf6632.jpg
+│   │   ├── traffic-light-404-_jpg.rf.9879c94e56f1c7cc8678dd561d9fd375.jpg
+│   │   ├── traffic-light-421-_jpg.rf.67b191bd867c7efda8dbd349b1e95355.jpg
+│   │   ├── traffic-light-429-_jpg.rf.c8064731a50f20cbe524e870614aabe1.jpg
+│   │   ├── traffic-light-455-_jpg.rf.a6322509b5fe71c7d457b2c639ab03dc.jpg
+│   │   ├── traffic-light-467-_jpg.rf.4f974707a623f91dea0dc00f5a6d472b.jpg
+│   │   ├── traffic-light-475-_jpg.rf.1fde9cb3701a989b10466c0e32b4df72.jpg
+│   │   ├── traffic-light-55-_jpg.rf.547078a3844d389eb3cce22bd3cc222c.jpg
+│   │   ├── traffic-light-602-_jpg.rf.7105a99b816d6bc94fdcab126159fc78.jpg
+│   │   ├── traffic-light-606-_jpg.rf.a9593a6bfd37693fc13d7c32b6117082.jpg
+│   │   ├── traffic-light-67-_jpg.rf.8c584059124cc94831906e64a46bcf80.jpg
+│   │   ├── traffic-light-696-_jpg.rf.05aea46df0cbb605e31d64552afb2e34.jpg
+│   │   ├── traffic-light-696-_jpg.rf.8d830e532b995f6245ec42970c9a8bfb.jpg
+│   │   ├── traffic-light-73-_jpg.rf.0501f196578f515a0f695c46d38671c9.jpg
+│   │   ├── traffic-light-76-_jpg.rf.3ed8c28736c1b3061b61141d7f7582d5.jpg
+│   │   ├── traffic-light-761-_jpg.rf.f2a699995e5f5ee472d6f16362566f3b.jpg
+│   │   ├── traffic-light-768-_jpg.rf.8a7d6558dc878ddb664239ce8584c552.jpg
+│   │   ├── traffic-light-787-_jpg.rf.610f9caa410cb84e0976cff1a97446f9.jpg
+│   │   ├── traffic-light-790-_jpg.rf.8a263a579d1198cf82efee14ecf17297.jpg
+│   │   ├── traffic-light-790-_jpg.rf.cd08cc4202d4def7fd63c63728dd36ec.jpg
+│   │   ├── traffic-light-794-_jpg.rf.237fa7b3d1a2d11ae72ff82b52cf9b4b.jpg
+│   │   ├── traffic-light-8-_jpg.rf.a46f9904a781fd77e8cf5c16c41bd5e9.jpg
+│   │   ├── traffic-light-814-_jpg.rf.fccff9958f6028245040ba496996aff6.jpg
+│   │   ├── traffic-light-824-_jpg.rf.941a798e1cb9990a27f1147371011d1c.jpg
+│   │   ├── traffic-light-832-_jpg.rf.97fd53be0e8f24585e75997b702b56b5.jpg
+│   │   ├── traffic-light-835-_jpg.rf.dc27e62fb7e2a2b63d35ebf74f0f7daa.jpg
+│   │   ├── traffic-light-853-_jpg.rf.e101a51b1a887c7d117911c785db6d69.jpg
+│   │   ├── traffic-light-871-_jpg.rf.f0ca75eea961ad9b1a25c5839e20ce7d.jpg
+│   │   ├── traffic-light-882-_jpg.rf.9ba7723fab3fe650f03988b42d2558b3.jpg
+│   │   ├── traffic-light-900-_jpg.rf.013fff5f1b46011c7b2b1b9519183dec.jpg
+│   │   ├── traffic-light-905-_jpg.rf.898d5f0699e206325d2bac046b44b7cb.jpg
+│   │   ├── traffic-light-912-_jpg.rf.5a1065df12b03910259d74a5cba8ab64.jpg
+│   │   ├── traffic-light-920-_jpg.rf.71a7749caec4e585caea613f3141dea2.jpg
+│   │   ├── traffic-light-928-_jpg.rf.32d44d31b1135406b8aeb152b9340feb.jpg
+│   │   ├── traffic-light-946-_jpg.rf.38ef8fbfb8cff2e136dd5b82d49ac528.jpg
+│   │   ├── traffic-light-949-_jpg.rf.d94f24dc0ca409f3024b45b4386ec66c.jpg
+│   │   ├── traffic-light-950-_jpg.rf.07d99adc1100ebcdfe4f66213c67c6f5.jpg
+│   │   ├── traffic-light-954-_jpg.rf.419dd7b0e783aa89955f317553b4763b.jpg
+│   │   ├── traffic-light-968-_jpg.rf.64933d598518d798eb00254e73581ed5.jpg
+│   │   ├── traffic-light-970-_jpg.rf.0fc6023bdf077b244896ea8ca196658b.jpg
+│   │   ├── traffic-light-989-_jpg.rf.7a845a00e4394e0afb932d7e0383fcb1.jpg
+│   │   ├── traffic-light-990-_jpg.rf.d756fda3c25da33deb6ef87a9476f1df.jpg
+│   │   ├── traffic-light-shows-stop-25238863_jpg.rf.d0a8fad2acac4b65d9187d2625793563.jpg
+│   │   ├── traffic-light-surveillance-camera-pole-mounted-street-79351054_jpg.rf.5ecd8d5231d506ab11e08ec390b8b370.jpg
+│   │   ├── trafficlight117_png_jpg.rf.b01855153e9e9345a7d2e94470506b00.jpg
+│   │   ├── trafficlight140_png_jpg.rf.f85880540c432364727bd0836a7f9807.jpg
+│   │   ├── trafficlight148_png_jpg.rf.34906dcfe586a8cda0c3d6567518e0a0.jpg
+│   │   ├── trafficlight14_png_jpg.rf.c82e1618caad49263f05f237b36e0f4c.jpg
+│   │   ├── trafficlight158_png_jpg.rf.fa0ade4e3bc1ee1d263fc098be8b3dbc.jpg
+│   │   ├── trafficlight166_png_jpg.rf.2630bb6ec9857ab4ddeadaffa6442866.jpg
+│   │   ├── trafficlight174_png_jpg.rf.2214d8a224d81f48931fcdccd2982836.jpg
+│   │   ├── trafficlight178_png_jpg.rf.973fef3c07fa942d96bafe599610d492.jpg
+│   │   ├── trafficlight19_png_jpg.rf.f6d86ad0b4bed1861a029a3a10818a3d.jpg
+│   │   └── trafficlight31_png_jpg.rf.fa1eb2ba80e9c18b92e6b25cfd204ac8.jpg
+│   └── labels
+│       ├── 1677427459652_jpg.rf.72962dc37035134ad380b4294965fd46.txt
+│       ├── 87_jpg.rf.3519cb1f750fe1096822f2e1f89f7c92.txt
+│       ├── Tlight-528-_png_jpg.rf.a80e57a106c3ccd548af1f2bac5f478e.txt
+│       ├── Tlight-530-_png_jpg.rf.a62c76ce45c2ab06b5aacba5a126acdf.txt
+│       ├── Tlight-548-_png_jpg.rf.781d18aa5c184ee31501c4fec98c3b2a.txt
+│       ├── Tlight-555-_png_jpg.rf.8401b04ed4db8b93de8bfab81f368b5c.txt
+│       ├── Tlight-556-_png_jpg.rf.e34705228511a7a921e133e52fed6018.txt
+│       ├── Tlight-585-_png_jpg.rf.35899d6df4a3fc73d3dab2bb01effb95.txt
+│       ├── Tlight-589-_png_jpg.rf.6d1144e11e1b45df164d82f0ea0b6a27.txt
+│       ├── Tlight-617-_png_jpg.rf.d5039036da3c15a6c165c1700d37bd1a.txt
+│       ├── Tlight-641-_png_jpg.rf.2e0224afc3324171300e88849f0aa487.txt
+│       ├── Tlight-650-_png_jpg.rf.1c5c7f84d3f89c36e2c0c4dd0f3a2d1a.txt
+│       ├── Tlight-652-_png_jpg.rf.ef82b6e72bdb4958cfd319e491d7be54.txt
+│       ├── Tlight-673-_png_jpg.rf.2087a4686c8e8a24dc9d13ec50a493ec.txt
+│       ├── Tlight-706-_png_jpg.rf.92bdb8e65d2b6337dfa958ae4730bae6.txt
+│       ├── Tlight-714-_png_jpg.rf.fd60bfe36701d488a9ac270bad0fa5fc.txt
+│       ├── Tlight-765-_png_jpg.rf.a26e6edec56f4f31322c7bb519ac9f21.txt
+│       ├── Tlight-800-_png_jpg.rf.e8cd5ac38508b77c36deec94c8214c6a.txt
+│       ├── Tlight-83-_png_jpg.rf.e45f2dd12394d4911c01c29f40ee491b.txt
+│       ├── VID_20230214_095146_000014_jpg.rf.c8464cc0c09828f141f3918fb0a00bf0.txt
+│       ├── images-13-_jpg.rf.76131e9f4d2d3d2d93a8b546f0d6cd75.txt
+│       ├── images-24-_jpg.rf.85d15e87c827d00f24f27b9123889803.txt
+│       ├── images-4-_jpg.rf.717b5bd9cbc606c15976c4ede174c750.txt
+│       ├── temporary-traffic-lights-street-england-34609671_jpg.rf.90d977d5ae5d7fbfd0fad465c27cfd36.txt
+│       ├── traffic-light-112-_jpg.rf.6a8ed298820d89a806aa1a021dab8b87.txt
+│       ├── traffic-light-322-_jpg.rf.d3a468f987ffd4f6434d5ab16e68815b.txt
+│       ├── traffic-light-333-_jpg.rf.01962c29fb2c0157733b3d763cd17d33.txt
+│       ├── traffic-light-349-_jpg.rf.10b76165116871856483ea449c6d7187.txt
+│       ├── traffic-light-356-_jpg.rf.fd3476a4153aeac0fa3d3abccdd81751.txt
+│       ├── traffic-light-357-_jpg.rf.3a24d7ab0360657a4e34a84a7f259f90.txt
+│       ├── traffic-light-37-_jpg.rf.b651177bf0990bd12fd9a96433bba2fe.txt
+│       ├── traffic-light-382-_jpg.rf.14501d31dda5bf47e08221f651888a7e.txt
+│       ├── traffic-light-387-_jpg.rf.2feb45dfed14cdf54514b0ae7cbb3513.txt
+│       ├── traffic-light-387-_jpg.rf.fc5b20b7f4826597323739ff2dcf6632.txt
+│       ├── traffic-light-404-_jpg.rf.9879c94e56f1c7cc8678dd561d9fd375.txt
+│       ├── traffic-light-421-_jpg.rf.67b191bd867c7efda8dbd349b1e95355.txt
+│       ├── traffic-light-429-_jpg.rf.c8064731a50f20cbe524e870614aabe1.txt
+│       ├── traffic-light-455-_jpg.rf.a6322509b5fe71c7d457b2c639ab03dc.txt
+│       ├── traffic-light-467-_jpg.rf.4f974707a623f91dea0dc00f5a6d472b.txt
+│       ├── traffic-light-475-_jpg.rf.1fde9cb3701a989b10466c0e32b4df72.txt
+│       ├── traffic-light-55-_jpg.rf.547078a3844d389eb3cce22bd3cc222c.txt
+│       ├── traffic-light-602-_jpg.rf.7105a99b816d6bc94fdcab126159fc78.txt
+│       ├── traffic-light-606-_jpg.rf.a9593a6bfd37693fc13d7c32b6117082.txt
+│       ├── traffic-light-67-_jpg.rf.8c584059124cc94831906e64a46bcf80.txt
+│       ├── traffic-light-696-_jpg.rf.05aea46df0cbb605e31d64552afb2e34.txt
+│       ├── traffic-light-696-_jpg.rf.8d830e532b995f6245ec42970c9a8bfb.txt
+│       ├── traffic-light-73-_jpg.rf.0501f196578f515a0f695c46d38671c9.txt
+│       ├── traffic-light-76-_jpg.rf.3ed8c28736c1b3061b61141d7f7582d5.txt
+│       ├── traffic-light-761-_jpg.rf.f2a699995e5f5ee472d6f16362566f3b.txt
+│       ├── traffic-light-768-_jpg.rf.8a7d6558dc878ddb664239ce8584c552.txt
+│       ├── traffic-light-787-_jpg.rf.610f9caa410cb84e0976cff1a97446f9.txt
+│       ├── traffic-light-790-_jpg.rf.8a263a579d1198cf82efee14ecf17297.txt
+│       ├── traffic-light-790-_jpg.rf.cd08cc4202d4def7fd63c63728dd36ec.txt
+│       ├── traffic-light-794-_jpg.rf.237fa7b3d1a2d11ae72ff82b52cf9b4b.txt
+│       ├── traffic-light-8-_jpg.rf.a46f9904a781fd77e8cf5c16c41bd5e9.txt
+│       ├── traffic-light-814-_jpg.rf.fccff9958f6028245040ba496996aff6.txt
+│       ├── traffic-light-824-_jpg.rf.941a798e1cb9990a27f1147371011d1c.txt
+│       ├── traffic-light-832-_jpg.rf.97fd53be0e8f24585e75997b702b56b5.txt
+│       ├── traffic-light-835-_jpg.rf.dc27e62fb7e2a2b63d35ebf74f0f7daa.txt
+│       ├── traffic-light-853-_jpg.rf.e101a51b1a887c7d117911c785db6d69.txt
+│       ├── traffic-light-871-_jpg.rf.f0ca75eea961ad9b1a25c5839e20ce7d.txt
+│       ├── traffic-light-882-_jpg.rf.9ba7723fab3fe650f03988b42d2558b3.txt
+│       ├── traffic-light-900-_jpg.rf.013fff5f1b46011c7b2b1b9519183dec.txt
+│       ├── traffic-light-905-_jpg.rf.898d5f0699e206325d2bac046b44b7cb.txt
+│       ├── traffic-light-912-_jpg.rf.5a1065df12b03910259d74a5cba8ab64.txt
+│       ├── traffic-light-920-_jpg.rf.71a7749caec4e585caea613f3141dea2.txt
+│       ├── traffic-light-928-_jpg.rf.32d44d31b1135406b8aeb152b9340feb.txt
+│       ├── traffic-light-946-_jpg.rf.38ef8fbfb8cff2e136dd5b82d49ac528.txt
+│       ├── traffic-light-949-_jpg.rf.d94f24dc0ca409f3024b45b4386ec66c.txt
+│       ├── traffic-light-950-_jpg.rf.07d99adc1100ebcdfe4f66213c67c6f5.txt
+│       ├── traffic-light-954-_jpg.rf.419dd7b0e783aa89955f317553b4763b.txt
+│       ├── traffic-light-968-_jpg.rf.64933d598518d798eb00254e73581ed5.txt
+│       ├── traffic-light-970-_jpg.rf.0fc6023bdf077b244896ea8ca196658b.txt
+│       ├── traffic-light-989-_jpg.rf.7a845a00e4394e0afb932d7e0383fcb1.txt
+│       ├── traffic-light-990-_jpg.rf.d756fda3c25da33deb6ef87a9476f1df.txt
+│       ├── traffic-light-shows-stop-25238863_jpg.rf.d0a8fad2acac4b65d9187d2625793563.txt
+│       ├── traffic-light-surveillance-camera-pole-mounted-street-79351054_jpg.rf.5ecd8d5231d506ab11e08ec390b8b370.txt
+│       ├── trafficlight117_png_jpg.rf.b01855153e9e9345a7d2e94470506b00.txt
+│       ├── trafficlight140_png_jpg.rf.f85880540c432364727bd0836a7f9807.txt
+│       ├── trafficlight148_png_jpg.rf.34906dcfe586a8cda0c3d6567518e0a0.txt
+│       ├── trafficlight14_png_jpg.rf.c82e1618caad49263f05f237b36e0f4c.txt
+│       ├── trafficlight158_png_jpg.rf.fa0ade4e3bc1ee1d263fc098be8b3dbc.txt
+│       ├── trafficlight166_png_jpg.rf.2630bb6ec9857ab4ddeadaffa6442866.txt
+│       ├── trafficlight174_png_jpg.rf.2214d8a224d81f48931fcdccd2982836.txt
+│       ├── trafficlight178_png_jpg.rf.973fef3c07fa942d96bafe599610d492.txt
+│       ├── trafficlight19_png_jpg.rf.f6d86ad0b4bed1861a029a3a10818a3d.txt
+│       └── trafficlight31_png_jpg.rf.fa1eb2ba80e9c18b92e6b25cfd204ac8.txt
+├── train
+│   ├── images
+│   │   ├── -2021-12-18-10-20-49_png_jpg.rf.59d09878c5ad845a27eae9eb248de3db.jpg
+│   │   ├── -2021-12-18-10-21-33_png_jpg.rf.3c3b42e8f84765ea24c88ba4b70ad5a4.jpg
+│   │   ├── 00xp-redlight-superJumbo_jpg.rf.1cd8cade52ea1051be78e7babbb55b26.jpg
+│   │   ├── 00xp-redlight-superJumbo_jpg.rf.ab14f63ae3608a7b2626030bf5161627.jpg
+│   │   ├── 00xp-redlight-superJumbo_jpg.rf.f0d965eda23482562be993143da8ca2d.jpg
+│   │   ├── 05-wilson-main4_jpg.rf.7d4adec0e6c9639e55f9d4920bc4c7a6.jpg
+│   │   ├── 0_ACP_HDE_150216Bwork_06_jpg.rf.1a4b0b386e3266eec1fdfa9dfa1f1bf1.jpg
+│   │   ├── 107_png_jpg.rf.0de78d513eccb2b0337370b6a81ada93.jpg
+│   │   ├── 107_png_jpg.rf.cd19e130b6653a8879922af667b06557.jpg
+│   │   ├── 109_png_jpg.rf.8aa91da0d5491e3658794dffcd7f12e4.jpg
+│   │   ├── 110_png_jpg.rf.76b5d0e9788a38ee1c9bc0f0d44e9a55.jpg
+│   │   ├── 111_png_jpg.rf.2d91cf0f7f836e57055ddbea3e1d6f98.jpg
+│   │   ├── 112_png_jpg.rf.5d5833ff3d1081c4b7e9b1be6f92d70e.jpg
+│   │   ├── 1133906_1_seoimage4x3_ie-171930_4c347c2a65894020b6deba9136e6ea95_jpg.rf.01d652ca0d9d7d7d5ca0a249a855e859.jpg
+│   │   ├── 114_png_jpg.rf.96f42eec215fbf6740431f56d002e789.jpg
+│   │   ├── 115_png_jpg.rf.fa5f2fc1c29d417744bb192052c97234.jpg
+│   │   ├── 116_png_jpg.rf.0cfcddd7ba49fe64c3211bd879a7f428.jpg
+│   │   ├── 117_png_jpg.rf.100353a364745374aa8387d045e55b83.jpg
+│   │   ├── 118_png_jpg.rf.83f7fca3f66fb5f6e6d2bfc434121c73.jpg
+│   │   ├── 119_png_jpg.rf.07000c1cc183ae3095b6b86b4f19af4d.jpg
+│   │   ├── 119_png_jpg.rf.1796b0317818fbb80fe29465b8773f21.jpg
+│   │   ├── 119_png_jpg.rf.b3e0d413c14f53549c730bf3c51eb287.jpg
+│   │   ├── 1200x0_jpg.rf.5b90be463034e972fa5f2802f19c612e.jpg
+│   │   ├── 120_png_jpg.rf.9b30691d7d013abf10fe4871187e567c.jpg
+│   │   ├── 122_png_jpg.rf.1e295e2dcf7ce4a9d583c31b27672161.jpg
+│   │   ├── 123_png_jpg.rf.ffc3f5038638210cb75d72950cebdb2f.jpg
+│   │   ├── 125_png_jpg.rf.27aa3de66cc1ea8071bb3a5208452641.jpg
+│   │   ├── 127_png_jpg.rf.364910b79906b8af6250d8f0143eed32.jpg
+│   │   ├── 128_png_jpg.rf.b1a4fcb83e830b4b577e1c5bbdee695a.jpg
+│   │   ├── 129_png_jpg.rf.9750a16fdf8920a696ac17f3f5b5631d.jpg
+│   │   ├── 130_png_jpg.rf.509899ab53d08ecdcdb513cb73b0b152.jpg
+│   │   ├── 131_png_jpg.rf.f501823e0b4f1481426f4534137f3a06.jpg
+│   │   ├── 132_png_jpg.rf.ec48702555e87c6f5e3585daa94f0655.jpg
+│   │   ├── 135_png_jpg.rf.748ce749a6df5079013aa980aeea7878.jpg
+│   │   ├── 135_png_jpg.rf.a04dcab8a57be21188104bc1827bcdd1.jpg
+│   │   ├── 137_png_jpg.rf.82a4ea4e255ad98a75c0ffc651775d3c.jpg
+│   │   ├── 138_png_jpg.rf.07119ac6139ed1f07d22122a7a9875c0.jpg
+│   │   ├── 138_png_jpg.rf.a4f057ec0e6aef6b9dca3dd2ed8f612d.jpg
+│   │   ├── 143_png_jpg.rf.3ca98bb20e330b3e00335633a984ce22.jpg
+│   │   ├── 149618483_-cvqHzFbDImpN8g7aASZ3A3AdSesfjz8timij-u9Gww_jpg.rf.166151c5e7ff34fc3ef2bff18b6413c0.jpg
+│   │   ├── 154_png_jpg.rf.53c06db8f0b48c9e6b077306106c7c8b.jpg
+│   │   ├── 157_png_jpg.rf.1c9a6cd8b2404e81507f8abd8d57017c.jpg
+│   │   ├── 159_png_jpg.rf.339bea071ca43c01b5aee9bdd4ea7a37.jpg
+│   │   ├── 159_png_jpg.rf.7e9888d409b80a31483599fedac65cbd.jpg
+│   │   ├── 1650160-AA_DSC_5781_jpg.rf.292da3ba2cd96a7939113b4c8051e6cb.jpg
+│   │   ├── 1678075060140_jpg.rf.d4ae20e37e8e342a736a9f1dd19c1d11.jpg
+│   │   ├── 168_png_jpg.rf.8120e28f8902a822418c7fd5255bd527.jpg
+│   │   ├── 182_png_jpg.rf.adbd1bf993f49dbc5e79081f206230c2.jpg
+│   │   ├── 183_png_jpg.rf.233740ae1b6d1ae9f281067b6df26bfe.jpg
+│   │   ├── 198_png_jpg.rf.40b051d6ca953af84ce9eea790a81739.jpg
+│   │   ├── 200px-Lwr_Mount_Street_by_the_Grand_Canal-_Dublin-_-_Coppermine_-_4671_jpg.rf.d981db02c542116e73acfb137c0ee37a.jpg
+│   │   ├── 200px-Mellor_traffic_lights_in_Donaghmede_Dublin_-_Coppermine_-_15568_jpg.rf.f43258078dfbfabbc733349470e800f8.jpg
+│   │   ├── 20170420_1492643400-133090_jpg.rf.badff3899e4f085d9233264590ec1adc.jpg
+│   │   ├── 201807_05_batterypt_sandybayrd_b68_stgeorgestce_jpg.rf.c9d431397cee09f52d2bd2b59562582d.jpg
+│   │   ├── 201_png_jpg.rf.0026dafa4b979ba38110854a55acaab1.jpg
+│   │   ├── 216_png_jpg.rf.671e75613971cfccb9b89ffafdc31809.jpg
+│   │   ├── 221_png_jpg.rf.e3cc6561f180f5f861fd47358616cab8.jpg
+│   │   ├── 22_jpg.rf.d001cf584d3a9cd824800925cf2c876b.jpg
+│   │   ├── 253_png_jpg.rf.833601ba9f201d478fed0bbf11952d8f.jpg
+│   │   ├── 262_png_jpg.rf.89c06d5e89e078afb5439e528b6673c2.jpg
+│   │   ├── 265_png_jpg.rf.fafcf1cfae18f96a802e8c0aaf118bc1.jpg
+│   │   ├── 26_jpg.rf.f0b862a97c601dc6c64c1c7f79d71e6c.jpg
+│   │   ├── 27094_ac46a6db2fed4cb98884d053d31a48a1_1541525900_jpeg_jpg.rf.236e7c53c6cfe9b03a3874205789a07c.jpg
+│   │   ├── 281_png_jpg.rf.a35cedd1721ae9f840419c4801028a0d.jpg
+│   │   ├── 288_png_jpg.rf.c481722d3d12c2efe4e569e9d96fc231.jpg
+│   │   ├── 299_png_jpg.rf.cf966f8f8c05683275f8581671a7b8f6.jpg
+│   │   ├── 304_png_jpg.rf.f66fe0d2bcdd17e4e1405195b5c3d63c.jpg
+│   │   ├── 308_png_jpg.rf.c6112356caaf7258510f30886f8b625d.jpg
+│   │   ├── 312_png_jpg.rf.8e1d90381b87a04d420bcf24f1a34a2b.jpg
+│   │   ├── 313_png_jpg.rf.0273d88ee7d12c938a521265d18076f1.jpg
+│   │   ├── 313_png_jpg.rf.b000ab9eb03fd107e2e67084de398d3a.jpg
+│   │   ├── 315_png_jpg.rf.d2bdc6db782dcad170484c814379394f.jpg
+│   │   ├── 317_png_jpg.rf.85517a089802f4d876a364f7b6475b1d.jpg
+│   │   ├── 318_png_jpg.rf.0f3465066f9623877acce6c85cd75480.jpg
+│   │   ├── 324_png_jpg.rf.f988a039203dfd613ab3e5cbea528ca0.jpg
+│   │   ├── 326_png_jpg.rf.5d7110a4362efceff06e3484814640c5.jpg
+│   │   ├── 327_png_jpg.rf.d9dc3fa90ee77df060e71feb875d15aa.jpg
+│   │   ├── 330_png_jpg.rf.8459cdc9a769204b9726e9b98c894bee.jpg
+│   │   ├── 331_png_jpg.rf.4c14abceeb7cd9a010d6ae3fea6805da.jpg
+│   │   ├── 331_png_jpg.rf.af3b1f00aa6cfdacddb4aa3ca326614a.jpg
+│   │   ├── 332_png_jpg.rf.877c09ad97f70d6341f504104413ad6e.jpg
+│   │   ├── 334_png_jpg.rf.097ae2bce706b4bf4fe58ad7fe19ef9e.jpg
+│   │   ├── 335_png_jpg.rf.9a4ab40747218ead3e79d911434562cf.jpg
+│   │   ├── 336_png_jpg.rf.339120dfb10c485cf2201d1295e887ca.jpg
+│   │   ├── 339_png_jpg.rf.75dafcc8a60b4493b10eddc1faf02d4a.jpg
+│   │   ├── 340_png_jpg.rf.7791744a563ec656d14ff808d3dd61d3.jpg
+│   │   ├── 340_png_jpg.rf.c96fb2bf1e1129a0b70dd9b9c7d1864f.jpg
+│   │   ├── 341_png_jpg.rf.d5ea02246198f9ccce45a5e398a7e71f.jpg
+│   │   ├── 344_png_jpg.rf.a57496e247f6bd4049569c1e6a4228bd.jpg
+│   │   ├── 348_png_jpg.rf.6a17a581b39fa7ed8c0d562ad620e073.jpg
+│   │   ├── 349_png_jpg.rf.ba460242b43b46fbfb44a1617a836589.jpg
+│   │   ├── 351_png_jpg.rf.955d55e88076df123cf139d9f3dadaac.jpg
+│   │   ├── 360_F_318079367_EWRbwr0tkYuDxT7FsrcGM5jyGnf3klbp_jpg.rf.fbe9e0d5f30b04769d1fa7c9044e041b.jpg
+│   │   ├── 360_png_jpg.rf.853fd7e5e1537ac458196c1634ac616c.jpg
+│   │   ├── 364_png_jpg.rf.9f51626ea5d8c070a1a83de8bd4e156d.jpg
+│   │   ├── 374_png_jpg.rf.1c841965730fccf0bc5579a87a2f99ef.jpg
+│   │   ├── 376_png_jpg.rf.08cd3c505ac6e1884f4ee06f77e78834.jpg
+│   │   ├── 384_png_jpg.rf.57271bbf42e2b2870378644a70ee74b7.jpg
+│   │   ├── 384_png_jpg.rf.d12134efa1156d94a1371b80ef3f3ed5.jpg
+│   │   ├── 386_png_jpg.rf.2221d9f551747adfa52b1c6723cc954e.jpg
+│   │   ├── 392_png_jpg.rf.7dc27d0f0da991143beff7b0343ec316.jpg
+│   │   ├── 392_png_jpg.rf.82c500cab73620d0ccd7703815f61a36.jpg
+│   │   ├── 396_png_jpg.rf.8fd1d5b97c9f453a47d50cb425ffc2cb.jpg
+│   │   ├── 398_png_jpg.rf.ab7fd07e02139c8a252c73459c60652b.jpg
+│   │   ├── 399_png_jpg.rf.4f2aeb9469a54ecdf64b5766ae3266db.jpg
+│   │   ├── 401_png_jpg.rf.08769187cca392a25d4dca1bc52e3e4d.jpg
+│   │   ├── 401_png_jpg.rf.6b5731fbccefa4b75157aa53ee021abf.jpg
+│   │   ├── 401_png_jpg.rf.ee8c8a31d16ce73a97e873e3e2d1165c.jpg
+│   │   ├── 405_png_jpg.rf.19ac93628ed0c710687e6a82c56ca7a2.jpg
+│   │   ├── 408_png_jpg.rf.9c67627ebd2c275542bda8d397773be1.jpg
+│   │   ├── 408_png_jpg.rf.a58096433badc212fd6ebf1159b89ff6.jpg
+│   │   ├── 409_png_jpg.rf.e9d3da312e274a5ef3c0511fb1ee6cac.jpg
+│   │   ├── 410_png_jpg.rf.6902b51bbfbc5194f56d20b3e7f8fbff.jpg
+│   │   ├── 411_png_jpg.rf.0f9a14ce9c30c801120244c5345a42de.jpg
+│   │   ├── 412_png_jpg.rf.042b405d5c0b5775c3ac504ca71677f6.jpg
+│   │   ├── 413_png_jpg.rf.fc220ee32d0ccb7c254f2e91966e4b7c.jpg
+│   │   ├── 415_png_jpg.rf.2f0d1c3358d18887bdeb5b188f4bf4ad.jpg
+│   │   ├── 416_png_jpg.rf.4d11e83b5c2e0e4887e85b4b4d5155cd.jpg
+│   │   ├── 4182bd07c99a3c7e300162a30b38a02a_jpg.rf.0dcaa94dacf2bd5dfc93a1eb85943074.jpg
+│   │   ├── 418_png_jpg.rf.b08901bce8bcaf05be6ae56559a74ce7.jpg
+│   │   ├── 419_png_jpg.rf.72b38d2a38e107d72f3e8f5714a2e8b6.jpg
+│   │   ├── 419_png_jpg.rf.c343f6983741f16c5042e326d92a90fa.jpg
+│   │   ├── 420_png_jpg.rf.34435188e27004c133e28db4e168e7bd.jpg
+│   │   ├── 420_png_jpg.rf.f259749baa6bb4f558bba10e36d24acf.jpg
+│   │   ├── 421_png_jpg.rf.078a27d4c20c8b36d8f55a4e9a47e59a.jpg
+│   │   ├── 421_png_jpg.rf.0b807a758e7641c493ed342b49fd199f.jpg
+│   │   ├── 422_png_jpg.rf.2dc157de3911b0d5a7775ce7aac37201.jpg
+│   │   ├── 422_png_jpg.rf.9efd0297b247cdcbdf9505aa11800dec.jpg
+│   │   ├── 423_png_jpg.rf.d67785d72855d4ae73aec7bca461fd56.jpg
+│   │   ├── 424_png_jpg.rf.31a625f7ef6242918874d214ab486826.jpg
+│   │   ├── 426_png_jpg.rf.0a8e7afe9444cb3f0432e6cd30f03e23.jpg
+│   │   ├── 428_png_jpg.rf.020d5a493be057d5708270368be6a064.jpg
+│   │   ├── 429_png_jpg.rf.dc4e4fc228dcce7c8179e0ce4317d2b8.jpg
+│   │   ├── 430_png_jpg.rf.cb63831a50ce9309ce07a00dbfa26ad9.jpg
+│   │   ├── 431_png_jpg.rf.4f4d6fe7c434b5e715978a711868b835.jpg
+│   │   ├── 432_png_jpg.rf.c92b827badf7e9ba969d6a02639e96d5.jpg
+│   │   ├── 432_png_jpg.rf.cbb2f8ce2c77364d41d1f6502bc00322.jpg
+│   │   ├── 432_png_jpg.rf.eec06452e845eddb47538ed83544889e.jpg
+│   │   ├── 435_png_jpg.rf.d9e0858559124efeb88256175dcfb8dc.jpg
+│   │   ├── 436_png_jpg.rf.1fe22b387122dea729a0962b8a980e91.jpg
+│   │   ├── 446_png_jpg.rf.d9a0b3483e8344bcc8521fc90c672eab.jpg
+│   │   ├── 447_png_jpg.rf.377a4a068642772ead13ee505fd3e455.jpg
+│   │   ├── 448_png_jpg.rf.88d41555ca445e653a1b88ccd250b05f.jpg
+│   │   ├── 450_png_jpg.rf.a3fe20658e8896e130fb6d57f83f0222.jpg
+│   │   ├── 451_png_jpg.rf.932bf9b146d97bee869c3db847d8e5ab.jpg
+│   │   ├── 456_png_jpg.rf.7cab377c269d0a275d4e66749fc9bc6d.jpg
+│   │   ├── 476_png_jpg.rf.da20892c9b65bd4f78ed69a0f3c92b52.jpg
+│   │   ├── 483_png_jpg.rf.7b8d14b3965e3f22531895877a604007.jpg
+│   │   ├── 483_png_jpg.rf.9f9fe3cf856b7c7adea90c2c275b458c.jpg
+│   │   ├── 484_png_jpg.rf.ac76458d9c860f10edabfac3a3af5fd6.jpg
+│   │   ├── 486_png_jpg.rf.9b5341a77ced3a0effaa43eca4d0772e.jpg
+│   │   ├── 486_png_jpg.rf.9b7af01a36a13e47e3f4bdbabd052b61.jpg
+│   │   ├── 507_png_jpg.rf.6e9b3990f4190e669385a9b719131dcc.jpg
+│   │   ├── 508_png_jpg.rf.19758cc1e546fb499c3639a57ede240e.jpg
+│   │   ├── 524_png_jpg.rf.5f41d42ef52ac5054dbb9eb7f9dd0251.jpg
+│   │   ├── 531_png_jpg.rf.97059ac97b904466109c39efb115340c.jpg
+│   │   ├── 532_png_jpg.rf.8bd1d5d6221da9942df97cc2452e291a.jpg
+│   │   ├── 538_png_jpg.rf.07152d18cfebfbd7759034e25e45cb00.jpg
+│   │   ├── 539_png_jpg.rf.4c8d55a4693ca62d737ff887a4533de7.jpg
+│   │   ├── 539_png_jpg.rf.b52ecf8e09a15d09167e344fff215d90.jpg
+│   │   ├── 544_png_jpg.rf.5686713b3c99734b11c3c21d8aec7fb6.jpg
+│   │   ├── 546_png_jpg.rf.1887f41051568a02668aa7c7be12a30a.jpg
+│   │   ├── 546_png_jpg.rf.d3351590c9c5c210e77a8d2ff7597bab.jpg
+│   │   ├── 553_png_jpg.rf.551db03d348448a7bf2b3a492e3dd76b.jpg
+│   │   ├── 68_png_jpg.rf.facec81b6c38d24407e73a1d1dfb8c0b.jpg
+│   │   ├── 70_png_jpg.rf.02f43373e151d27bdfa6f015f29060b5.jpg
+│   │   ├── 79_png_jpg.rf.efbc60e4fc739843ab5a72e00b19ac45.jpg
+│   │   ├── 83c834ad-86ce-461e-a63a-716565eb9f17_png_jpg.rf.0c51f12a74a6a03c0976460135520283.jpg
+│   │   ├── 86_jpg.rf.090d88ca8c3b56f7c808e4957a929543.jpg
+│   │   ├── 86_png_jpg.rf.d69dede353cfffd69f16d7a4c2dd3430.jpg
+│   │   ├── 92_png_jpg.rf.79a022f60e713611eac0df1e2260b493.jpg
+│   │   ├── 97_png_jpg.rf.44475536d5dee372d3056fe76854506d.jpg
+│   │   ├── IMG_20230113_181801_1_jpg.rf.2d16a25074e5cf462243c8fab001315d.jpg
+│   │   ├── IMG_20230113_181801_jpg.rf.78c43a124ba5c04018aac1dbe89df105.jpg
+│   │   ├── IMG_20230113_181803_jpg.rf.05f1b61490eafa2f9dd79526d3ab7742.jpg
+│   │   ├── IMG_4465_jpg.rf.c1467a5268bc8404c794868fc1bc90b0.jpg
+│   │   ├── IMG_4554_jpg.rf.9c2cf01e3f2fc7293f32ed590eeaaa1e.jpg
+│   │   ├── IMG_4583_jpg.rf.b246e0ba36423fa38f0f429fc46f0fe1.jpg
+│   │   ├── IMG_4672_PNG_jpg.rf.d7e99023231dedc8b9dc6cf27d7f53a8.jpg
+│   │   ├── IMG_4677_PNG_jpg.rf.55187ecc846212dc2131b74f36d5e963.jpg
+│   │   ├── IMG_4680_PNG_jpg.rf.37bb9d0599704857c5c154413cc65c31.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part10_mp4-10_jpg.rf.5f82a7e0d67fe9aad68209c841d91d5a.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part10_mp4-26_jpg.rf.eb6d874e1707be386ff0dd37219f0026.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part10_mp4-43_jpg.rf.a765d45945fb0273ff91ba7556e72e94.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part11_mp4-10_jpg.rf.cb036ce57596530081ebbc7acd5b8ead.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part11_mp4-1_jpg.rf.7b3d98631e821b48ba678afa36fae9ea.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part19_mp4-1_jpg.rf.26f2e2ddac8295c1dcb34c78ac4b1f96.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part1_mp4-138_jpg.rf.8a68d0e5327c2daef0c8e5b39a3271f1.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part20_mp4-4_jpg.rf.8ef22e407fa82dbf8ffb4aa45673dd40.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part28_mp4-4_jpg.rf.4de58206c586769e36c7d66371e4f8a0.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part29_mp4-1_jpg.rf.7473886e4a1b6af07b917fe3488a7688.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-104_jpg.rf.9a054566f5066be4caf6322130c1507a.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-109_jpg.rf.c803e21cdf7747473673eaa387b1ee59.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-116_jpg.rf.889f423bf988a95b3b9a8766110f6b32.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-69_jpg.rf.1407539c0158f35b3ceeaabcf83d1f56.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-98_jpg.rf.401708b323f0d8dceece717156ac2ee0.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-10_jpg.rf.172ba77749ae0ec28cc7ee33df81939e.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-52_jpg.rf.2334bc0ef2e59387ee8df7d001f06dff.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-55_jpg.rf.05e0cd794962473516ba6e1416eaa469.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-56_jpg.rf.0d83ddc0cbe3a21d3241ed3d3fe349bc.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-57_jpg.rf.ae14c5ab495d56d7de863fe3d5d31f10.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-9_jpg.rf.9ad74955b62f685b3da83bccb38965cc.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-10_jpg.rf.5b204a6791da2a3fd5db7a3a084a4ab5.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-13_jpg.rf.64e567d66610a07b108506c177f0a506.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-14_jpg.rf.a4710f7d13edd4dee94bb889021573b6.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-16_jpg.rf.7e52bdb61fa5ab4cb58e9db777de3315.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-6_jpg.rf.c91b236691f4e9b0aa1ca6f7be27da8e.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-7_jpg.rf.77260318b4d2ad0a2e5205026e6e8807.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-8_jpg.rf.137c0e46badc9e7ab14ade50a003ade4.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-9_jpg.rf.2c3684f32b950ba6d51757bd061b7296.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part33_mp4-15_jpg.rf.256cec25a639f3cf60322c9da76edc2d.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part33_mp4-17_jpg.rf.53d9f72822fec908d8450d2d2f0df9be.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part33_mp4-18_jpg.rf.48333d574ef0a1f490b80c98184fec63.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part36_mp4-4_jpg.rf.a28612a7b77406e491efd183624bb108.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part37_mp4-2_jpg.rf.8e10ed4a5c1b1027cbead0f352305e78.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part37_mp4-3_jpg.rf.c1eebdc26e8e2bbccd19ae02106922ec.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part38_mp4-2_jpg.rf.2056e24a64aab5b01e09082ec39fd1cd.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-0_jpg.rf.fdf849c7f5c3651beb838ea1d035544d.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-10_jpg.rf.e965cbb814bbbd3be5f861933053c552.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-12_jpg.rf.4e840a066665c5499a8dbf5cf5a10235.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-2_jpg.rf.2714c0dc14dca512ed0055448e9ca333.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-3_jpg.rf.7e299884d16bdb74386fbdac1423f091.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-4_jpg.rf.d4c87d0bb74de4e1c64ed6d3bc198873.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-5_jpg.rf.e8c0b2815488807a363c3304d085e11e.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-6_jpg.rf.5a5218436cacbf12626efa39bc84de3a.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-8_jpg.rf.370df6df6e67c1a9060590ad97860063.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-9_jpg.rf.25ea1601a5cc276dcdc2edd9f9a772e4.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-100_jpg.rf.5e10f241df4f0aad39d06f40bcf7ba7a.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-101_jpg.rf.06d6ea7155c7bbb5f907ae834d986198.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-102_jpg.rf.8364667da9dc8856efcec07bc10f8b5a.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-10_jpg.rf.246a0fd6a5ed07417e766c79ee782af1.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-4_jpg.rf.4849ed9d863a5ba366a6875d5c97263c.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-7_jpg.rf.e7dbb68eeba9097f1b7e2e46f957d65f.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-85_jpg.rf.8923c3be00e1d37b3e3c55df5dc7a72c.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-87_jpg.rf.32017735797c104b512899ada2632301.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-89_jpg.rf.b853497f3026f79de37f862719d16f9f.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-8_jpg.rf.afbebe6bea2800bea7da45003869f5e2.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-90_jpg.rf.c9f7b92afc6e8b3c9e7f727f8d4d5830.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-91_jpg.rf.77f4b95a3081f444c0f5c0226cae686d.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-92_jpg.rf.384e3876dfee5828fa2155b385cc28f9.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-94_jpg.rf.9deea27e240be65609d6014f06d528b3.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-95_jpg.rf.bb08563238115d74b4f2d92296ed87dd.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-96_jpg.rf.d43b394d6d4b70cf2ec6d4f637b1ff06.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-97_jpg.rf.518284ed6b19d10c740ba706d10f2ccb.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-98_jpg.rf.4d9f9f57364176e93bf9305e39d8f1ae.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-16_jpg.rf.0ba3fddbe85653c05c1d7ee5037e4712.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-17_jpg.rf.d04334c5d8e070d641f9b81f9adec2a3.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-18_jpg.rf.793b5d9a354fdb729e43fb850b315826.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-20_jpg.rf.ac3ea27291c5f46cc76750f00e23d0b9.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-22_jpg.rf.fcd33ebf109cabebf81d5b67639c4d0c.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part42_mp4-12_jpg.rf.c67afc010f662735d517f33929f799b6.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part42_mp4-13_jpg.rf.657317871034e7aae27f5add9435d72b.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part42_mp4-18_jpg.rf.b45dac15f7e1f601928862e26a82d940.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part42_mp4-6_jpg.rf.8843842f2563b01844a7b050db37c182.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part43_mp4-39_jpg.rf.bca94bce3ce02955509e01d4a4ef0e19.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part45_mp4-2_jpg.rf.f3a9ad7d43f072c7a97ef3c0a68543b6.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part8_mp4-55_jpg.rf.26aa0ad29c679406025b5fd45dfdbd49.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part9_mp4-11_jpg.rf.e70cf5b7b8563c59201cd71a80474cc5.jpg
+│   │   ├── Istanbul-4K-Driving-Downtown-Turkey_Part9_mp4-4_jpg.rf.836d07877c08aee874ea743e303ff7fa.jpg
+│   │   ├── KJP6QLO6BVB3BD3BG4244DWFQA_jpg.rf.3ca3437a0c348b4c4e64f523b3a0f94b.jpg
+│   │   ├── Lysaght-Traffic-Pole-05_jpg.rf.be2ece79d757522ab014450d99078138.jpg
+│   │   ├── Screenshot-2022-05-18-012603_png_jpg.rf.a97640e367ca6804983a44e87294d7cc.jpg
+│   │   ├── Screenshot-2023-02-27-023542_jpg.rf.02d55b321a18745fe590f46d974ce9b0.jpg
+│   │   ├── Sig_3173-e1572460133885_jpg.rf.488f8978b1b9a9ad92a0adb0d092a8f9.jpg
+│   │   ├── Stop_Light_Wide_jpg.rf.57c51d11d1d01002e70c2c326b812b41.jpg
+│   │   ├── Sudan1-1-_jpg.rf.b50f5489f55f2b8181fe9b1e9855eea2.jpg
+│   │   ├── Tlight-538-_png_jpg.rf.e72f2fa917d8e5254db457a93ef9f735.jpg
+│   │   ├── Tlight-539-_png_jpg.rf.b7f55e27f7ad6cebdb45c7d6596d07e3.jpg
+│   │   ├── Tlight-540-_png_jpg.rf.dc8a203c87f70a46551619359d7a721c.jpg
+│   │   ├── Tlight-541-_png_jpg.rf.df6c776b3774c1ac4f40e4b26a87b6b6.jpg
+│   │   ├── Tlight-543-_png_jpg.rf.bc89c84b432c6b64d199d8d88bad8aad.jpg
+│   │   ├── Tlight-545-_png_jpg.rf.b0564817667c431bf511cad56e56f834.jpg
+│   │   ├── Tlight-553-_png_jpg.rf.da06a6748cddecfe07bb7b2aa945803d.jpg
+│   │   ├── Tlight-557-_png_jpg.rf.731d16c221554f6016374cf85ddc955d.jpg
+│   │   ├── Tlight-567-_png_jpg.rf.3da39d5ff38a4a27afe6ebceaae4eb55.jpg
+│   │   ├── Tlight-588-_png_jpg.rf.75b0edcca4f7d09f5c261326ec18aecc.jpg
+│   │   ├── Tlight-599-_png_jpg.rf.5411930782c5a0eeb74add9ac4916030.jpg
+│   │   ├── Tlight-668-_png_jpg.rf.106423b38ad17979053bf60f8584a5a3.jpg
+│   │   ├── Tlight-709-_png_jpg.rf.583abc7b9bc88b6e2bd0b8e1f1a7a2cf.jpg
+│   │   ├── Tlight-92-_png_jpg.rf.4c06f2a6b349f86e993d5cf6d1bcbe56.jpg
+│   │   ├── Tlight-96-_png_jpg.rf.ab3f7d6834dfc45e4b299e0de3a6ca23.jpg
+│   │   ├── TrafficLights_jpg.rf.02618c4eb92577dc85c4a6a13d55e104.jpg
+│   │   ├── VID_20230114_134110_000056_jpg.rf.5e112c1130a7ef8cfcc4362d541e1237.jpg
+│   │   ├── VID_20230225_135853_000022_jpg.rf.a36c7f233ec0105b1a1119e9ab70f54a.jpg
+│   │   ├── VID_20230226_175115_000008_jpg.rf.7bccec8f7b64c932cf6fb96a75fd7015.jpg
+│   │   ├── VID_20230226_175115_000009_jpg.rf.f40b8f762d3dada91f09644010eecf14.jpg
+│   │   ├── VID_20230305_162146_000003_jpg.rf.223ff42d720b10681bdef36afd018c22.jpg
+│   │   ├── a5377a24-3ce7-4741-9142-6fd73b2597d7_scaled_jpg.rf.cb4fa1c90eb004e73ca72de4c82c56e6.jpg
+│   │   ├── ampeln-rot-grun-400-75677667_jpg.rf.ce27c00327667a6602fca82b1577eb8d.jpg
+│   │   ├── article-1388711-00533F3D00000258-208_1024x615_large_jpg.rf.c777fc3a5e0cc925be195edf7e8b9c82.jpg
+│   │   ├── depositphotos_107649870-stock-photo-red-traffic-signal-on-the_jpg.rf.52d5aaf0a986f782602a8ee7895ad0b0.jpg
+│   │   ├── getty_689407322_2000149320009280353_370904_jpg.rf.0215e5a5ae0a09ea2aa78b4eb37543f1.jpg
+│   │   ├── green-on-traffic-light-against-light-trails-of-tram-and-cars-night-scene-of-city-street-in_jpg.rf.596efefb397a0a2fe554f0b8f248b8b7.jpg
+│   │   ├── how-trafic-lights-works_jpg.rf.8d33e090e76da32409c2fedcb7cce708.jpg
+│   │   ├── image004_jpg.rf.e8a9d5cb38046b7d92ca9a68842defb8.jpg
+│   │   ├── image7Y866O-SGUjdhjdfhjdfhs_jpg.rf.92867ee03d9028f1b411b3281a17edfc.jpg
+│   │   ├── images-1-_jpg.rf.cd596542a0b060151af23694f0e46850.jpg
+│   │   ├── images-11-_jpg.rf.80ed645a6fe61362d060c05a8e09405b.jpg
+│   │   ├── images-12-_jpg.rf.652c4be0d23bf31f8a910030b3661e9d.jpg
+│   │   ├── images-17-_jpg.rf.d05212ce442a0f4af24991bafdf0e15c.jpg
+│   │   ├── images-19-_jpg.rf.0578dfa4a7bb5ce63ed271ec108deecf.jpg
+│   │   ├── images-21-_jpg.rf.1120fc647b2e8c0aa062e3e6fb1f8c36.jpg
+│   │   ├── images-22-_jpg.rf.dc2f1a4ee2e61c1740bdf0b405c3c23a.jpg
+│   │   ├── images-27-_jpg.rf.2cb5418677cf56319561ae6f35a8b4c7.jpg
+│   │   ├── images-28-_jpg.rf.db4353d571a0e4e430ed1bef9f6a4a9c.jpg
+│   │   ├── images-29-_jpg.rf.a9fa61916ff15a97215711b6cea484c8.jpg
+│   │   ├── images-3-2_jpg.rf.894cf2c57e12d95e14b13cd92280aab1.jpg
+│   │   ├── images-30-_jpg.rf.998c9cdcd7c3c4d89dbfa665f2b9c5b2.jpg
+│   │   ├── images-31-_jpg.rf.b18a3889dbc022f8586c8c95967e2bdb.jpg
+│   │   ├── images-32-_jpg.rf.bcdea5f6e5a52c83aef1ac562a3e9dda.jpg
+│   │   ├── images-34-_jpg.rf.4074c6889bd55570fa48c5f76cee6e29.jpg
+│   │   ├── images-36-_jpg.rf.bec67d70994c705dedab9c5a02fbc8fe.jpg
+│   │   ├── images-37-_jpg.rf.6a396b280603d2547ce86b847c7843c4.jpg
+│   │   ├── images-38-_jpg.rf.2baf115dff2047e7f2938d5453b6d224.jpg
+│   │   ├── images-5-_jpg.rf.e3c24c59c5c9920f7424ba127865868e.jpg
+│   │   ├── images-7-_jpg.rf.3658ed77abc30e069cc03be3be711c06.jpg
+│   │   ├── images-8-_jpg.rf.098b54f00fe4058a4222cfa887c85973.jpg
+│   │   ├── images-9-_jpg.rf.fc9e7ca85425e071a5c7ee101f58b25b.jpg
+│   │   ├── images1234_jpg.rf.455131cf8ba213a3bd588b6b60ed1ee1.jpg
+│   │   ├── images787-7-6-5-5-5-_jpg.rf.3f605a9fea1803fb21036dabde0101cd.jpg
+│   │   ├── images97-_jpg.rf.f38042cb8d3d29e59b76695653c69c16.jpg
+│   │   ├── images_jpg.rf.c33e4d9f1aa69fa6dc2ccfb262d16dfc.jpg
+│   │   ├── img10_png.rf.9c32a73eb6fdcfeb241c7b5781322977.jpg
+│   │   ├── img13_png.rf.504ea2291b4c7960b287580276b42135.jpg
+│   │   ├── img14_png.rf.3390c83cebcafaa94f735fd2c5935730.jpg
+│   │   ├── img15_png.rf.8742e7ad22fbe32c1a48a0d2f09aa5ab.jpg
+│   │   ├── img16_png.rf.e663ff91d3822b616a9e43c7c99e91e2.jpg
+│   │   ├── img17_png.rf.b53d3d10bf1fe0a7bd326fcc5e376376.jpg
+│   │   ├── img18_png.rf.08cac8c1f9d689e682f10d259073404a.jpg
+│   │   ├── img19_png.rf.2a345da265ff38840f0854c18e3d4893.jpg
+│   │   ├── img1png_png.rf.f9fe0c385bc3a5125392007b9b2382b3.jpg
+│   │   ├── img20_png.rf.fd6568001941b4219dcb5d310fb91dfd.jpg
+│   │   ├── img2_png.rf.0d2aba6c16b37b4659550472dc77a7ed.jpg
+│   │   ├── img3_png.rf.fc9a8538e139971fb99b3a724ec081fe.jpg
+│   │   ├── img4_png.rf.d87a928629ab62e5b9f8e962fe9e8323.jpg
+│   │   ├── img5_png.rf.cb6fcb718c8fdb323c1c96f000fb9279.jpg
+│   │   ├── img6_png.rf.c358335c0479d57af57a8606bfe2cffb.jpg
+│   │   ├── img7_png.rf.bda86ef316881764fcfc87e5f1734a52.jpg
+│   │   ├── img8_png.rf.42b4e00bb4525bb8aa33df4236f5d81d.jpg
+│   │   ├── istockphoto-1253851745-612x612_jpg.rf.434c7c15dd71a72f8653b09e7474b3cb.jpg
+│   │   ├── istockphoto-577633002-612x612_jpg.rf.8eaf4d33dd4750ca85193dc10b842dd6.jpg
+│   │   ├── istockphoto-693406474-170667a_jpg.rf.8f38d56b5cc81267c517b714da355a15.jpg
+│   │   ├── istockphoto-950322678-612x612_jpg.rf.0b12fb37421511ada7995963077c9fca.jpg
+│   │   ├── istockphoto-950322682-612x612_jpg.rf.5ef44558c9e6be06a7951d2d99114e74.jpg
+│   │   ├── k19_jpg.rf.29a9b953e9ae809ade6b6978b57ae998.jpg
+│   │   ├── led-traffic-signal-light-500x500-250x250_jpg.rf.9ea491c6cf8783a49d0cdb115bac3193.jpg
+│   │   ├── maxresdefault_jpg.rf.e89674fe15d160c831977f68ba7e9ada.jpg
+│   │   ├── mqdefault_jpg.rf.a8b0cc3ac327ed07a8e43516da945871.jpg
+│   │   ├── outdoor-vertical-traffic-light-green-color-outdoor-vertical-traffic-light-blue-sky-trees-around-traffic-control-concept-221609452_jpg.rf.088101a5b38fb831063bd33a1c205957.jpg
+│   │   ├── r8_196_3256_2031_w1200_h678_fmax_jpg.rf.c6345f7f6016283ccf06bc813578b5f3.jpg
+│   │   ├── ratio3x2_400_jpg.rf.80473e4cd41a2c2cfd182b9ae2ff372b.jpg
+│   │   ├── red-color-traffic-light-beautiful-blue-sky-background-54360435_jpg.rf.bc37193e023b73c8c0116813d904f351.jpg
+│   │   ├── red-light-sign-road-works-traffic-lights-49963630_jpg.rf.bf00e43d1bac8ab7bbe7cf261118f3f5.jpg
+│   │   ├── red-traffic-light-background-cars-red-traffic-light-114676135_jpg.rf.c896a6730cf8b5d200a01019cca30bbd.jpg
+│   │   ├── red_jpeg_jpg.rf.90759690d4fc3f632058e124e0cd7b26.jpg
+│   │   ├── tflight_001084_jpg.rf.5220b27b1b888c73414595c77b9c90b5.jpg
+│   │   ├── tflight_001087_jpg.rf.2f66e95768169b543ce30fb9a42c5831.jpg
+│   │   ├── tflight_001109_jpg.rf.f5c189d2d0631c981a9c477fbb48bb8a.jpg
+│   │   ├── tflight_001114_jpg.rf.facc6b4015cea08dba9f9eead3b54374.jpg
+│   │   ├── tflight_001127_jpg.rf.27bbe204564c7c7e9a14d71ed5388953.jpg
+│   │   ├── tflight_001131_jpg.rf.1d9a344551e0511019a87e1f56610028.jpg
+│   │   ├── tflight_001140_jpg.rf.7e5657d8cf699694e8ff6dac26a820cb.jpg
+│   │   ├── tflight_001152_jpg.rf.c4e539fb798650f3d68989780f2f97e1.jpg
+│   │   ├── tflight_001155_jpg.rf.65ae95846a56ce2ac40e4eb01e3f9178.jpg
+│   │   ├── tflight_001157_jpg.rf.f2ddd5e054cf391f81303897aef70ea8.jpg
+│   │   ├── tflight_001168_jpg.rf.44b2065d90036a086a2b46cd32d727dd.jpg
+│   │   ├── tflight_001170_jpg.rf.4cdb5c21076d70ed448b7eb40f2c9c5c.jpg
+│   │   ├── tflight_001172_jpg.rf.0c324ec41d70d55e1e294f5949082add.jpg
+│   │   ├── tflight_001173_jpg.rf.b4c0d17778d8c632a925488b642f3552.jpg
+│   │   ├── tflight_001177_jpg.rf.078c65398be700092ee39f4477a14273.jpg
+│   │   ├── tflight_001178_jpg.rf.1afc128aa379c45cad2a880cc81c5bc1.jpg
+│   │   ├── tflight_001192_jpg.rf.062820448572520bdf73d2a9c259ebb0.jpg
+│   │   ├── tflight_001193_jpg.rf.aa1c0a96767af445010c17fe6c715231.jpg
+│   │   ├── tflight_001199_jpg.rf.240ba08c40d2161adffc4440a7035957.jpg
+│   │   ├── tflight_001200_jpg.rf.0959144cdfc5686123cca5d1a82c6231.jpg
+│   │   ├── tflight_001206_jpg.rf.034710ca53f7648ea2d91c7904f9664a.jpg
+│   │   ├── tflight_001214_jpg.rf.bbee718c371522ca630e0b0e4b390375.jpg
+│   │   ├── tflight_001215_jpg.rf.48d718377d0c8d4e37fc49b6c5ade2bf.jpg
+│   │   ├── tflight_001219_jpg.rf.a8c77c684c072847fe4103cd151023ac.jpg
+│   │   ├── tflight_001221_jpg.rf.6f1c59737d435e78ae8f7d2ed831797d.jpg
+│   │   ├── tflight_001226_jpg.rf.eac95ca1bf6528bbb1b4b6c9919fd8be.jpg
+│   │   ├── tflight_001239_jpg.rf.d13aba8a2747b12f38f64fe4230b8b0d.jpg
+│   │   ├── tflight_001240_jpg.rf.8c9f1311e851e3ac857c6f20c4a34fd6.jpg
+│   │   ├── tflight_001241_jpg.rf.8bc6de05681c10f69c818f38c9d42927.jpg
+│   │   ├── tflight_001247_jpg.rf.25571a55567b9bcf67c3be682ebb0373.jpg
+│   │   ├── tflight_001261_jpg.rf.993d60a82174d72e18f6b3d43ec4ef07.jpg
+│   │   ├── tflight_001284_jpg.rf.2949926f9094abefdc305132abbf029b.jpg
+│   │   ├── tflight_001286_jpg.rf.344c7840d2ebefc18d92f9ba5831520d.jpg
+│   │   ├── tflight_001287_jpg.rf.19b56cd78823364e6c9d4e9b56a6b6fd.jpg
+│   │   ├── tflight_001303_jpg.rf.be7615e73816601c2bfe677dbab727ee.jpg
+│   │   ├── tflight_001312_jpg.rf.5936010040c538a58251b274540dbeae.jpg
+│   │   ├── tflight_001313_jpg.rf.de8b71d3b13f85d7dcefd931ee6d37c1.jpg
+│   │   ├── tflight_001316_jpg.rf.bfb10ae4fdbc9e3ba3aa4dc0ab8e8045.jpg
+│   │   ├── tflight_001322_jpg.rf.f6ac2bd86985350cbfe43f43402ca61e.jpg
+│   │   ├── tflight_001327_jpg.rf.9dfb2325c58c88cef6715612c98a8b04.jpg
+│   │   ├── tflight_001335_jpg.rf.7551f09fa4462b7119272d7e9a2efe46.jpg
+│   │   ├── tflight_001339_jpg.rf.dfe6fded13c3a25e2332a35621e31514.jpg
+│   │   ├── tflight_001347_jpg.rf.fe55888d8432081dcd32cec477cce7e7.jpg
+│   │   ├── tflight_001394_jpg.rf.557bca50252aa7e964a9869737555c64.jpg
+│   │   ├── tflight_001397_jpg.rf.df3dbd96c9c7447cd9d0b34042cf875c.jpg
+│   │   ├── tflight_001418_jpg.rf.1c647231b3398a71958b608390f6813d.jpg
+│   │   ├── tflight_001449_jpg.rf.97093e2f3d73bf68221f215248b0730f.jpg
+│   │   ├── tflight_001452_jpg.rf.1d1ff313fec265e4023a5173c5b08910.jpg
+│   │   ├── tflight_001470_jpg.rf.d7b8f6535b8cc2d731ffe78e029834a9.jpg
+│   │   ├── tflight_001472_jpg.rf.afc856d4a783d0e6e22a7e9c8d0361ef.jpg
+│   │   ├── tflight_001476_jpg.rf.df6203d37f4d2382246be230f5bc0934.jpg
+│   │   ├── tflight_001477_jpg.rf.9a4bad8dc0f5e5863e4dd2a33b353481.jpg
+│   │   ├── tflight_001478_jpg.rf.eb17b99a4d6d78e3c88db67535954ea9.jpg
+│   │   ├── tflight_001481_jpg.rf.49b022cc6b2b4484626115fa83012f65.jpg
+│   │   ├── tflight_001483_jpg.rf.c74402ebb875a77051a3828bfb80b42e.jpg
+│   │   ├── tflight_001484_jpg.rf.97b2c8c5cd1eb83805b196e0f86d40e4.jpg
+│   │   ├── tflight_001485_jpg.rf.6821bb4f03660d414194b985e9eb21af.jpg
+│   │   ├── tflight_001489_jpg.rf.f9c002c574835cbd1d72eb2608cbe7c7.jpg
+│   │   ├── tflight_001491_jpg.rf.4e15b75e9473b1dc2dd45c7d1d52c394.jpg
+│   │   ├── tflight_001493_jpg.rf.f965ec160d027464cb12652cc0616a0a.jpg
+│   │   ├── tflight_001494_jpg.rf.4ba2b12f74d3c4ee8fcfae6f5b885cd9.jpg
+│   │   ├── tflight_001496_jpg.rf.4bb95f5a557bf7be06850d8c95bb069f.jpg
+│   │   ├── tflight_001498_jpg.rf.603470bf15bdda105aa0d650d6ce9bb9.jpg
+│   │   ├── tflight_001505_jpg.rf.a4fcfe70704f22b0e297b450ad428bea.jpg
+│   │   ├── tflight_001507_jpg.rf.365dd9504125d02998ba318d3e9b3bca.jpg
+│   │   ├── tflight_001513_jpg.rf.ae9ab06659a43c4d576b5cc5461abceb.jpg
+│   │   ├── tflight_001516_jpg.rf.e7eebfaf20da13b1b54945d39bca276a.jpg
+│   │   ├── tflight_001520_jpg.rf.14f734f59d707b771c7b42860757e44c.jpg
+│   │   ├── tflight_001522_jpg.rf.e46ae9a7506563bc8379c5c23f9c1865.jpg
+│   │   ├── tflight_001525_jpg.rf.cab51c6b3a5f833e538504f5a42380f9.jpg
+│   │   ├── tflight_001530_jpg.rf.9b222434946df68e9fab04e8af374feb.jpg
+│   │   ├── tflight_001535_jpg.rf.e3239fb91ecde01c31b2eafa12ff7c38.jpg
+│   │   ├── tflight_001540_jpg.rf.10f97740d170309e77dffa3bdb260ce8.jpg
+│   │   ├── tflight_001545_jpg.rf.b2f8b95cd10c3cf355ad5847c11dc8d2.jpg
+│   │   ├── tflight_001552_jpg.rf.0ca42eb8cd889217dad97d5f4022fa0d.jpg
+│   │   ├── tflight_001556_jpg.rf.7525496e31dd3cb685eadf99b222a9ce.jpg
+│   │   ├── tflight_001560_jpg.rf.19d27d4fc92a4f5c7fadd3b4f9ef5d73.jpg
+│   │   ├── tflight_001562_jpg.rf.0f3fa1f8f9b6a4ee19dc93f4e974c8df.jpg
+│   │   ├── tflight_001563_jpg.rf.ea09f9b213f0c9c346f69ae5c4143249.jpg
+│   │   ├── tflight_001569_jpg.rf.d79989c75cf4506f5dab4396abc6c9df.jpg
+│   │   ├── tflight_001571_jpg.rf.ca6022772f86c459d901914b18adf504.jpg
+│   │   ├── tflight_001572_jpg.rf.07f816dd8910355a4f8fe8693f437d33.jpg
+│   │   ├── tflight_001574_jpg.rf.a9d2aabdc5bb8a7e050309dba6a410ff.jpg
+│   │   ├── tflight_001575_jpg.rf.5915aa772a2a4534b125425458bd3ae1.jpg
+│   │   ├── tflight_001577_jpg.rf.56b3c074985c9f984f9e8a8b25f9690e.jpg
+│   │   ├── tflight_001580_jpg.rf.c2485c1f93adda0103192f1cd031fb6d.jpg
+│   │   ├── tflight_001582_jpg.rf.37f95b47fbe2b238c36671f097201d68.jpg
+│   │   ├── tflight_001587_jpg.rf.7d96482cfb5fab62e7788b9de2dc7d01.jpg
+│   │   ├── tflight_001590_jpg.rf.0878fbfeded5a600a68cd8de94edaa65.jpg
+│   │   ├── tflight_001595_jpg.rf.c9e029b3bcf3863897e4217d9e586321.jpg
+│   │   ├── tflight_001596_jpg.rf.41d65651187def7f07e4c8be0eb34579.jpg
+│   │   ├── tflight_001605_jpg.rf.b4d733762963ad1ae7577190c03c3daa.jpg
+│   │   ├── tflight_001613_jpg.rf.68b5ad8c8fbecea2d13db1d89dc61661.jpg
+│   │   ├── tflight_001615_jpg.rf.d7626ebc308df0c18f48113e6cb3808e.jpg
+│   │   ├── tflight_001618_jpg.rf.cb382a68a761c9985b318021d84cb0de.jpg
+│   │   ├── tflight_001625_jpg.rf.10bf9d5b3f92122ab42212360c35e430.jpg
+│   │   ├── tflight_001653_jpg.rf.ff860a8d61be0aec65a6ae4311852897.jpg
+│   │   ├── tflight_001654_jpg.rf.dbd80a08030f5832674e6abf5a0b13f0.jpg
+│   │   ├── tflight_001658_jpg.rf.c9537dbdc9605edfc80e0bfb8cd75cba.jpg
+│   │   ├── tflight_001659_jpg.rf.331d1ccea6b2d70e56574db63ef7b348.jpg
+│   │   ├── traffic-light-1-1455703_jpg.rf.04b8156b4bb484c55604979af6c6ce0b.jpg
+│   │   ├── traffic-light-10-_jpg.rf.af89cf96c5b3dd4c19c0a899a0dcd01c.jpg
+│   │   ├── traffic-light-10-_jpg.rf.dbbab5b0453b24e84fd7092e55d4f627.jpg
+│   │   ├── traffic-light-102-_jpg.rf.39cdfbd081de9fc9a032ff303b87ac89.jpg
+│   │   ├── traffic-light-102-_jpg.rf.51904eff47b11ef5a628ae45ea5e1731.jpg
+│   │   ├── traffic-light-105-_jpg.rf.2f5da660ef04932a6d74482be456c375.jpg
+│   │   ├── traffic-light-105-_jpg.rf.765c4bae0f73b2ad0366dc63d7597da2.jpg
+│   │   ├── traffic-light-105-_jpg.rf.78ce1a17032187bf1f418f6e11c019a4.jpg
+│   │   ├── traffic-light-108-_jpg.rf.192fcf3356402a5839fd61653926dd05.jpg
+│   │   ├── traffic-light-108-_jpg.rf.7102b5c694feb7e5086a1a44c66c32d8.jpg
+│   │   ├── traffic-light-11-_jpg.rf.3689788e6dbf3ec35df97fc895edfca0.jpg
+│   │   ├── traffic-light-11-_jpg.rf.3fa8cf003134c2628c9f39a0a17f9db8.jpg
+│   │   ├── traffic-light-11-_jpg.rf.665859a6f71979f4a938df20617d1c19.jpg
+│   │   ├── traffic-light-11-_jpg.rf.c4c49cdcdd7ebc01682bb355916452be.jpg
+│   │   ├── traffic-light-11-_jpg.rf.d24f8b0601ba9c969c75a091c743469e.jpg
+│   │   ├── traffic-light-114-_jpg.rf.04b425457cfbb9ebce51ac4e14eb2137.jpg
+│   │   ├── traffic-light-117-_jpg.rf.6a67a3801603be0a04bd89d46a531e4e.jpg
+│   │   ├── traffic-light-117-_jpg.rf.79ee578d435c0ddbb5c80467a3c6aa8f.jpg
+│   │   ├── traffic-light-130-_jpg.rf.001c4c8fc1174368a99ededa5f577b91.jpg
+│   │   ├── traffic-light-130-_jpg.rf.3700edc1711ea944ef7d76bd281970e8.jpg
+│   │   ├── traffic-light-130-_jpg.rf.5eb5b890c4df659706a909b44ea54dba.jpg
+│   │   ├── traffic-light-130-_jpg.rf.869729c36df6c3c2b45678da26b72abf.jpg
+│   │   ├── traffic-light-130-_jpg.rf.e27790e8f65f6b373cd820e445ba329c.jpg
+│   │   ├── traffic-light-136-_jpg.rf.96713a4b1c3c05b19d1b3b24afc7b887.jpg
+│   │   ├── traffic-light-136-_jpg.rf.98048942ae1db6208edf3631bd304b2b.jpg
+│   │   ├── traffic-light-136-_jpg.rf.b18f3041258f3b90568f659c534f5778.jpg
+│   │   ├── traffic-light-14-_jpg.rf.56ea7f63d93f9e0d8fec168b5fc30e19.jpg
+│   │   ├── traffic-light-142-_jpg.rf.585e0719c4fe40e1dd9c3f8014fd470b.jpg
+│   │   ├── traffic-light-142-_jpg.rf.aaf1b1d6e088eb0eed6787f4382ce8fc.jpg
+│   │   ├── traffic-light-142-_jpg.rf.eb116db5afff94f3477dd45bf2199e2e.jpg
+│   │   ├── traffic-light-145-_jpg.rf.9e8d48051373953bd2652e08fc655f2d.jpg
+│   │   ├── traffic-light-145-_jpg.rf.e3d8e4816886ddb96c353509107ce65c.jpg
+│   │   ├── traffic-light-151-_jpg.rf.0ff99e5ff5935e6ef021dc3ced028d44.jpg
+│   │   ├── traffic-light-156-_jpg.rf.1c9d8ca8b6c01e645d1d572865500bb6.jpg
+│   │   ├── traffic-light-156-_jpg.rf.4d1e72a0a2aa38c1f480198be6dabe08.jpg
+│   │   ├── traffic-light-156-_jpg.rf.8108ce8acdbe158cc924ff1892abf3c1.jpg
+│   │   ├── traffic-light-156-_jpg.rf.b01dcfed5ac9627b064a2d9f57db513e.jpg
+│   │   ├── traffic-light-156-_jpg.rf.b64204a8ed392c5da0c480c98106c3f5.jpg
+│   │   ├── traffic-light-159-_jpg.rf.24644686670abfc47583e9c61ff4b4b8.jpg
+│   │   ├── traffic-light-159-_jpg.rf.690c13805a4d44c668cfa53685bbd711.jpg
+│   │   ├── traffic-light-159-_jpg.rf.dfdef2ad283b760f0f113891ba233d06.jpg
+│   │   ├── traffic-light-159-_jpg.rf.e3bf6597f1e49fba782870dae728b337.jpg
+│   │   ├── traffic-light-162-_jpg.rf.5d3e7d9e34aad904dbf06c8c7e082d79.jpg
+│   │   ├── traffic-light-162-_jpg.rf.cb4914f36252e8c0d127f47238b8ac90.jpg
+│   │   ├── traffic-light-162-_jpg.rf.d81142aa7ebb96caa8cafce344bdd79a.jpg
+│   │   ├── traffic-light-165-_jpg.rf.031b9835f9fa5a04213b570ac66de7a6.jpg
+│   │   ├── traffic-light-168-_jpg.rf.b5decc29af02b4cf6ca07ffc3ddfdd3c.jpg
+│   │   ├── traffic-light-17-_jpg.rf.533cc4a767097c6b1b5bd45489b02042.jpg
+│   │   ├── traffic-light-187-_jpg.rf.221f548c7843be9da0030f916020d21b.jpg
+│   │   ├── traffic-light-187-_jpg.rf.8b2d8db44cd48d9be4acb21368f60e3b.jpg
+│   │   ├── traffic-light-187-_jpg.rf.da3202740af3eb8c39f6224648b0b028.jpg
+│   │   ├── traffic-light-190-_jpg.rf.05585b50ad069714b37cffbb545e5de0.jpg
+│   │   ├── traffic-light-190-_jpg.rf.5822e49270157831f782f6918725124c.jpg
+│   │   ├── traffic-light-190-_jpg.rf.6e07c738cf1e116476c6be9f1a864c5b.jpg
+│   │   ├── traffic-light-198-_jpg.rf.509287ac2a455e0a226397f2c0059946.jpg
+│   │   ├── traffic-light-20-_jpg.rf.324eec39c6d40307868b1147a6a8cd03.jpg
+│   │   ├── traffic-light-201-_jpg.rf.28df273123f668a91eec779736bc342a.jpg
+│   │   ├── traffic-light-202-_jpg.rf.85ffeff59b9d033fbc1051ad9e21593a.jpg
+│   │   ├── traffic-light-202-_jpg.rf.c0af50cc7972a05bb73f79b7d52e1613.jpg
+│   │   ├── traffic-light-224-_jpg.rf.0fb13fb115fc3897d63a871a022f234c.jpg
+│   │   ├── traffic-light-224-_jpg.rf.7eb907ac497ea2d5568ae7041837fd13.jpg
+│   │   ├── traffic-light-227-_jpg.rf.47c57d8a80276230de23e24f0f059de0.jpg
+│   │   ├── traffic-light-227-_jpg.rf.e34611cde8ec074e2150ff788e44bd1e.jpg
+│   │   ├── traffic-light-236-_jpg.rf.a46e135afee1145dce9162cbf389ff3b.jpg
+│   │   ├── traffic-light-236-_jpg.rf.cac86a0c426b5584e3689e2464ddda97.jpg
+│   │   ├── traffic-light-237-_jpg.rf.2d0709f6ec06aed42de66f540934b230.jpg
+│   │   ├── traffic-light-237-_jpg.rf.40e2987e0e8e2e063bad5f07a5825e11.jpg
+│   │   ├── traffic-light-237-_jpg.rf.4816db8ef56babde3ad20b284d9c0170.jpg
+│   │   ├── traffic-light-242-_jpg.rf.b06e582977f7abeac16ce10e11bae497.jpg
+│   │   ├── traffic-light-245-_jpg.rf.77bad2f77a94d20fab1c768f93ea7571.jpg
+│   │   ├── traffic-light-246-_jpg.rf.b1d93ea3b5a0cc3d9244a84db71de2f8.jpg
+│   │   ├── traffic-light-246-_jpg.rf.d076021201eee20c2e70fcee41287dac.jpg
+│   │   ├── traffic-light-25-_jpg.rf.efd120f232275ff954d0af38d172f10a.jpg
+│   │   ├── traffic-light-267-_jpg.rf.4caf14c8e6e6890b3c1a06a437b8b750.jpg
+│   │   ├── traffic-light-267-_jpg.rf.6f58d2922d70c10bd13f6ad6745e0d1a.jpg
+│   │   ├── traffic-light-267-_jpg.rf.b3dc9bf207d177e2c8ac34cd5ac9e3b9.jpg
+│   │   ├── traffic-light-268-_jpg.rf.69e4480a1adf813a67f5c2e075c4258b.jpg
+│   │   ├── traffic-light-268-_jpg.rf.8a4b2dc62d2e5fd72bbd7dacf2f317bc.jpg
+│   │   ├── traffic-light-268-_jpg.rf.9028b87478b6a13ba0f68d88d7c51cb0.jpg
+│   │   ├── traffic-light-269-_jpg.rf.13399fcef5b79662551da6b8674f87a0.jpg
+│   │   ├── traffic-light-269-_jpg.rf.aba2d99237001013fe9d03f06dedba09.jpg
+│   │   ├── traffic-light-271-_jpg.rf.04824f1ccdab07fdb491371691e8c542.jpg
+│   │   ├── traffic-light-271-_jpg.rf.46de3a4dcc2163b03904054df14de956.jpg
+│   │   ├── traffic-light-271-_jpg.rf.67c4c65a145ba349c0e7b218dbeb7c06.jpg
+│   │   ├── traffic-light-271-_jpg.rf.9ca7f94bac75525272ae3313d69d04f3.jpg
+│   │   ├── traffic-light-272-_jpg.rf.600a73cb3e6860072ef35ba58eb77220.jpg
+│   │   ├── traffic-light-285-_jpg.rf.9269499cd09db955ed3a4a52650be7d5.jpg
+│   │   ├── traffic-light-285-_jpg.rf.fd29e0bdfb79b8b8aa8d273564205770.jpg
+│   │   ├── traffic-light-29-_jpg.rf.5d47c931c3350ec2accb4e328b4b85c4.jpg
+│   │   ├── traffic-light-29-_jpg.rf.6f1cde5fc805f9817e315542089daeb2.jpg
+│   │   ├── traffic-light-29-_jpg.rf.f878cc45504d5f59238d5b203e62ba94.jpg
+│   │   ├── traffic-light-290-_jpg.rf.35ab1403ac5f9ec7fbfc99996f90ad50.jpg
+│   │   ├── traffic-light-290-_jpg.rf.4ee729151c031021f26ccab998e0ba00.jpg
+│   │   ├── traffic-light-290-_jpg.rf.d00a392bbcd9580c2ad9d57f8848e5e7.jpg
+│   │   ├── traffic-light-291-_jpg.rf.8ab6662645d2ad5e66ab9f59363286a9.jpg
+│   │   ├── traffic-light-334-_jpg.rf.9c37ba9b8ac249a90e25e4c04a5eff16.jpg
+│   │   ├── traffic-light-336-_jpg.rf.41be3e42aee42e0b9bf2963eef11b336.jpg
+│   │   ├── traffic-light-340-_jpg.rf.0439a6264fd42cf8aca915a916dfc4ce.jpg
+│   │   ├── traffic-light-341-_jpg.rf.ba87e0cdde96792274e0a775c14c40bb.jpg
+│   │   ├── traffic-light-366-_jpg.rf.87714688ed4a34fd2356b99a231296da.jpg
+│   │   ├── traffic-light-366-_jpg.rf.b8bd5dc41c4b02cacf8521eeaafb0f2b.jpg
+│   │   ├── traffic-light-367-_jpg.rf.c4436850532a2ef9b8a003103a6ccbf3.jpg
+│   │   ├── traffic-light-370-_jpg.rf.496b1b9590a218088717e9eae370118e.jpg
+│   │   ├── traffic-light-389-_jpg.rf.b0b73a1fefa2bd0d5455a78d334a5d8f.jpg
+│   │   ├── traffic-light-408-_jpg.rf.48f55cc471ba1a85d9ae56f6955eb83a.jpg
+│   │   ├── traffic-light-408-_jpg.rf.68173ffe5f380c338463c623b5672d62.jpg
+│   │   ├── traffic-light-424-_jpg.rf.0946f8630b802a2512b645ede4b3fddc.jpg
+│   │   ├── traffic-light-45-_jpg.rf.1754a3d95771389a8758d2c3b640bc4e.jpg
+│   │   ├── traffic-light-489-_jpg.rf.70ba9c85cbf98cc17cc2de3c2ce91535.jpg
+│   │   ├── traffic-light-489-_jpg.rf.997760ccd76ccc1210a949b2afed4b4a.jpg
+│   │   ├── traffic-light-489-_jpg.rf.a7193ce2e4854f43053974cfd281f464.jpg
+│   │   ├── traffic-light-489-_jpg.rf.bc22d0dc8520a6f34fd538b920d91418.jpg
+│   │   ├── traffic-light-490-_jpg.rf.2b701d153e2923b904f9d296a56f65c2.jpg
+│   │   ├── traffic-light-490-_jpg.rf.367f13ef12cb7bbfe1fd6ae343f38abf.jpg
+│   │   ├── traffic-light-490-_jpg.rf.3b03d0ebeed1ad9cb61cdd1e08e4071b.jpg
+│   │   ├── traffic-light-490-_jpg.rf.9ed84ad4773d1382cadd0cb78d4f1d8e.jpg
+│   │   ├── traffic-light-492-_jpg.rf.34d18e75fd351c559c2c30734ef3ab3f.jpg
+│   │   ├── traffic-light-497-_jpg.rf.6cdcf61c70fecc21a0d7e3a89a74c340.jpg
+│   │   ├── traffic-light-497-_jpg.rf.da07e107ceace343943f10dddd674cb2.jpg
+│   │   ├── traffic-light-497-_jpg.rf.f8e452252f1f631e23d0e55bd2cd6c72.jpg
+│   │   ├── traffic-light-499-_jpg.rf.30007e61162148669c896a2fa9d9e089.jpg
+│   │   ├── traffic-light-501-_jpg.rf.03a92f028b31b640998e036f30a356eb.jpg
+│   │   ├── traffic-light-501-_jpg.rf.b932547fa9ff2da7949d96331f7917d3.jpg
+│   │   ├── traffic-light-501-_jpg.rf.ff630eedcabcfbbae3b6542231008ac8.jpg
+│   │   ├── traffic-light-502-_jpg.rf.b7df07b51f2b6b3e3fd138be77fedc39.jpg
+│   │   ├── traffic-light-508-_jpg.rf.2f465f35087de3f0cb5aaf17a7eec671.jpg
+│   │   ├── traffic-light-510-_jpg.rf.32dcd649b945ac9a8cd6223003db4e4f.jpg
+│   │   ├── traffic-light-510-_jpg.rf.99af8d53f1d526a8616f66a7791fbc58.jpg
+│   │   ├── traffic-light-511-_jpg.rf.74970d91febcf97dbc210ed18fc8a4f1.jpg
+│   │   ├── traffic-light-513-_jpg.rf.acffa6f49576709b1a2f47cce8d72c83.jpg
+│   │   ├── traffic-light-516-_jpg.rf.38dad7e005e36ab89bcff6d458d7a56c.jpg
+│   │   ├── traffic-light-520-_jpg.rf.0b92fb588f99d7b20587eb090678f348.jpg
+│   │   ├── traffic-light-522-_jpg.rf.37e35d78a788e703ccb6052d4ea5791c.jpg
+│   │   ├── traffic-light-523-_jpg.rf.8aa1ee8e15c3bf60829ff59ac81a8343.jpg
+│   │   ├── traffic-light-534-_jpg.rf.6d5116b2c27c71636637e8c4b7600c99.jpg
+│   │   ├── traffic-light-547-_jpg.rf.57eca97e83fb930bd2004461e2ebf472.jpg
+│   │   ├── traffic-light-550-_jpg.rf.983dd038580028a190bbb7240b477f81.jpg
+│   │   ├── traffic-light-551-_jpg.rf.cc14af52e09847e1a22911df5979f693.jpg
+│   │   ├── traffic-light-552-_jpg.rf.97825768c9ad9b178c0d9958c5bddfa7.jpg
+│   │   ├── traffic-light-552-_jpg.rf.a0925b66ef633acc7ccdda824dc800ae.jpg
+│   │   ├── traffic-light-553-_jpg.rf.9115b99299e134c85627e4c2b65af952.jpg
+│   │   ├── traffic-light-554-_jpg.rf.202ad7c411142e132af23dc4e3475307.jpg
+│   │   ├── traffic-light-554-_jpg.rf.c727e65efbe76106329bbfcb0ff1f2a2.jpg
+│   │   ├── traffic-light-557-_jpg.rf.8475ab5041341c7bebcda6359878c4ea.jpg
+│   │   ├── traffic-light-557-_jpg.rf.f40759e80c80181a7a53fa2f39a5fd72.jpg
+│   │   ├── traffic-light-558-_jpg.rf.833b097ebf73ff770c85a82dd712b74b.jpg
+│   │   ├── traffic-light-559-_jpg.rf.47a9be1373f23bd5877f484074bb6956.jpg
+│   │   ├── traffic-light-559-_jpg.rf.f164039cde8aed93c4f5901f34c1f5ea.jpg
+│   │   ├── traffic-light-559-_jpg.rf.fa710d16e182c9439f81fe0a7d11b206.jpg
+│   │   ├── traffic-light-563-_jpg.rf.f38b3508bea1255aadbdc5fd280a3ba0.jpg
+│   │   ├── traffic-light-564-_jpg.rf.99933f505c8ce6372c64fab02f53a611.jpg
+│   │   ├── traffic-light-575-_jpg.rf.3a915e81bd345bc81cf757c246f38aa1.jpg
+│   │   ├── traffic-light-575-_jpg.rf.ba6bf5444a10bedb35ffede441a11be8.jpg
+│   │   ├── traffic-light-588-_jpg.rf.67391eee2c199e95e5271e892465b885.jpg
+│   │   ├── traffic-light-588-_jpg.rf.74a22e1267284c9f6176844642ade562.jpg
+│   │   ├── traffic-light-588-_jpg.rf.76632f822ab6fae90d3bbb6abd184d03.jpg
+│   │   ├── traffic-light-588-_jpg.rf.c76ccfdb65d7009db40afbc7cedfd117.jpg
+│   │   ├── traffic-light-589-_jpg.rf.335d293174afe73eb9d0304e4ed86d43.jpg
+│   │   ├── traffic-light-592-_jpg.rf.8a740a707e4fcfd537e8c5092f2758d6.jpg
+│   │   ├── traffic-light-592-_jpg.rf.b243ef402c475dae8fa654b43425c091.jpg
+│   │   ├── traffic-light-596-_jpg.rf.5e206a9b7dddc222db06ddb12b68debb.jpg
+│   │   ├── traffic-light-596-_jpg.rf.e7e07e24a214fb0166835254f9bd924d.jpg
+│   │   ├── traffic-light-63-_jpg.rf.18f2d43e698a20ad3e03ed44120494e5.jpg
+│   │   ├── traffic-light-67-_jpg.rf.e3db495539178baf2a1cea2602e8c770.jpg
+│   │   ├── traffic-light-691-_jpg.rf.6076b93efdf6b43f42bbba4c5d2dc7c9.jpg
+│   │   ├── traffic-light-694-_jpg.rf.a79061056b78fc38d2c80c4befbea521.jpg
+│   │   ├── traffic-light-697-_jpg.rf.626f65db97a93d6b304ed44bd251417e.jpg
+│   │   ├── traffic-light-697-_jpg.rf.6f6aab39032b86fc20817c8022225a8b.jpg
+│   │   ├── traffic-light-71-_jpg.rf.c82af4770877bb82fd2bfa4aa063767e.jpg
+│   │   ├── traffic-light-72-_jpg.rf.067bf23e13c8c94a747d1bbe238be746.jpg
+│   │   ├── traffic-light-72-_jpg.rf.9aaa5509258ae5d77e3f1fc91bd42b6d.jpg
+│   │   ├── traffic-light-729-_jpg.rf.01e8444991ce8b67b3cd42ef80995a76.jpg
+│   │   ├── traffic-light-759-_jpg.rf.c73ab811828dc0a814e247a8c9fa3033.jpg
+│   │   ├── traffic-light-797-_jpg.rf.644906b79ca5377feead1b892252efc0.jpg
+│   │   ├── traffic-light-797-_jpg.rf.b3693ca652a95a26ec57d66e74715a48.jpg
+│   │   ├── traffic-light-815-_jpg.rf.adaa21501eee71e70cd1113b2ee5fd1e.jpg
+│   │   ├── traffic-light-816-_jpg.rf.ebc02de010a5d1ea328ae1ec248e858e.jpg
+│   │   ├── traffic-light-825-_jpg.rf.709c244e10a2aca648b3a75b0d3f8c4b.jpg
+│   │   ├── traffic-light-837-_jpg.rf.8f55f4cef6972aeeb92aa95db8d849e5.jpg
+│   │   ├── traffic-light-860-_jpg.rf.16034d7e923cb8f10d8e51fba6522963.jpg
+│   │   ├── traffic-light-862-_jpg.rf.e901f0b21feedf3a9b93e93ddff0104c.jpg
+│   │   ├── traffic-light-867-_jpg.rf.f6a1be0eeaf0390114edd596671b0dea.jpg
+│   │   ├── traffic-light-87-_jpg.rf.6c9503c02f7481e301b634a4f5678b80.jpg
+│   │   ├── traffic-light-886-_jpg.rf.08b1e49df23da21c93c8966b754329e4.jpg
+│   │   ├── traffic-light-90-_jpg.rf.39f6f92269a0dd913b6e3f80a76d558c.jpg
+│   │   ├── traffic-light-90-_jpg.rf.7e0d973f8859ac938097ff0bb89c5b51.jpg
+│   │   ├── traffic-light-91-_jpg.rf.f98136b08659efb85c824c7e65d9a29f.jpg
+│   │   ├── traffic-light-916-_jpg.rf.916ea5c3cbeec06cd134caa8d7e0b29b.jpg
+│   │   ├── traffic-light-926-_jpg.rf.596cb7cdfe11bdb136315b691082f2d8.jpg
+│   │   ├── traffic-light-934-_jpg.rf.d7c727beca82fc047eaacb676032e6e3.jpg
+│   │   ├── traffic-light-946-_jpg.rf.434d1f0d21e01bdceb633a662fb03a7d.jpg
+│   │   ├── traffic-light-960-_jpg.rf.2ca2f0f51d914857e0e55a69cc72b0bf.jpg
+│   │   ├── traffic-light-960-_jpg.rf.cbdc6f50ac1700678eb2c6f399c93e0d.jpg
+│   │   ├── traffic-light-961-_jpg.rf.93ca659380cbbbe337f5e790ecd52b0f.jpg
+│   │   ├── traffic-light-97-_jpg.rf.81a875c15c8f6519607b003cf0e293a3.jpg
+│   │   ├── traffic-light-970-_jpg.rf.285ba2ecec49b322b125153e453fd265.jpg
+│   │   ├── traffic-light-979-_jpg.rf.013764cb58c0702194ae54269c30da24.jpg
+│   │   ├── traffic-light-979-_jpg.rf.15c0a6b3d4fedee7967d51a072cc533b.jpg
+│   │   ├── traffic-light-98-_jpg.rf.0f54e9725298a894faeb3182385ceff0.jpg
+│   │   ├── traffic-light-985-_jpg.rf.621c6fb6ff2703ef7da0d2685129caa4.jpg
+│   │   ├── traffic-light-989-_jpg.rf.9363342acaa5caa55789805d276717ec.jpg
+│   │   ├── traffic-light-996-_jpg.rf.7573eb879335329b36e17fc6957b1043.jpg
+│   │   ├── traffic-light-998-_jpg.rf.455878b1629fd3eac7bc67ae53459d68.jpg
+│   │   ├── traffic-light-998-_jpg.rf.cd11ade60fec936241fd85075966dbb2.jpg
+│   │   ├── trafficlight100_png_jpg.rf.6d3dcd062092bcca0746db3ecb61268c.jpg
+│   │   ├── trafficlight116_png_jpg.rf.a202ffab1980d142f8c289a616171776.jpg
+│   │   ├── trafficlight126_png_jpg.rf.022293e3a101acdf0196a45500df21f2.jpg
+│   │   ├── trafficlight13_png_jpg.rf.9731d7481ab028f5f3f70a8db4a2966d.jpg
+│   │   ├── trafficlight183_png_jpg.rf.63775f441ef6660257249d7a8274e60b.jpg
+│   │   ├── trafficlight185_png_jpg.rf.2c73a764c5fcbdca485505e1e0fe16fa.jpg
+│   │   ├── trafficlight187_png_jpg.rf.ddc7fd424bbe294ad00bdd2e0317290b.jpg
+│   │   ├── trafficlight189_png_jpg.rf.dacb3b8557b065183767875841762de7.jpg
+│   │   ├── trafficlight18_png_jpg.rf.89cb54fb34f4500746a28806a5ef2026.jpg
+│   │   ├── trafficlight190_png_jpg.rf.815e9b0cf5d7b616af7552b17f011c08.jpg
+│   │   ├── trafficlight192_png_jpg.rf.ca744939e948f622192cf508a14d6db8.jpg
+│   │   ├── trafficlight193_png_jpg.rf.c701be94aec324f2ce3bfc5754a0d87c.jpg
+│   │   ├── trafficlight196_png_jpg.rf.3b8cab4ddd40b71cfbcbca8a418a825b.jpg
+│   │   ├── trafficlight199_png_jpg.rf.43c8c02cd67f4a3ecb6b0c0015b97935.jpg
+│   │   ├── trafficlight1_png_jpg.rf.0cbc9ac11869f6f178f4426846edef6d.jpg
+│   │   ├── trafficlight200_png_jpg.rf.185da4bf8e4541299a5ddae025069b49.jpg
+│   │   ├── trafficlight22_png_jpg.rf.c80541de98afd1f76be9312f2f7c9409.jpg
+│   │   ├── trafficlight32_png_jpg.rf.1b053b5ad7c04769a36161a23cc8e6f1.jpg
+│   │   ├── trafficlight35_png_jpg.rf.539b32a97c115ac39ccc0655740b88e5.jpg
+│   │   ├── trafficlight36_png_jpg.rf.33e92f05c2c989e8263ec3310e909399.jpg
+│   │   ├── trafficlight38_png_jpg.rf.f442de0bae3c89c3a64363543f5f63c7.jpg
+│   │   ├── unnamed-2_jpg.rf.fe9dadd5f7480de1b5bd628c064be240.jpg
+│   │   ├── vec1677605717_png_jpg.rf.8b6125ca92ad22b1f17f02f666cbf813.jpg
+│   │   ├── vec1677605747_png_jpg.rf.b27946baed7fc56be307d26f979a45af.jpg
+│   │   ├── vec1677605807_png_jpg.rf.815eb393be16d2406bb2c7e29bf1ac81.jpg
+│   │   └── vec1677605837_png_jpg.rf.4dd4d4bbeb4fa9ba1534aa95907b9063.jpg
+│   └── labels
+│       ├── -2021-12-18-10-20-49_png_jpg.rf.59d09878c5ad845a27eae9eb248de3db.txt
+│       ├── -2021-12-18-10-21-33_png_jpg.rf.3c3b42e8f84765ea24c88ba4b70ad5a4.txt
+│       ├── 00xp-redlight-superJumbo_jpg.rf.1cd8cade52ea1051be78e7babbb55b26.txt
+│       ├── 00xp-redlight-superJumbo_jpg.rf.ab14f63ae3608a7b2626030bf5161627.txt
+│       ├── 00xp-redlight-superJumbo_jpg.rf.f0d965eda23482562be993143da8ca2d.txt
+│       ├── 05-wilson-main4_jpg.rf.7d4adec0e6c9639e55f9d4920bc4c7a6.txt
+│       ├── 0_ACP_HDE_150216Bwork_06_jpg.rf.1a4b0b386e3266eec1fdfa9dfa1f1bf1.txt
+│       ├── 107_png_jpg.rf.0de78d513eccb2b0337370b6a81ada93.txt
+│       ├── 107_png_jpg.rf.cd19e130b6653a8879922af667b06557.txt
+│       ├── 109_png_jpg.rf.8aa91da0d5491e3658794dffcd7f12e4.txt
+│       ├── 110_png_jpg.rf.76b5d0e9788a38ee1c9bc0f0d44e9a55.txt
+│       ├── 111_png_jpg.rf.2d91cf0f7f836e57055ddbea3e1d6f98.txt
+│       ├── 112_png_jpg.rf.5d5833ff3d1081c4b7e9b1be6f92d70e.txt
+│       ├── 1133906_1_seoimage4x3_ie-171930_4c347c2a65894020b6deba9136e6ea95_jpg.rf.01d652ca0d9d7d7d5ca0a249a855e859.txt
+│       ├── 114_png_jpg.rf.96f42eec215fbf6740431f56d002e789.txt
+│       ├── 115_png_jpg.rf.fa5f2fc1c29d417744bb192052c97234.txt
+│       ├── 116_png_jpg.rf.0cfcddd7ba49fe64c3211bd879a7f428.txt
+│       ├── 117_png_jpg.rf.100353a364745374aa8387d045e55b83.txt
+│       ├── 118_png_jpg.rf.83f7fca3f66fb5f6e6d2bfc434121c73.txt
+│       ├── 119_png_jpg.rf.07000c1cc183ae3095b6b86b4f19af4d.txt
+│       ├── 119_png_jpg.rf.1796b0317818fbb80fe29465b8773f21.txt
+│       ├── 119_png_jpg.rf.b3e0d413c14f53549c730bf3c51eb287.txt
+│       ├── 1200x0_jpg.rf.5b90be463034e972fa5f2802f19c612e.txt
+│       ├── 120_png_jpg.rf.9b30691d7d013abf10fe4871187e567c.txt
+│       ├── 122_png_jpg.rf.1e295e2dcf7ce4a9d583c31b27672161.txt
+│       ├── 123_png_jpg.rf.ffc3f5038638210cb75d72950cebdb2f.txt
+│       ├── 125_png_jpg.rf.27aa3de66cc1ea8071bb3a5208452641.txt
+│       ├── 127_png_jpg.rf.364910b79906b8af6250d8f0143eed32.txt
+│       ├── 128_png_jpg.rf.b1a4fcb83e830b4b577e1c5bbdee695a.txt
+│       ├── 129_png_jpg.rf.9750a16fdf8920a696ac17f3f5b5631d.txt
+│       ├── 130_png_jpg.rf.509899ab53d08ecdcdb513cb73b0b152.txt
+│       ├── 131_png_jpg.rf.f501823e0b4f1481426f4534137f3a06.txt
+│       ├── 132_png_jpg.rf.ec48702555e87c6f5e3585daa94f0655.txt
+│       ├── 135_png_jpg.rf.748ce749a6df5079013aa980aeea7878.txt
+│       ├── 135_png_jpg.rf.a04dcab8a57be21188104bc1827bcdd1.txt
+│       ├── 137_png_jpg.rf.82a4ea4e255ad98a75c0ffc651775d3c.txt
+│       ├── 138_png_jpg.rf.07119ac6139ed1f07d22122a7a9875c0.txt
+│       ├── 138_png_jpg.rf.a4f057ec0e6aef6b9dca3dd2ed8f612d.txt
+│       ├── 143_png_jpg.rf.3ca98bb20e330b3e00335633a984ce22.txt
+│       ├── 149618483_-cvqHzFbDImpN8g7aASZ3A3AdSesfjz8timij-u9Gww_jpg.rf.166151c5e7ff34fc3ef2bff18b6413c0.txt
+│       ├── 154_png_jpg.rf.53c06db8f0b48c9e6b077306106c7c8b.txt
+│       ├── 157_png_jpg.rf.1c9a6cd8b2404e81507f8abd8d57017c.txt
+│       ├── 159_png_jpg.rf.339bea071ca43c01b5aee9bdd4ea7a37.txt
+│       ├── 159_png_jpg.rf.7e9888d409b80a31483599fedac65cbd.txt
+│       ├── 1650160-AA_DSC_5781_jpg.rf.292da3ba2cd96a7939113b4c8051e6cb.txt
+│       ├── 1678075060140_jpg.rf.d4ae20e37e8e342a736a9f1dd19c1d11.txt
+│       ├── 168_png_jpg.rf.8120e28f8902a822418c7fd5255bd527.txt
+│       ├── 182_png_jpg.rf.adbd1bf993f49dbc5e79081f206230c2.txt
+│       ├── 183_png_jpg.rf.233740ae1b6d1ae9f281067b6df26bfe.txt
+│       ├── 198_png_jpg.rf.40b051d6ca953af84ce9eea790a81739.txt
+│       ├── 200px-Lwr_Mount_Street_by_the_Grand_Canal-_Dublin-_-_Coppermine_-_4671_jpg.rf.d981db02c542116e73acfb137c0ee37a.txt
+│       ├── 200px-Mellor_traffic_lights_in_Donaghmede_Dublin_-_Coppermine_-_15568_jpg.rf.f43258078dfbfabbc733349470e800f8.txt
+│       ├── 20170420_1492643400-133090_jpg.rf.badff3899e4f085d9233264590ec1adc.txt
+│       ├── 201807_05_batterypt_sandybayrd_b68_stgeorgestce_jpg.rf.c9d431397cee09f52d2bd2b59562582d.txt
+│       ├── 201_png_jpg.rf.0026dafa4b979ba38110854a55acaab1.txt
+│       ├── 216_png_jpg.rf.671e75613971cfccb9b89ffafdc31809.txt
+│       ├── 221_png_jpg.rf.e3cc6561f180f5f861fd47358616cab8.txt
+│       ├── 22_jpg.rf.d001cf584d3a9cd824800925cf2c876b.txt
+│       ├── 253_png_jpg.rf.833601ba9f201d478fed0bbf11952d8f.txt
+│       ├── 262_png_jpg.rf.89c06d5e89e078afb5439e528b6673c2.txt
+│       ├── 265_png_jpg.rf.fafcf1cfae18f96a802e8c0aaf118bc1.txt
+│       ├── 26_jpg.rf.f0b862a97c601dc6c64c1c7f79d71e6c.txt
+│       ├── 27094_ac46a6db2fed4cb98884d053d31a48a1_1541525900_jpeg_jpg.rf.236e7c53c6cfe9b03a3874205789a07c.txt
+│       ├── 281_png_jpg.rf.a35cedd1721ae9f840419c4801028a0d.txt
+│       ├── 288_png_jpg.rf.c481722d3d12c2efe4e569e9d96fc231.txt
+│       ├── 299_png_jpg.rf.cf966f8f8c05683275f8581671a7b8f6.txt
+│       ├── 304_png_jpg.rf.f66fe0d2bcdd17e4e1405195b5c3d63c.txt
+│       ├── 308_png_jpg.rf.c6112356caaf7258510f30886f8b625d.txt
+│       ├── 312_png_jpg.rf.8e1d90381b87a04d420bcf24f1a34a2b.txt
+│       ├── 313_png_jpg.rf.0273d88ee7d12c938a521265d18076f1.txt
+│       ├── 313_png_jpg.rf.b000ab9eb03fd107e2e67084de398d3a.txt
+│       ├── 315_png_jpg.rf.d2bdc6db782dcad170484c814379394f.txt
+│       ├── 317_png_jpg.rf.85517a089802f4d876a364f7b6475b1d.txt
+│       ├── 318_png_jpg.rf.0f3465066f9623877acce6c85cd75480.txt
+│       ├── 324_png_jpg.rf.f988a039203dfd613ab3e5cbea528ca0.txt
+│       ├── 326_png_jpg.rf.5d7110a4362efceff06e3484814640c5.txt
+│       ├── 327_png_jpg.rf.d9dc3fa90ee77df060e71feb875d15aa.txt
+│       ├── 330_png_jpg.rf.8459cdc9a769204b9726e9b98c894bee.txt
+│       ├── 331_png_jpg.rf.4c14abceeb7cd9a010d6ae3fea6805da.txt
+│       ├── 331_png_jpg.rf.af3b1f00aa6cfdacddb4aa3ca326614a.txt
+│       ├── 332_png_jpg.rf.877c09ad97f70d6341f504104413ad6e.txt
+│       ├── 334_png_jpg.rf.097ae2bce706b4bf4fe58ad7fe19ef9e.txt
+│       ├── 335_png_jpg.rf.9a4ab40747218ead3e79d911434562cf.txt
+│       ├── 336_png_jpg.rf.339120dfb10c485cf2201d1295e887ca.txt
+│       ├── 339_png_jpg.rf.75dafcc8a60b4493b10eddc1faf02d4a.txt
+│       ├── 340_png_jpg.rf.7791744a563ec656d14ff808d3dd61d3.txt
+│       ├── 340_png_jpg.rf.c96fb2bf1e1129a0b70dd9b9c7d1864f.txt
+│       ├── 341_png_jpg.rf.d5ea02246198f9ccce45a5e398a7e71f.txt
+│       ├── 344_png_jpg.rf.a57496e247f6bd4049569c1e6a4228bd.txt
+│       ├── 348_png_jpg.rf.6a17a581b39fa7ed8c0d562ad620e073.txt
+│       ├── 349_png_jpg.rf.ba460242b43b46fbfb44a1617a836589.txt
+│       ├── 351_png_jpg.rf.955d55e88076df123cf139d9f3dadaac.txt
+│       ├── 360_F_318079367_EWRbwr0tkYuDxT7FsrcGM5jyGnf3klbp_jpg.rf.fbe9e0d5f30b04769d1fa7c9044e041b.txt
+│       ├── 360_png_jpg.rf.853fd7e5e1537ac458196c1634ac616c.txt
+│       ├── 364_png_jpg.rf.9f51626ea5d8c070a1a83de8bd4e156d.txt
+│       ├── 374_png_jpg.rf.1c841965730fccf0bc5579a87a2f99ef.txt
+│       ├── 376_png_jpg.rf.08cd3c505ac6e1884f4ee06f77e78834.txt
+│       ├── 384_png_jpg.rf.57271bbf42e2b2870378644a70ee74b7.txt
+│       ├── 384_png_jpg.rf.d12134efa1156d94a1371b80ef3f3ed5.txt
+│       ├── 386_png_jpg.rf.2221d9f551747adfa52b1c6723cc954e.txt
+│       ├── 392_png_jpg.rf.7dc27d0f0da991143beff7b0343ec316.txt
+│       ├── 392_png_jpg.rf.82c500cab73620d0ccd7703815f61a36.txt
+│       ├── 396_png_jpg.rf.8fd1d5b97c9f453a47d50cb425ffc2cb.txt
+│       ├── 398_png_jpg.rf.ab7fd07e02139c8a252c73459c60652b.txt
+│       ├── 399_png_jpg.rf.4f2aeb9469a54ecdf64b5766ae3266db.txt
+│       ├── 401_png_jpg.rf.08769187cca392a25d4dca1bc52e3e4d.txt
+│       ├── 401_png_jpg.rf.6b5731fbccefa4b75157aa53ee021abf.txt
+│       ├── 401_png_jpg.rf.ee8c8a31d16ce73a97e873e3e2d1165c.txt
+│       ├── 405_png_jpg.rf.19ac93628ed0c710687e6a82c56ca7a2.txt
+│       ├── 408_png_jpg.rf.9c67627ebd2c275542bda8d397773be1.txt
+│       ├── 408_png_jpg.rf.a58096433badc212fd6ebf1159b89ff6.txt
+│       ├── 409_png_jpg.rf.e9d3da312e274a5ef3c0511fb1ee6cac.txt
+│       ├── 410_png_jpg.rf.6902b51bbfbc5194f56d20b3e7f8fbff.txt
+│       ├── 411_png_jpg.rf.0f9a14ce9c30c801120244c5345a42de.txt
+│       ├── 412_png_jpg.rf.042b405d5c0b5775c3ac504ca71677f6.txt
+│       ├── 413_png_jpg.rf.fc220ee32d0ccb7c254f2e91966e4b7c.txt
+│       ├── 415_png_jpg.rf.2f0d1c3358d18887bdeb5b188f4bf4ad.txt
+│       ├── 416_png_jpg.rf.4d11e83b5c2e0e4887e85b4b4d5155cd.txt
+│       ├── 4182bd07c99a3c7e300162a30b38a02a_jpg.rf.0dcaa94dacf2bd5dfc93a1eb85943074.txt
+│       ├── 418_png_jpg.rf.b08901bce8bcaf05be6ae56559a74ce7.txt
+│       ├── 419_png_jpg.rf.72b38d2a38e107d72f3e8f5714a2e8b6.txt
+│       ├── 419_png_jpg.rf.c343f6983741f16c5042e326d92a90fa.txt
+│       ├── 420_png_jpg.rf.34435188e27004c133e28db4e168e7bd.txt
+│       ├── 420_png_jpg.rf.f259749baa6bb4f558bba10e36d24acf.txt
+│       ├── 421_png_jpg.rf.078a27d4c20c8b36d8f55a4e9a47e59a.txt
+│       ├── 421_png_jpg.rf.0b807a758e7641c493ed342b49fd199f.txt
+│       ├── 422_png_jpg.rf.2dc157de3911b0d5a7775ce7aac37201.txt
+│       ├── 422_png_jpg.rf.9efd0297b247cdcbdf9505aa11800dec.txt
+│       ├── 423_png_jpg.rf.d67785d72855d4ae73aec7bca461fd56.txt
+│       ├── 424_png_jpg.rf.31a625f7ef6242918874d214ab486826.txt
+│       ├── 426_png_jpg.rf.0a8e7afe9444cb3f0432e6cd30f03e23.txt
+│       ├── 428_png_jpg.rf.020d5a493be057d5708270368be6a064.txt
+│       ├── 429_png_jpg.rf.dc4e4fc228dcce7c8179e0ce4317d2b8.txt
+│       ├── 430_png_jpg.rf.cb63831a50ce9309ce07a00dbfa26ad9.txt
+│       ├── 431_png_jpg.rf.4f4d6fe7c434b5e715978a711868b835.txt
+│       ├── 432_png_jpg.rf.c92b827badf7e9ba969d6a02639e96d5.txt
+│       ├── 432_png_jpg.rf.cbb2f8ce2c77364d41d1f6502bc00322.txt
+│       ├── 432_png_jpg.rf.eec06452e845eddb47538ed83544889e.txt
+│       ├── 435_png_jpg.rf.d9e0858559124efeb88256175dcfb8dc.txt
+│       ├── 436_png_jpg.rf.1fe22b387122dea729a0962b8a980e91.txt
+│       ├── 446_png_jpg.rf.d9a0b3483e8344bcc8521fc90c672eab.txt
+│       ├── 447_png_jpg.rf.377a4a068642772ead13ee505fd3e455.txt
+│       ├── 448_png_jpg.rf.88d41555ca445e653a1b88ccd250b05f.txt
+│       ├── 450_png_jpg.rf.a3fe20658e8896e130fb6d57f83f0222.txt
+│       ├── 451_png_jpg.rf.932bf9b146d97bee869c3db847d8e5ab.txt
+│       ├── 456_png_jpg.rf.7cab377c269d0a275d4e66749fc9bc6d.txt
+│       ├── 476_png_jpg.rf.da20892c9b65bd4f78ed69a0f3c92b52.txt
+│       ├── 483_png_jpg.rf.7b8d14b3965e3f22531895877a604007.txt
+│       ├── 483_png_jpg.rf.9f9fe3cf856b7c7adea90c2c275b458c.txt
+│       ├── 484_png_jpg.rf.ac76458d9c860f10edabfac3a3af5fd6.txt
+│       ├── 486_png_jpg.rf.9b5341a77ced3a0effaa43eca4d0772e.txt
+│       ├── 486_png_jpg.rf.9b7af01a36a13e47e3f4bdbabd052b61.txt
+│       ├── 507_png_jpg.rf.6e9b3990f4190e669385a9b719131dcc.txt
+│       ├── 508_png_jpg.rf.19758cc1e546fb499c3639a57ede240e.txt
+│       ├── 524_png_jpg.rf.5f41d42ef52ac5054dbb9eb7f9dd0251.txt
+│       ├── 531_png_jpg.rf.97059ac97b904466109c39efb115340c.txt
+│       ├── 532_png_jpg.rf.8bd1d5d6221da9942df97cc2452e291a.txt
+│       ├── 538_png_jpg.rf.07152d18cfebfbd7759034e25e45cb00.txt
+│       ├── 539_png_jpg.rf.4c8d55a4693ca62d737ff887a4533de7.txt
+│       ├── 539_png_jpg.rf.b52ecf8e09a15d09167e344fff215d90.txt
+│       ├── 544_png_jpg.rf.5686713b3c99734b11c3c21d8aec7fb6.txt
+│       ├── 546_png_jpg.rf.1887f41051568a02668aa7c7be12a30a.txt
+│       ├── 546_png_jpg.rf.d3351590c9c5c210e77a8d2ff7597bab.txt
+│       ├── 553_png_jpg.rf.551db03d348448a7bf2b3a492e3dd76b.txt
+│       ├── 68_png_jpg.rf.facec81b6c38d24407e73a1d1dfb8c0b.txt
+│       ├── 70_png_jpg.rf.02f43373e151d27bdfa6f015f29060b5.txt
+│       ├── 79_png_jpg.rf.efbc60e4fc739843ab5a72e00b19ac45.txt
+│       ├── 83c834ad-86ce-461e-a63a-716565eb9f17_png_jpg.rf.0c51f12a74a6a03c0976460135520283.txt
+│       ├── 86_jpg.rf.090d88ca8c3b56f7c808e4957a929543.txt
+│       ├── 86_png_jpg.rf.d69dede353cfffd69f16d7a4c2dd3430.txt
+│       ├── 92_png_jpg.rf.79a022f60e713611eac0df1e2260b493.txt
+│       ├── 97_png_jpg.rf.44475536d5dee372d3056fe76854506d.txt
+│       ├── IMG_20230113_181801_1_jpg.rf.2d16a25074e5cf462243c8fab001315d.txt
+│       ├── IMG_20230113_181801_jpg.rf.78c43a124ba5c04018aac1dbe89df105.txt
+│       ├── IMG_20230113_181803_jpg.rf.05f1b61490eafa2f9dd79526d3ab7742.txt
+│       ├── IMG_4465_jpg.rf.c1467a5268bc8404c794868fc1bc90b0.txt
+│       ├── IMG_4554_jpg.rf.9c2cf01e3f2fc7293f32ed590eeaaa1e.txt
+│       ├── IMG_4583_jpg.rf.b246e0ba36423fa38f0f429fc46f0fe1.txt
+│       ├── IMG_4672_PNG_jpg.rf.d7e99023231dedc8b9dc6cf27d7f53a8.txt
+│       ├── IMG_4677_PNG_jpg.rf.55187ecc846212dc2131b74f36d5e963.txt
+│       ├── IMG_4680_PNG_jpg.rf.37bb9d0599704857c5c154413cc65c31.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part10_mp4-10_jpg.rf.5f82a7e0d67fe9aad68209c841d91d5a.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part10_mp4-26_jpg.rf.eb6d874e1707be386ff0dd37219f0026.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part10_mp4-43_jpg.rf.a765d45945fb0273ff91ba7556e72e94.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part11_mp4-10_jpg.rf.cb036ce57596530081ebbc7acd5b8ead.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part11_mp4-1_jpg.rf.7b3d98631e821b48ba678afa36fae9ea.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part19_mp4-1_jpg.rf.26f2e2ddac8295c1dcb34c78ac4b1f96.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part1_mp4-138_jpg.rf.8a68d0e5327c2daef0c8e5b39a3271f1.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part20_mp4-4_jpg.rf.8ef22e407fa82dbf8ffb4aa45673dd40.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part28_mp4-4_jpg.rf.4de58206c586769e36c7d66371e4f8a0.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part29_mp4-1_jpg.rf.7473886e4a1b6af07b917fe3488a7688.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-104_jpg.rf.9a054566f5066be4caf6322130c1507a.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-109_jpg.rf.c803e21cdf7747473673eaa387b1ee59.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-116_jpg.rf.889f423bf988a95b3b9a8766110f6b32.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-69_jpg.rf.1407539c0158f35b3ceeaabcf83d1f56.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part2_mp4-98_jpg.rf.401708b323f0d8dceece717156ac2ee0.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-10_jpg.rf.172ba77749ae0ec28cc7ee33df81939e.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-52_jpg.rf.2334bc0ef2e59387ee8df7d001f06dff.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-55_jpg.rf.05e0cd794962473516ba6e1416eaa469.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-56_jpg.rf.0d83ddc0cbe3a21d3241ed3d3fe349bc.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-57_jpg.rf.ae14c5ab495d56d7de863fe3d5d31f10.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part31_mp4-9_jpg.rf.9ad74955b62f685b3da83bccb38965cc.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-10_jpg.rf.5b204a6791da2a3fd5db7a3a084a4ab5.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-13_jpg.rf.64e567d66610a07b108506c177f0a506.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-14_jpg.rf.a4710f7d13edd4dee94bb889021573b6.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-16_jpg.rf.7e52bdb61fa5ab4cb58e9db777de3315.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-6_jpg.rf.c91b236691f4e9b0aa1ca6f7be27da8e.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-7_jpg.rf.77260318b4d2ad0a2e5205026e6e8807.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-8_jpg.rf.137c0e46badc9e7ab14ade50a003ade4.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part32_mp4-9_jpg.rf.2c3684f32b950ba6d51757bd061b7296.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part33_mp4-15_jpg.rf.256cec25a639f3cf60322c9da76edc2d.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part33_mp4-17_jpg.rf.53d9f72822fec908d8450d2d2f0df9be.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part33_mp4-18_jpg.rf.48333d574ef0a1f490b80c98184fec63.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part36_mp4-4_jpg.rf.a28612a7b77406e491efd183624bb108.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part37_mp4-2_jpg.rf.8e10ed4a5c1b1027cbead0f352305e78.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part37_mp4-3_jpg.rf.c1eebdc26e8e2bbccd19ae02106922ec.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part38_mp4-2_jpg.rf.2056e24a64aab5b01e09082ec39fd1cd.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-0_jpg.rf.fdf849c7f5c3651beb838ea1d035544d.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-10_jpg.rf.e965cbb814bbbd3be5f861933053c552.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-12_jpg.rf.4e840a066665c5499a8dbf5cf5a10235.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-2_jpg.rf.2714c0dc14dca512ed0055448e9ca333.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-3_jpg.rf.7e299884d16bdb74386fbdac1423f091.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-4_jpg.rf.d4c87d0bb74de4e1c64ed6d3bc198873.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-5_jpg.rf.e8c0b2815488807a363c3304d085e11e.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-6_jpg.rf.5a5218436cacbf12626efa39bc84de3a.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-8_jpg.rf.370df6df6e67c1a9060590ad97860063.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part39_mp4-9_jpg.rf.25ea1601a5cc276dcdc2edd9f9a772e4.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-100_jpg.rf.5e10f241df4f0aad39d06f40bcf7ba7a.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-101_jpg.rf.06d6ea7155c7bbb5f907ae834d986198.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-102_jpg.rf.8364667da9dc8856efcec07bc10f8b5a.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-10_jpg.rf.246a0fd6a5ed07417e766c79ee782af1.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-4_jpg.rf.4849ed9d863a5ba366a6875d5c97263c.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-7_jpg.rf.e7dbb68eeba9097f1b7e2e46f957d65f.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-85_jpg.rf.8923c3be00e1d37b3e3c55df5dc7a72c.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-87_jpg.rf.32017735797c104b512899ada2632301.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-89_jpg.rf.b853497f3026f79de37f862719d16f9f.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-8_jpg.rf.afbebe6bea2800bea7da45003869f5e2.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-90_jpg.rf.c9f7b92afc6e8b3c9e7f727f8d4d5830.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-91_jpg.rf.77f4b95a3081f444c0f5c0226cae686d.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-92_jpg.rf.384e3876dfee5828fa2155b385cc28f9.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-94_jpg.rf.9deea27e240be65609d6014f06d528b3.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-95_jpg.rf.bb08563238115d74b4f2d92296ed87dd.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-96_jpg.rf.d43b394d6d4b70cf2ec6d4f637b1ff06.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-97_jpg.rf.518284ed6b19d10c740ba706d10f2ccb.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part3_mp4-98_jpg.rf.4d9f9f57364176e93bf9305e39d8f1ae.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-16_jpg.rf.0ba3fddbe85653c05c1d7ee5037e4712.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-17_jpg.rf.d04334c5d8e070d641f9b81f9adec2a3.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-18_jpg.rf.793b5d9a354fdb729e43fb850b315826.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-20_jpg.rf.ac3ea27291c5f46cc76750f00e23d0b9.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part40_mp4-22_jpg.rf.fcd33ebf109cabebf81d5b67639c4d0c.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part42_mp4-12_jpg.rf.c67afc010f662735d517f33929f799b6.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part42_mp4-13_jpg.rf.657317871034e7aae27f5add9435d72b.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part42_mp4-18_jpg.rf.b45dac15f7e1f601928862e26a82d940.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part42_mp4-6_jpg.rf.8843842f2563b01844a7b050db37c182.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part43_mp4-39_jpg.rf.bca94bce3ce02955509e01d4a4ef0e19.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part45_mp4-2_jpg.rf.f3a9ad7d43f072c7a97ef3c0a68543b6.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part8_mp4-55_jpg.rf.26aa0ad29c679406025b5fd45dfdbd49.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part9_mp4-11_jpg.rf.e70cf5b7b8563c59201cd71a80474cc5.txt
+│       ├── Istanbul-4K-Driving-Downtown-Turkey_Part9_mp4-4_jpg.rf.836d07877c08aee874ea743e303ff7fa.txt
+│       ├── KJP6QLO6BVB3BD3BG4244DWFQA_jpg.rf.3ca3437a0c348b4c4e64f523b3a0f94b.txt
+│       ├── Lysaght-Traffic-Pole-05_jpg.rf.be2ece79d757522ab014450d99078138.txt
+│       ├── Screenshot-2022-05-18-012603_png_jpg.rf.a97640e367ca6804983a44e87294d7cc.txt
+│       ├── Screenshot-2023-02-27-023542_jpg.rf.02d55b321a18745fe590f46d974ce9b0.txt
+│       ├── Sig_3173-e1572460133885_jpg.rf.488f8978b1b9a9ad92a0adb0d092a8f9.txt
+│       ├── Stop_Light_Wide_jpg.rf.57c51d11d1d01002e70c2c326b812b41.txt
+│       ├── Sudan1-1-_jpg.rf.b50f5489f55f2b8181fe9b1e9855eea2.txt
+│       ├── Tlight-538-_png_jpg.rf.e72f2fa917d8e5254db457a93ef9f735.txt
+│       ├── Tlight-539-_png_jpg.rf.b7f55e27f7ad6cebdb45c7d6596d07e3.txt
+│       ├── Tlight-540-_png_jpg.rf.dc8a203c87f70a46551619359d7a721c.txt
+│       ├── Tlight-541-_png_jpg.rf.df6c776b3774c1ac4f40e4b26a87b6b6.txt
+│       ├── Tlight-543-_png_jpg.rf.bc89c84b432c6b64d199d8d88bad8aad.txt
+│       ├── Tlight-545-_png_jpg.rf.b0564817667c431bf511cad56e56f834.txt
+│       ├── Tlight-553-_png_jpg.rf.da06a6748cddecfe07bb7b2aa945803d.txt
+│       ├── Tlight-557-_png_jpg.rf.731d16c221554f6016374cf85ddc955d.txt
+│       ├── Tlight-567-_png_jpg.rf.3da39d5ff38a4a27afe6ebceaae4eb55.txt
+│       ├── Tlight-588-_png_jpg.rf.75b0edcca4f7d09f5c261326ec18aecc.txt
+│       ├── Tlight-599-_png_jpg.rf.5411930782c5a0eeb74add9ac4916030.txt
+│       ├── Tlight-668-_png_jpg.rf.106423b38ad17979053bf60f8584a5a3.txt
+│       ├── Tlight-709-_png_jpg.rf.583abc7b9bc88b6e2bd0b8e1f1a7a2cf.txt
+│       ├── Tlight-92-_png_jpg.rf.4c06f2a6b349f86e993d5cf6d1bcbe56.txt
+│       ├── Tlight-96-_png_jpg.rf.ab3f7d6834dfc45e4b299e0de3a6ca23.txt
+│       ├── TrafficLights_jpg.rf.02618c4eb92577dc85c4a6a13d55e104.txt
+│       ├── VID_20230114_134110_000056_jpg.rf.5e112c1130a7ef8cfcc4362d541e1237.txt
+│       ├── VID_20230225_135853_000022_jpg.rf.a36c7f233ec0105b1a1119e9ab70f54a.txt
+│       ├── VID_20230226_175115_000008_jpg.rf.7bccec8f7b64c932cf6fb96a75fd7015.txt
+│       ├── VID_20230226_175115_000009_jpg.rf.f40b8f762d3dada91f09644010eecf14.txt
+│       ├── VID_20230305_162146_000003_jpg.rf.223ff42d720b10681bdef36afd018c22.txt
+│       ├── a5377a24-3ce7-4741-9142-6fd73b2597d7_scaled_jpg.rf.cb4fa1c90eb004e73ca72de4c82c56e6.txt
+│       ├── ampeln-rot-grun-400-75677667_jpg.rf.ce27c00327667a6602fca82b1577eb8d.txt
+│       ├── article-1388711-00533F3D00000258-208_1024x615_large_jpg.rf.c777fc3a5e0cc925be195edf7e8b9c82.txt
+│       ├── depositphotos_107649870-stock-photo-red-traffic-signal-on-the_jpg.rf.52d5aaf0a986f782602a8ee7895ad0b0.txt
+│       ├── getty_689407322_2000149320009280353_370904_jpg.rf.0215e5a5ae0a09ea2aa78b4eb37543f1.txt
+│       ├── green-on-traffic-light-against-light-trails-of-tram-and-cars-night-scene-of-city-street-in_jpg.rf.596efefb397a0a2fe554f0b8f248b8b7.txt
+│       ├── how-trafic-lights-works_jpg.rf.8d33e090e76da32409c2fedcb7cce708.txt
+│       ├── image004_jpg.rf.e8a9d5cb38046b7d92ca9a68842defb8.txt
+│       ├── image7Y866O-SGUjdhjdfhjdfhs_jpg.rf.92867ee03d9028f1b411b3281a17edfc.txt
+│       ├── images-1-_jpg.rf.cd596542a0b060151af23694f0e46850.txt
+│       ├── images-11-_jpg.rf.80ed645a6fe61362d060c05a8e09405b.txt
+│       ├── images-12-_jpg.rf.652c4be0d23bf31f8a910030b3661e9d.txt
+│       ├── images-17-_jpg.rf.d05212ce442a0f4af24991bafdf0e15c.txt
+│       ├── images-19-_jpg.rf.0578dfa4a7bb5ce63ed271ec108deecf.txt
+│       ├── images-21-_jpg.rf.1120fc647b2e8c0aa062e3e6fb1f8c36.txt
+│       ├── images-22-_jpg.rf.dc2f1a4ee2e61c1740bdf0b405c3c23a.txt
+│       ├── images-27-_jpg.rf.2cb5418677cf56319561ae6f35a8b4c7.txt
+│       ├── images-28-_jpg.rf.db4353d571a0e4e430ed1bef9f6a4a9c.txt
+│       ├── images-29-_jpg.rf.a9fa61916ff15a97215711b6cea484c8.txt
+│       ├── images-3-2_jpg.rf.894cf2c57e12d95e14b13cd92280aab1.txt
+│       ├── images-30-_jpg.rf.998c9cdcd7c3c4d89dbfa665f2b9c5b2.txt
+│       ├── images-31-_jpg.rf.b18a3889dbc022f8586c8c95967e2bdb.txt
+│       ├── images-32-_jpg.rf.bcdea5f6e5a52c83aef1ac562a3e9dda.txt
+│       ├── images-34-_jpg.rf.4074c6889bd55570fa48c5f76cee6e29.txt
+│       ├── images-36-_jpg.rf.bec67d70994c705dedab9c5a02fbc8fe.txt
+│       ├── images-37-_jpg.rf.6a396b280603d2547ce86b847c7843c4.txt
+│       ├── images-38-_jpg.rf.2baf115dff2047e7f2938d5453b6d224.txt
+│       ├── images-5-_jpg.rf.e3c24c59c5c9920f7424ba127865868e.txt
+│       ├── images-7-_jpg.rf.3658ed77abc30e069cc03be3be711c06.txt
+│       ├── images-8-_jpg.rf.098b54f00fe4058a4222cfa887c85973.txt
+│       ├── images-9-_jpg.rf.fc9e7ca85425e071a5c7ee101f58b25b.txt
+│       ├── images1234_jpg.rf.455131cf8ba213a3bd588b6b60ed1ee1.txt
+│       ├── images787-7-6-5-5-5-_jpg.rf.3f605a9fea1803fb21036dabde0101cd.txt
+│       ├── images97-_jpg.rf.f38042cb8d3d29e59b76695653c69c16.txt
+│       ├── images_jpg.rf.c33e4d9f1aa69fa6dc2ccfb262d16dfc.txt
+│       ├── img10_png.rf.9c32a73eb6fdcfeb241c7b5781322977.txt
+│       ├── img13_png.rf.504ea2291b4c7960b287580276b42135.txt
+│       ├── img14_png.rf.3390c83cebcafaa94f735fd2c5935730.txt
+│       ├── img15_png.rf.8742e7ad22fbe32c1a48a0d2f09aa5ab.txt
+│       ├── img16_png.rf.e663ff91d3822b616a9e43c7c99e91e2.txt
+│       ├── img17_png.rf.b53d3d10bf1fe0a7bd326fcc5e376376.txt
+│       ├── img18_png.rf.08cac8c1f9d689e682f10d259073404a.txt
+│       ├── img19_png.rf.2a345da265ff38840f0854c18e3d4893.txt
+│       ├── img1png_png.rf.f9fe0c385bc3a5125392007b9b2382b3.txt
+│       ├── img20_png.rf.fd6568001941b4219dcb5d310fb91dfd.txt
+│       ├── img2_png.rf.0d2aba6c16b37b4659550472dc77a7ed.txt
+│       ├── img3_png.rf.fc9a8538e139971fb99b3a724ec081fe.txt
+│       ├── img4_png.rf.d87a928629ab62e5b9f8e962fe9e8323.txt
+│       ├── img5_png.rf.cb6fcb718c8fdb323c1c96f000fb9279.txt
+│       ├── img6_png.rf.c358335c0479d57af57a8606bfe2cffb.txt
+│       ├── img7_png.rf.bda86ef316881764fcfc87e5f1734a52.txt
+│       ├── img8_png.rf.42b4e00bb4525bb8aa33df4236f5d81d.txt
+│       ├── istockphoto-1253851745-612x612_jpg.rf.434c7c15dd71a72f8653b09e7474b3cb.txt
+│       ├── istockphoto-577633002-612x612_jpg.rf.8eaf4d33dd4750ca85193dc10b842dd6.txt
+│       ├── istockphoto-693406474-170667a_jpg.rf.8f38d56b5cc81267c517b714da355a15.txt
+│       ├── istockphoto-950322678-612x612_jpg.rf.0b12fb37421511ada7995963077c9fca.txt
+│       ├── istockphoto-950322682-612x612_jpg.rf.5ef44558c9e6be06a7951d2d99114e74.txt
+│       ├── k19_jpg.rf.29a9b953e9ae809ade6b6978b57ae998.txt
+│       ├── led-traffic-signal-light-500x500-250x250_jpg.rf.9ea491c6cf8783a49d0cdb115bac3193.txt
+│       ├── maxresdefault_jpg.rf.e89674fe15d160c831977f68ba7e9ada.txt
+│       ├── mqdefault_jpg.rf.a8b0cc3ac327ed07a8e43516da945871.txt
+│       ├── outdoor-vertical-traffic-light-green-color-outdoor-vertical-traffic-light-blue-sky-trees-around-traffic-control-concept-221609452_jpg.rf.088101a5b38fb831063bd33a1c205957.txt
+│       ├── r8_196_3256_2031_w1200_h678_fmax_jpg.rf.c6345f7f6016283ccf06bc813578b5f3.txt
+│       ├── ratio3x2_400_jpg.rf.80473e4cd41a2c2cfd182b9ae2ff372b.txt
+│       ├── red-color-traffic-light-beautiful-blue-sky-background-54360435_jpg.rf.bc37193e023b73c8c0116813d904f351.txt
+│       ├── red-light-sign-road-works-traffic-lights-49963630_jpg.rf.bf00e43d1bac8ab7bbe7cf261118f3f5.txt
+│       ├── red-traffic-light-background-cars-red-traffic-light-114676135_jpg.rf.c896a6730cf8b5d200a01019cca30bbd.txt
+│       ├── red_jpeg_jpg.rf.90759690d4fc3f632058e124e0cd7b26.txt
+│       ├── tflight_001084_jpg.rf.5220b27b1b888c73414595c77b9c90b5.txt
+│       ├── tflight_001087_jpg.rf.2f66e95768169b543ce30fb9a42c5831.txt
+│       ├── tflight_001109_jpg.rf.f5c189d2d0631c981a9c477fbb48bb8a.txt
+│       ├── tflight_001114_jpg.rf.facc6b4015cea08dba9f9eead3b54374.txt
+│       ├── tflight_001127_jpg.rf.27bbe204564c7c7e9a14d71ed5388953.txt
+│       ├── tflight_001131_jpg.rf.1d9a344551e0511019a87e1f56610028.txt
+│       ├── tflight_001140_jpg.rf.7e5657d8cf699694e8ff6dac26a820cb.txt
+│       ├── tflight_001152_jpg.rf.c4e539fb798650f3d68989780f2f97e1.txt
+│       ├── tflight_001155_jpg.rf.65ae95846a56ce2ac40e4eb01e3f9178.txt
+│       ├── tflight_001157_jpg.rf.f2ddd5e054cf391f81303897aef70ea8.txt
+│       ├── tflight_001168_jpg.rf.44b2065d90036a086a2b46cd32d727dd.txt
+│       ├── tflight_001170_jpg.rf.4cdb5c21076d70ed448b7eb40f2c9c5c.txt
+│       ├── tflight_001172_jpg.rf.0c324ec41d70d55e1e294f5949082add.txt
+│       ├── tflight_001173_jpg.rf.b4c0d17778d8c632a925488b642f3552.txt
+│       ├── tflight_001177_jpg.rf.078c65398be700092ee39f4477a14273.txt
+│       ├── tflight_001178_jpg.rf.1afc128aa379c45cad2a880cc81c5bc1.txt
+│       ├── tflight_001192_jpg.rf.062820448572520bdf73d2a9c259ebb0.txt
+│       ├── tflight_001193_jpg.rf.aa1c0a96767af445010c17fe6c715231.txt
+│       ├── tflight_001199_jpg.rf.240ba08c40d2161adffc4440a7035957.txt
+│       ├── tflight_001200_jpg.rf.0959144cdfc5686123cca5d1a82c6231.txt
+│       ├── tflight_001206_jpg.rf.034710ca53f7648ea2d91c7904f9664a.txt
+│       ├── tflight_001214_jpg.rf.bbee718c371522ca630e0b0e4b390375.txt
+│       ├── tflight_001215_jpg.rf.48d718377d0c8d4e37fc49b6c5ade2bf.txt
+│       ├── tflight_001219_jpg.rf.a8c77c684c072847fe4103cd151023ac.txt
+│       ├── tflight_001221_jpg.rf.6f1c59737d435e78ae8f7d2ed831797d.txt
+│       ├── tflight_001226_jpg.rf.eac95ca1bf6528bbb1b4b6c9919fd8be.txt
+│       ├── tflight_001239_jpg.rf.d13aba8a2747b12f38f64fe4230b8b0d.txt
+│       ├── tflight_001240_jpg.rf.8c9f1311e851e3ac857c6f20c4a34fd6.txt
+│       ├── tflight_001241_jpg.rf.8bc6de05681c10f69c818f38c9d42927.txt
+│       ├── tflight_001247_jpg.rf.25571a55567b9bcf67c3be682ebb0373.txt
+│       ├── tflight_001261_jpg.rf.993d60a82174d72e18f6b3d43ec4ef07.txt
+│       ├── tflight_001284_jpg.rf.2949926f9094abefdc305132abbf029b.txt
+│       ├── tflight_001286_jpg.rf.344c7840d2ebefc18d92f9ba5831520d.txt
+│       ├── tflight_001287_jpg.rf.19b56cd78823364e6c9d4e9b56a6b6fd.txt
+│       ├── tflight_001303_jpg.rf.be7615e73816601c2bfe677dbab727ee.txt
+│       ├── tflight_001312_jpg.rf.5936010040c538a58251b274540dbeae.txt
+│       ├── tflight_001313_jpg.rf.de8b71d3b13f85d7dcefd931ee6d37c1.txt
+│       ├── tflight_001316_jpg.rf.bfb10ae4fdbc9e3ba3aa4dc0ab8e8045.txt
+│       ├── tflight_001322_jpg.rf.f6ac2bd86985350cbfe43f43402ca61e.txt
+│       ├── tflight_001327_jpg.rf.9dfb2325c58c88cef6715612c98a8b04.txt
+│       ├── tflight_001335_jpg.rf.7551f09fa4462b7119272d7e9a2efe46.txt
+│       ├── tflight_001339_jpg.rf.dfe6fded13c3a25e2332a35621e31514.txt
+│       ├── tflight_001347_jpg.rf.fe55888d8432081dcd32cec477cce7e7.txt
+│       ├── tflight_001394_jpg.rf.557bca50252aa7e964a9869737555c64.txt
+│       ├── tflight_001397_jpg.rf.df3dbd96c9c7447cd9d0b34042cf875c.txt
+│       ├── tflight_001418_jpg.rf.1c647231b3398a71958b608390f6813d.txt
+│       ├── tflight_001449_jpg.rf.97093e2f3d73bf68221f215248b0730f.txt
+│       ├── tflight_001452_jpg.rf.1d1ff313fec265e4023a5173c5b08910.txt
+│       ├── tflight_001470_jpg.rf.d7b8f6535b8cc2d731ffe78e029834a9.txt
+│       ├── tflight_001472_jpg.rf.afc856d4a783d0e6e22a7e9c8d0361ef.txt
+│       ├── tflight_001476_jpg.rf.df6203d37f4d2382246be230f5bc0934.txt
+│       ├── tflight_001477_jpg.rf.9a4bad8dc0f5e5863e4dd2a33b353481.txt
+│       ├── tflight_001478_jpg.rf.eb17b99a4d6d78e3c88db67535954ea9.txt
+│       ├── tflight_001481_jpg.rf.49b022cc6b2b4484626115fa83012f65.txt
+│       ├── tflight_001483_jpg.rf.c74402ebb875a77051a3828bfb80b42e.txt
+│       ├── tflight_001484_jpg.rf.97b2c8c5cd1eb83805b196e0f86d40e4.txt
+│       ├── tflight_001485_jpg.rf.6821bb4f03660d414194b985e9eb21af.txt
+│       ├── tflight_001489_jpg.rf.f9c002c574835cbd1d72eb2608cbe7c7.txt
+│       ├── tflight_001491_jpg.rf.4e15b75e9473b1dc2dd45c7d1d52c394.txt
+│       ├── tflight_001493_jpg.rf.f965ec160d027464cb12652cc0616a0a.txt
+│       ├── tflight_001494_jpg.rf.4ba2b12f74d3c4ee8fcfae6f5b885cd9.txt
+│       ├── tflight_001496_jpg.rf.4bb95f5a557bf7be06850d8c95bb069f.txt
+│       ├── tflight_001498_jpg.rf.603470bf15bdda105aa0d650d6ce9bb9.txt
+│       ├── tflight_001505_jpg.rf.a4fcfe70704f22b0e297b450ad428bea.txt
+│       ├── tflight_001507_jpg.rf.365dd9504125d02998ba318d3e9b3bca.txt
+│       ├── tflight_001513_jpg.rf.ae9ab06659a43c4d576b5cc5461abceb.txt
+│       ├── tflight_001516_jpg.rf.e7eebfaf20da13b1b54945d39bca276a.txt
+│       ├── tflight_001520_jpg.rf.14f734f59d707b771c7b42860757e44c.txt
+│       ├── tflight_001522_jpg.rf.e46ae9a7506563bc8379c5c23f9c1865.txt
+│       ├── tflight_001525_jpg.rf.cab51c6b3a5f833e538504f5a42380f9.txt
+│       ├── tflight_001530_jpg.rf.9b222434946df68e9fab04e8af374feb.txt
+│       ├── tflight_001535_jpg.rf.e3239fb91ecde01c31b2eafa12ff7c38.txt
+│       ├── tflight_001540_jpg.rf.10f97740d170309e77dffa3bdb260ce8.txt
+│       ├── tflight_001545_jpg.rf.b2f8b95cd10c3cf355ad5847c11dc8d2.txt
+│       ├── tflight_001552_jpg.rf.0ca42eb8cd889217dad97d5f4022fa0d.txt
+│       ├── tflight_001556_jpg.rf.7525496e31dd3cb685eadf99b222a9ce.txt
+│       ├── tflight_001560_jpg.rf.19d27d4fc92a4f5c7fadd3b4f9ef5d73.txt
+│       ├── tflight_001562_jpg.rf.0f3fa1f8f9b6a4ee19dc93f4e974c8df.txt
+│       ├── tflight_001563_jpg.rf.ea09f9b213f0c9c346f69ae5c4143249.txt
+│       ├── tflight_001569_jpg.rf.d79989c75cf4506f5dab4396abc6c9df.txt
+│       ├── tflight_001571_jpg.rf.ca6022772f86c459d901914b18adf504.txt
+│       ├── tflight_001572_jpg.rf.07f816dd8910355a4f8fe8693f437d33.txt
+│       ├── tflight_001574_jpg.rf.a9d2aabdc5bb8a7e050309dba6a410ff.txt
+│       ├── tflight_001575_jpg.rf.5915aa772a2a4534b125425458bd3ae1.txt
+│       ├── tflight_001577_jpg.rf.56b3c074985c9f984f9e8a8b25f9690e.txt
+│       ├── tflight_001580_jpg.rf.c2485c1f93adda0103192f1cd031fb6d.txt
+│       ├── tflight_001582_jpg.rf.37f95b47fbe2b238c36671f097201d68.txt
+│       ├── tflight_001587_jpg.rf.7d96482cfb5fab62e7788b9de2dc7d01.txt
+│       ├── tflight_001590_jpg.rf.0878fbfeded5a600a68cd8de94edaa65.txt
+│       ├── tflight_001595_jpg.rf.c9e029b3bcf3863897e4217d9e586321.txt
+│       ├── tflight_001596_jpg.rf.41d65651187def7f07e4c8be0eb34579.txt
+│       ├── tflight_001605_jpg.rf.b4d733762963ad1ae7577190c03c3daa.txt
+│       ├── tflight_001613_jpg.rf.68b5ad8c8fbecea2d13db1d89dc61661.txt
+│       ├── tflight_001615_jpg.rf.d7626ebc308df0c18f48113e6cb3808e.txt
+│       ├── tflight_001618_jpg.rf.cb382a68a761c9985b318021d84cb0de.txt
+│       ├── tflight_001625_jpg.rf.10bf9d5b3f92122ab42212360c35e430.txt
+│       ├── tflight_001653_jpg.rf.ff860a8d61be0aec65a6ae4311852897.txt
+│       ├── tflight_001654_jpg.rf.dbd80a08030f5832674e6abf5a0b13f0.txt
+│       ├── tflight_001658_jpg.rf.c9537dbdc9605edfc80e0bfb8cd75cba.txt
+│       ├── tflight_001659_jpg.rf.331d1ccea6b2d70e56574db63ef7b348.txt
+│       ├── traffic-light-1-1455703_jpg.rf.04b8156b4bb484c55604979af6c6ce0b.txt
+│       ├── traffic-light-10-_jpg.rf.af89cf96c5b3dd4c19c0a899a0dcd01c.txt
+│       ├── traffic-light-10-_jpg.rf.dbbab5b0453b24e84fd7092e55d4f627.txt
+│       ├── traffic-light-102-_jpg.rf.39cdfbd081de9fc9a032ff303b87ac89.txt
+│       ├── traffic-light-102-_jpg.rf.51904eff47b11ef5a628ae45ea5e1731.txt
+│       ├── traffic-light-105-_jpg.rf.2f5da660ef04932a6d74482be456c375.txt
+│       ├── traffic-light-105-_jpg.rf.765c4bae0f73b2ad0366dc63d7597da2.txt
+│       ├── traffic-light-105-_jpg.rf.78ce1a17032187bf1f418f6e11c019a4.txt
+│       ├── traffic-light-108-_jpg.rf.192fcf3356402a5839fd61653926dd05.txt
+│       ├── traffic-light-108-_jpg.rf.7102b5c694feb7e5086a1a44c66c32d8.txt
+│       ├── traffic-light-11-_jpg.rf.3689788e6dbf3ec35df97fc895edfca0.txt
+│       ├── traffic-light-11-_jpg.rf.3fa8cf003134c2628c9f39a0a17f9db8.txt
+│       ├── traffic-light-11-_jpg.rf.665859a6f71979f4a938df20617d1c19.txt
+│       ├── traffic-light-11-_jpg.rf.c4c49cdcdd7ebc01682bb355916452be.txt
+│       ├── traffic-light-11-_jpg.rf.d24f8b0601ba9c969c75a091c743469e.txt
+│       ├── traffic-light-114-_jpg.rf.04b425457cfbb9ebce51ac4e14eb2137.txt
+│       ├── traffic-light-117-_jpg.rf.6a67a3801603be0a04bd89d46a531e4e.txt
+│       ├── traffic-light-117-_jpg.rf.79ee578d435c0ddbb5c80467a3c6aa8f.txt
+│       ├── traffic-light-130-_jpg.rf.001c4c8fc1174368a99ededa5f577b91.txt
+│       ├── traffic-light-130-_jpg.rf.3700edc1711ea944ef7d76bd281970e8.txt
+│       ├── traffic-light-130-_jpg.rf.5eb5b890c4df659706a909b44ea54dba.txt
+│       ├── traffic-light-130-_jpg.rf.869729c36df6c3c2b45678da26b72abf.txt
+│       ├── traffic-light-130-_jpg.rf.e27790e8f65f6b373cd820e445ba329c.txt
+│       ├── traffic-light-136-_jpg.rf.96713a4b1c3c05b19d1b3b24afc7b887.txt
+│       ├── traffic-light-136-_jpg.rf.98048942ae1db6208edf3631bd304b2b.txt
+│       ├── traffic-light-136-_jpg.rf.b18f3041258f3b90568f659c534f5778.txt
+│       ├── traffic-light-14-_jpg.rf.56ea7f63d93f9e0d8fec168b5fc30e19.txt
+│       ├── traffic-light-142-_jpg.rf.585e0719c4fe40e1dd9c3f8014fd470b.txt
+│       ├── traffic-light-142-_jpg.rf.aaf1b1d6e088eb0eed6787f4382ce8fc.txt
+│       ├── traffic-light-142-_jpg.rf.eb116db5afff94f3477dd45bf2199e2e.txt
+│       ├── traffic-light-145-_jpg.rf.9e8d48051373953bd2652e08fc655f2d.txt
+│       ├── traffic-light-145-_jpg.rf.e3d8e4816886ddb96c353509107ce65c.txt
+│       ├── traffic-light-151-_jpg.rf.0ff99e5ff5935e6ef021dc3ced028d44.txt
+│       ├── traffic-light-156-_jpg.rf.1c9d8ca8b6c01e645d1d572865500bb6.txt
+│       ├── traffic-light-156-_jpg.rf.4d1e72a0a2aa38c1f480198be6dabe08.txt
+│       ├── traffic-light-156-_jpg.rf.8108ce8acdbe158cc924ff1892abf3c1.txt
+│       ├── traffic-light-156-_jpg.rf.b01dcfed5ac9627b064a2d9f57db513e.txt
+│       ├── traffic-light-156-_jpg.rf.b64204a8ed392c5da0c480c98106c3f5.txt
+│       ├── traffic-light-159-_jpg.rf.24644686670abfc47583e9c61ff4b4b8.txt
+│       ├── traffic-light-159-_jpg.rf.690c13805a4d44c668cfa53685bbd711.txt
+│       ├── traffic-light-159-_jpg.rf.dfdef2ad283b760f0f113891ba233d06.txt
+│       ├── traffic-light-159-_jpg.rf.e3bf6597f1e49fba782870dae728b337.txt
+│       ├── traffic-light-162-_jpg.rf.5d3e7d9e34aad904dbf06c8c7e082d79.txt
+│       ├── traffic-light-162-_jpg.rf.cb4914f36252e8c0d127f47238b8ac90.txt
+│       ├── traffic-light-162-_jpg.rf.d81142aa7ebb96caa8cafce344bdd79a.txt
+│       ├── traffic-light-165-_jpg.rf.031b9835f9fa5a04213b570ac66de7a6.txt
+│       ├── traffic-light-168-_jpg.rf.b5decc29af02b4cf6ca07ffc3ddfdd3c.txt
+│       ├── traffic-light-17-_jpg.rf.533cc4a767097c6b1b5bd45489b02042.txt
+│       ├── traffic-light-187-_jpg.rf.221f548c7843be9da0030f916020d21b.txt
+│       ├── traffic-light-187-_jpg.rf.8b2d8db44cd48d9be4acb21368f60e3b.txt
+│       ├── traffic-light-187-_jpg.rf.da3202740af3eb8c39f6224648b0b028.txt
+│       ├── traffic-light-190-_jpg.rf.05585b50ad069714b37cffbb545e5de0.txt
+│       ├── traffic-light-190-_jpg.rf.5822e49270157831f782f6918725124c.txt
+│       ├── traffic-light-190-_jpg.rf.6e07c738cf1e116476c6be9f1a864c5b.txt
+│       ├── traffic-light-198-_jpg.rf.509287ac2a455e0a226397f2c0059946.txt
+│       ├── traffic-light-20-_jpg.rf.324eec39c6d40307868b1147a6a8cd03.txt
+│       ├── traffic-light-201-_jpg.rf.28df273123f668a91eec779736bc342a.txt
+│       ├── traffic-light-202-_jpg.rf.85ffeff59b9d033fbc1051ad9e21593a.txt
+│       ├── traffic-light-202-_jpg.rf.c0af50cc7972a05bb73f79b7d52e1613.txt
+│       ├── traffic-light-224-_jpg.rf.0fb13fb115fc3897d63a871a022f234c.txt
+│       ├── traffic-light-224-_jpg.rf.7eb907ac497ea2d5568ae7041837fd13.txt
+│       ├── traffic-light-227-_jpg.rf.47c57d8a80276230de23e24f0f059de0.txt
+│       ├── traffic-light-227-_jpg.rf.e34611cde8ec074e2150ff788e44bd1e.txt
+│       ├── traffic-light-236-_jpg.rf.a46e135afee1145dce9162cbf389ff3b.txt
+│       ├── traffic-light-236-_jpg.rf.cac86a0c426b5584e3689e2464ddda97.txt
+│       ├── traffic-light-237-_jpg.rf.2d0709f6ec06aed42de66f540934b230.txt
+│       ├── traffic-light-237-_jpg.rf.40e2987e0e8e2e063bad5f07a5825e11.txt
+│       ├── traffic-light-237-_jpg.rf.4816db8ef56babde3ad20b284d9c0170.txt
+│       ├── traffic-light-242-_jpg.rf.b06e582977f7abeac16ce10e11bae497.txt
+│       ├── traffic-light-245-_jpg.rf.77bad2f77a94d20fab1c768f93ea7571.txt
+│       ├── traffic-light-246-_jpg.rf.b1d93ea3b5a0cc3d9244a84db71de2f8.txt
+│       ├── traffic-light-246-_jpg.rf.d076021201eee20c2e70fcee41287dac.txt
+│       ├── traffic-light-25-_jpg.rf.efd120f232275ff954d0af38d172f10a.txt
+│       ├── traffic-light-267-_jpg.rf.4caf14c8e6e6890b3c1a06a437b8b750.txt
+│       ├── traffic-light-267-_jpg.rf.6f58d2922d70c10bd13f6ad6745e0d1a.txt
+│       ├── traffic-light-267-_jpg.rf.b3dc9bf207d177e2c8ac34cd5ac9e3b9.txt
+│       ├── traffic-light-268-_jpg.rf.69e4480a1adf813a67f5c2e075c4258b.txt
+│       ├── traffic-light-268-_jpg.rf.8a4b2dc62d2e5fd72bbd7dacf2f317bc.txt
+│       ├── traffic-light-268-_jpg.rf.9028b87478b6a13ba0f68d88d7c51cb0.txt
+│       ├── traffic-light-269-_jpg.rf.13399fcef5b79662551da6b8674f87a0.txt
+│       ├── traffic-light-269-_jpg.rf.aba2d99237001013fe9d03f06dedba09.txt
+│       ├── traffic-light-271-_jpg.rf.04824f1ccdab07fdb491371691e8c542.txt
+│       ├── traffic-light-271-_jpg.rf.46de3a4dcc2163b03904054df14de956.txt
+│       ├── traffic-light-271-_jpg.rf.67c4c65a145ba349c0e7b218dbeb7c06.txt
+│       ├── traffic-light-271-_jpg.rf.9ca7f94bac75525272ae3313d69d04f3.txt
+│       ├── traffic-light-272-_jpg.rf.600a73cb3e6860072ef35ba58eb77220.txt
+│       ├── traffic-light-285-_jpg.rf.9269499cd09db955ed3a4a52650be7d5.txt
+│       ├── traffic-light-285-_jpg.rf.fd29e0bdfb79b8b8aa8d273564205770.txt
+│       ├── traffic-light-29-_jpg.rf.5d47c931c3350ec2accb4e328b4b85c4.txt
+│       ├── traffic-light-29-_jpg.rf.6f1cde5fc805f9817e315542089daeb2.txt
+│       ├── traffic-light-29-_jpg.rf.f878cc45504d5f59238d5b203e62ba94.txt
+│       ├── traffic-light-290-_jpg.rf.35ab1403ac5f9ec7fbfc99996f90ad50.txt
+│       ├── traffic-light-290-_jpg.rf.4ee729151c031021f26ccab998e0ba00.txt
+│       ├── traffic-light-290-_jpg.rf.d00a392bbcd9580c2ad9d57f8848e5e7.txt
+│       ├── traffic-light-291-_jpg.rf.8ab6662645d2ad5e66ab9f59363286a9.txt
+│       ├── traffic-light-334-_jpg.rf.9c37ba9b8ac249a90e25e4c04a5eff16.txt
+│       ├── traffic-light-336-_jpg.rf.41be3e42aee42e0b9bf2963eef11b336.txt
+│       ├── traffic-light-340-_jpg.rf.0439a6264fd42cf8aca915a916dfc4ce.txt
+│       ├── traffic-light-341-_jpg.rf.ba87e0cdde96792274e0a775c14c40bb.txt
+│       ├── traffic-light-366-_jpg.rf.87714688ed4a34fd2356b99a231296da.txt
+│       ├── traffic-light-366-_jpg.rf.b8bd5dc41c4b02cacf8521eeaafb0f2b.txt
+│       ├── traffic-light-367-_jpg.rf.c4436850532a2ef9b8a003103a6ccbf3.txt
+│       ├── traffic-light-370-_jpg.rf.496b1b9590a218088717e9eae370118e.txt
+│       ├── traffic-light-389-_jpg.rf.b0b73a1fefa2bd0d5455a78d334a5d8f.txt
+│       ├── traffic-light-408-_jpg.rf.48f55cc471ba1a85d9ae56f6955eb83a.txt
+│       ├── traffic-light-408-_jpg.rf.68173ffe5f380c338463c623b5672d62.txt
+│       ├── traffic-light-424-_jpg.rf.0946f8630b802a2512b645ede4b3fddc.txt
+│       ├── traffic-light-45-_jpg.rf.1754a3d95771389a8758d2c3b640bc4e.txt
+│       ├── traffic-light-489-_jpg.rf.70ba9c85cbf98cc17cc2de3c2ce91535.txt
+│       ├── traffic-light-489-_jpg.rf.997760ccd76ccc1210a949b2afed4b4a.txt
+│       ├── traffic-light-489-_jpg.rf.a7193ce2e4854f43053974cfd281f464.txt
+│       ├── traffic-light-489-_jpg.rf.bc22d0dc8520a6f34fd538b920d91418.txt
+│       ├── traffic-light-490-_jpg.rf.2b701d153e2923b904f9d296a56f65c2.txt
+│       ├── traffic-light-490-_jpg.rf.367f13ef12cb7bbfe1fd6ae343f38abf.txt
+│       ├── traffic-light-490-_jpg.rf.3b03d0ebeed1ad9cb61cdd1e08e4071b.txt
+│       ├── traffic-light-490-_jpg.rf.9ed84ad4773d1382cadd0cb78d4f1d8e.txt
+│       ├── traffic-light-492-_jpg.rf.34d18e75fd351c559c2c30734ef3ab3f.txt
+│       ├── traffic-light-497-_jpg.rf.6cdcf61c70fecc21a0d7e3a89a74c340.txt
+│       ├── traffic-light-497-_jpg.rf.da07e107ceace343943f10dddd674cb2.txt
+│       ├── traffic-light-497-_jpg.rf.f8e452252f1f631e23d0e55bd2cd6c72.txt
+│       ├── traffic-light-499-_jpg.rf.30007e61162148669c896a2fa9d9e089.txt
+│       ├── traffic-light-501-_jpg.rf.03a92f028b31b640998e036f30a356eb.txt
+│       ├── traffic-light-501-_jpg.rf.b932547fa9ff2da7949d96331f7917d3.txt
+│       ├── traffic-light-501-_jpg.rf.ff630eedcabcfbbae3b6542231008ac8.txt
+│       ├── traffic-light-502-_jpg.rf.b7df07b51f2b6b3e3fd138be77fedc39.txt
+│       ├── traffic-light-508-_jpg.rf.2f465f35087de3f0cb5aaf17a7eec671.txt
+│       ├── traffic-light-510-_jpg.rf.32dcd649b945ac9a8cd6223003db4e4f.txt
+│       ├── traffic-light-510-_jpg.rf.99af8d53f1d526a8616f66a7791fbc58.txt
+│       ├── traffic-light-511-_jpg.rf.74970d91febcf97dbc210ed18fc8a4f1.txt
+│       ├── traffic-light-513-_jpg.rf.acffa6f49576709b1a2f47cce8d72c83.txt
+│       ├── traffic-light-516-_jpg.rf.38dad7e005e36ab89bcff6d458d7a56c.txt
+│       ├── traffic-light-520-_jpg.rf.0b92fb588f99d7b20587eb090678f348.txt
+│       ├── traffic-light-522-_jpg.rf.37e35d78a788e703ccb6052d4ea5791c.txt
+│       ├── traffic-light-523-_jpg.rf.8aa1ee8e15c3bf60829ff59ac81a8343.txt
+│       ├── traffic-light-534-_jpg.rf.6d5116b2c27c71636637e8c4b7600c99.txt
+│       ├── traffic-light-547-_jpg.rf.57eca97e83fb930bd2004461e2ebf472.txt
+│       ├── traffic-light-550-_jpg.rf.983dd038580028a190bbb7240b477f81.txt
+│       ├── traffic-light-551-_jpg.rf.cc14af52e09847e1a22911df5979f693.txt
+│       ├── traffic-light-552-_jpg.rf.97825768c9ad9b178c0d9958c5bddfa7.txt
+│       ├── traffic-light-552-_jpg.rf.a0925b66ef633acc7ccdda824dc800ae.txt
+│       ├── traffic-light-553-_jpg.rf.9115b99299e134c85627e4c2b65af952.txt
+│       ├── traffic-light-554-_jpg.rf.202ad7c411142e132af23dc4e3475307.txt
+│       ├── traffic-light-554-_jpg.rf.c727e65efbe76106329bbfcb0ff1f2a2.txt
+│       ├── traffic-light-557-_jpg.rf.8475ab5041341c7bebcda6359878c4ea.txt
+│       ├── traffic-light-557-_jpg.rf.f40759e80c80181a7a53fa2f39a5fd72.txt
+│       ├── traffic-light-558-_jpg.rf.833b097ebf73ff770c85a82dd712b74b.txt
+│       ├── traffic-light-559-_jpg.rf.47a9be1373f23bd5877f484074bb6956.txt
+│       ├── traffic-light-559-_jpg.rf.f164039cde8aed93c4f5901f34c1f5ea.txt
+│       ├── traffic-light-559-_jpg.rf.fa710d16e182c9439f81fe0a7d11b206.txt
+│       ├── traffic-light-563-_jpg.rf.f38b3508bea1255aadbdc5fd280a3ba0.txt
+│       ├── traffic-light-564-_jpg.rf.99933f505c8ce6372c64fab02f53a611.txt
+│       ├── traffic-light-575-_jpg.rf.3a915e81bd345bc81cf757c246f38aa1.txt
+│       ├── traffic-light-575-_jpg.rf.ba6bf5444a10bedb35ffede441a11be8.txt
+│       ├── traffic-light-588-_jpg.rf.67391eee2c199e95e5271e892465b885.txt
+│       ├── traffic-light-588-_jpg.rf.74a22e1267284c9f6176844642ade562.txt
+│       ├── traffic-light-588-_jpg.rf.76632f822ab6fae90d3bbb6abd184d03.txt
+│       ├── traffic-light-588-_jpg.rf.c76ccfdb65d7009db40afbc7cedfd117.txt
+│       ├── traffic-light-589-_jpg.rf.335d293174afe73eb9d0304e4ed86d43.txt
+│       ├── traffic-light-592-_jpg.rf.8a740a707e4fcfd537e8c5092f2758d6.txt
+│       ├── traffic-light-592-_jpg.rf.b243ef402c475dae8fa654b43425c091.txt
+│       ├── traffic-light-596-_jpg.rf.5e206a9b7dddc222db06ddb12b68debb.txt
+│       ├── traffic-light-596-_jpg.rf.e7e07e24a214fb0166835254f9bd924d.txt
+│       ├── traffic-light-63-_jpg.rf.18f2d43e698a20ad3e03ed44120494e5.txt
+│       ├── traffic-light-67-_jpg.rf.e3db495539178baf2a1cea2602e8c770.txt
+│       ├── traffic-light-691-_jpg.rf.6076b93efdf6b43f42bbba4c5d2dc7c9.txt
+│       ├── traffic-light-694-_jpg.rf.a79061056b78fc38d2c80c4befbea521.txt
+│       ├── traffic-light-697-_jpg.rf.626f65db97a93d6b304ed44bd251417e.txt
+│       ├── traffic-light-697-_jpg.rf.6f6aab39032b86fc20817c8022225a8b.txt
+│       ├── traffic-light-71-_jpg.rf.c82af4770877bb82fd2bfa4aa063767e.txt
+│       ├── traffic-light-72-_jpg.rf.067bf23e13c8c94a747d1bbe238be746.txt
+│       ├── traffic-light-72-_jpg.rf.9aaa5509258ae5d77e3f1fc91bd42b6d.txt
+│       ├── traffic-light-729-_jpg.rf.01e8444991ce8b67b3cd42ef80995a76.txt
+│       ├── traffic-light-759-_jpg.rf.c73ab811828dc0a814e247a8c9fa3033.txt
+│       ├── traffic-light-797-_jpg.rf.644906b79ca5377feead1b892252efc0.txt
+│       ├── traffic-light-797-_jpg.rf.b3693ca652a95a26ec57d66e74715a48.txt
+│       ├── traffic-light-815-_jpg.rf.adaa21501eee71e70cd1113b2ee5fd1e.txt
+│       ├── traffic-light-816-_jpg.rf.ebc02de010a5d1ea328ae1ec248e858e.txt
+│       ├── traffic-light-825-_jpg.rf.709c244e10a2aca648b3a75b0d3f8c4b.txt
+│       ├── traffic-light-837-_jpg.rf.8f55f4cef6972aeeb92aa95db8d849e5.txt
+│       ├── traffic-light-860-_jpg.rf.16034d7e923cb8f10d8e51fba6522963.txt
+│       ├── traffic-light-862-_jpg.rf.e901f0b21feedf3a9b93e93ddff0104c.txt
+│       ├── traffic-light-867-_jpg.rf.f6a1be0eeaf0390114edd596671b0dea.txt
+│       ├── traffic-light-87-_jpg.rf.6c9503c02f7481e301b634a4f5678b80.txt
+│       ├── traffic-light-886-_jpg.rf.08b1e49df23da21c93c8966b754329e4.txt
+│       ├── traffic-light-90-_jpg.rf.39f6f92269a0dd913b6e3f80a76d558c.txt
+│       ├── traffic-light-90-_jpg.rf.7e0d973f8859ac938097ff0bb89c5b51.txt
+│       ├── traffic-light-91-_jpg.rf.f98136b08659efb85c824c7e65d9a29f.txt
+│       ├── traffic-light-916-_jpg.rf.916ea5c3cbeec06cd134caa8d7e0b29b.txt
+│       ├── traffic-light-926-_jpg.rf.596cb7cdfe11bdb136315b691082f2d8.txt
+│       ├── traffic-light-934-_jpg.rf.d7c727beca82fc047eaacb676032e6e3.txt
+│       ├── traffic-light-946-_jpg.rf.434d1f0d21e01bdceb633a662fb03a7d.txt
+│       ├── traffic-light-960-_jpg.rf.2ca2f0f51d914857e0e55a69cc72b0bf.txt
+│       ├── traffic-light-960-_jpg.rf.cbdc6f50ac1700678eb2c6f399c93e0d.txt
+│       ├── traffic-light-961-_jpg.rf.93ca659380cbbbe337f5e790ecd52b0f.txt
+│       ├── traffic-light-97-_jpg.rf.81a875c15c8f6519607b003cf0e293a3.txt
+│       ├── traffic-light-970-_jpg.rf.285ba2ecec49b322b125153e453fd265.txt
+│       ├── traffic-light-979-_jpg.rf.013764cb58c0702194ae54269c30da24.txt
+│       ├── traffic-light-979-_jpg.rf.15c0a6b3d4fedee7967d51a072cc533b.txt
+│       ├── traffic-light-98-_jpg.rf.0f54e9725298a894faeb3182385ceff0.txt
+│       ├── traffic-light-985-_jpg.rf.621c6fb6ff2703ef7da0d2685129caa4.txt
+│       ├── traffic-light-989-_jpg.rf.9363342acaa5caa55789805d276717ec.txt
+│       ├── traffic-light-996-_jpg.rf.7573eb879335329b36e17fc6957b1043.txt
+│       ├── traffic-light-998-_jpg.rf.455878b1629fd3eac7bc67ae53459d68.txt
+│       ├── traffic-light-998-_jpg.rf.cd11ade60fec936241fd85075966dbb2.txt
+│       ├── trafficlight100_png_jpg.rf.6d3dcd062092bcca0746db3ecb61268c.txt
+│       ├── trafficlight116_png_jpg.rf.a202ffab1980d142f8c289a616171776.txt
+│       ├── trafficlight126_png_jpg.rf.022293e3a101acdf0196a45500df21f2.txt
+│       ├── trafficlight13_png_jpg.rf.9731d7481ab028f5f3f70a8db4a2966d.txt
+│       ├── trafficlight183_png_jpg.rf.63775f441ef6660257249d7a8274e60b.txt
+│       ├── trafficlight185_png_jpg.rf.2c73a764c5fcbdca485505e1e0fe16fa.txt
+│       ├── trafficlight187_png_jpg.rf.ddc7fd424bbe294ad00bdd2e0317290b.txt
+│       ├── trafficlight189_png_jpg.rf.dacb3b8557b065183767875841762de7.txt
+│       ├── trafficlight18_png_jpg.rf.89cb54fb34f4500746a28806a5ef2026.txt
+│       ├── trafficlight190_png_jpg.rf.815e9b0cf5d7b616af7552b17f011c08.txt
+│       ├── trafficlight192_png_jpg.rf.ca744939e948f622192cf508a14d6db8.txt
+│       ├── trafficlight193_png_jpg.rf.c701be94aec324f2ce3bfc5754a0d87c.txt
+│       ├── trafficlight196_png_jpg.rf.3b8cab4ddd40b71cfbcbca8a418a825b.txt
+│       ├── trafficlight199_png_jpg.rf.43c8c02cd67f4a3ecb6b0c0015b97935.txt
+│       ├── trafficlight1_png_jpg.rf.0cbc9ac11869f6f178f4426846edef6d.txt
+│       ├── trafficlight200_png_jpg.rf.185da4bf8e4541299a5ddae025069b49.txt
+│       ├── trafficlight22_png_jpg.rf.c80541de98afd1f76be9312f2f7c9409.txt
+│       ├── trafficlight32_png_jpg.rf.1b053b5ad7c04769a36161a23cc8e6f1.txt
+│       ├── trafficlight35_png_jpg.rf.539b32a97c115ac39ccc0655740b88e5.txt
+│       ├── trafficlight36_png_jpg.rf.33e92f05c2c989e8263ec3310e909399.txt
+│       ├── trafficlight38_png_jpg.rf.f442de0bae3c89c3a64363543f5f63c7.txt
+│       ├── unnamed-2_jpg.rf.fe9dadd5f7480de1b5bd628c064be240.txt
+│       ├── vec1677605717_png_jpg.rf.8b6125ca92ad22b1f17f02f666cbf813.txt
+│       ├── vec1677605747_png_jpg.rf.b27946baed7fc56be307d26f979a45af.txt
+│       ├── vec1677605807_png_jpg.rf.815eb393be16d2406bb2c7e29bf1ac81.txt
+│       └── vec1677605837_png_jpg.rf.4dd4d4bbeb4fa9ba1534aa95907b9063.txt
+└── valid
+    ├── images
+    │   ├── 1106653_jpg.rf.f9c96fc6777fa90b4264c62fd36f19d6.jpg
+    │   ├── 136_png_jpg.rf.c9776f42e972452f78eab56d079bb44a.jpg
+    │   ├── 155_png_jpg.rf.6854e2924b2c628fb57315279844fba8.jpg
+    │   ├── 166_png_jpg.rf.c2ad5818ea8aacf480e8a230a15d59aa.jpg
+    │   ├── 175_png_jpg.rf.0308f7e5127616d068ac4c7d22c4ffe5.jpg
+    │   ├── 179_png_jpg.rf.4ab63c49fd8c243283d0191aeba016d0.jpg
+    │   ├── 179_png_jpg.rf.76f324489e85aa08e0c3f5ea8d855907.jpg
+    │   ├── 184_png_jpg.rf.4f06be5554207b7670c25ed628d7ade1.jpg
+    │   ├── 345562662-gallery_jpg.rf.806908a8b06ca5f05f7ca759477dce26.jpg
+    │   ├── 84cee1006a4fcf16a7893a1e463632df2e354a7f2b_jpg.rf.258b8e5480fd01eba9c7616f6a5b19f1.jpg
+    │   ├── 94_jpg.rf.40bb71712dcab6d79c1a19c4e0c420ea.jpg
+    │   ├── IMG_2702_jpg.rf.1f04f50955c45572ee5742500a2d1062.jpg
+    │   ├── Screenshot-2022-05-18-012935_png_jpg.rf.0b424e5b2e77a8180d8b5e2e1f284045.jpg
+    │   ├── Screenshot-2023-02-27-023756_jpg.rf.558fa2067a2ebd4342b7e3dd777946c4.jpg
+    │   ├── Tlight-533-_png_jpg.rf.6d9d8900ed59cf71416cb209f976c62f.jpg
+    │   ├── Tlight-542-_png_jpg.rf.e3153b5dcb5ada8eaf3f41ef77a35b0a.jpg
+    │   ├── Tlight-547-_png_jpg.rf.9d30b87a96646b73e3a865735fb61055.jpg
+    │   ├── Tlight-55-_png_jpg.rf.af52dd4abb8b370241c3f038033f2eb9.jpg
+    │   ├── Tlight-551-_png_jpg.rf.8e98ab01859e5520fef11f57ab664a51.jpg
+    │   ├── Tlight-558-_png_jpg.rf.803a90f1136c33712deb7e0579f847fc.jpg
+    │   ├── Tlight-565-_png_jpg.rf.0390a67b991b8e1d2731d11dc0532099.jpg
+    │   ├── Tlight-566-_png_jpg.rf.7dc99a5cbc8c6e57db80a60f6406b8ea.jpg
+    │   ├── Tlight-570-_png_jpg.rf.1eb0e87c31c4d3f09c338bed18e1a8d8.jpg
+    │   ├── Tlight-571-_png_jpg.rf.9fb21d2d54c133b876a9068b4fd8759a.jpg
+    │   ├── Tlight-572-_png_jpg.rf.82bd78c03eaf062ae1ae3f5dc1994143.jpg
+    │   ├── Tlight-577-_png_jpg.rf.acc5050bd531e5221057e409cf63929b.jpg
+    │   ├── Tlight-58-_png_jpg.rf.15d40de7a809ec7ef3616d664d272ace.jpg
+    │   ├── Tlight-583-_png_jpg.rf.bf5633a4db06fd0111065c0b20179ec5.jpg
+    │   ├── Tlight-584-_png_jpg.rf.8143c7188b96caacb89f5acac7dbfd73.jpg
+    │   ├── Tlight-586-_png_jpg.rf.f362130c7a2195564b220d19783a44bc.jpg
+    │   ├── Tlight-587-_png_jpg.rf.433088385c7c0732ef553018b20686b1.jpg
+    │   ├── Tlight-590-_png_jpg.rf.9c7fa422a8edd915eced922215d3a6c6.jpg
+    │   ├── Tlight-601-_png_jpg.rf.3c9ada3eac4fae4a80d4b64fd71940ea.jpg
+    │   ├── Tlight-604-_png_jpg.rf.ede20da2dc106d5fdc236270c0016adc.jpg
+    │   ├── Tlight-607-_png_jpg.rf.76034397f7540020032f9f75e6078246.jpg
+    │   ├── Tlight-608-_png_jpg.rf.5bc5ee188c190e9a98cfcb2996aa896f.jpg
+    │   ├── Tlight-614-_png_jpg.rf.7434f3d6ed592426d9f83c1cc10880f6.jpg
+    │   ├── Tlight-621-_png_jpg.rf.2b6aa30b6cbeeff4cb756fe130bdbde2.jpg
+    │   ├── Tlight-625-_png_jpg.rf.22256e71b09a0493188e081188a7e34b.jpg
+    │   ├── Tlight-630-_png_jpg.rf.37487a9d53908ba678c304a08768d03e.jpg
+    │   ├── Tlight-632-_png_jpg.rf.fc896c68fdb43067d13ec1b91534ff44.jpg
+    │   ├── Tlight-644-_png_jpg.rf.9af69955d2ff8ed6b10bde3659fbf9c5.jpg
+    │   ├── Tlight-65-_png_jpg.rf.ad560c6d1f5d529ecb1056efebdf3eb0.jpg
+    │   ├── Tlight-656-_png_jpg.rf.a4492a02206b1bd106bc295d49804843.jpg
+    │   ├── Tlight-657-_png_jpg.rf.791ca595e766df51ed240ac19aa77efe.jpg
+    │   ├── Tlight-658-_png_jpg.rf.a070e9a1dce29ee796c54ff9e8d5ab1b.jpg
+    │   ├── Tlight-659-_png_jpg.rf.e848202e0f509fa4c4a481806972f5c2.jpg
+    │   ├── Tlight-662-_png_jpg.rf.bcda0c586c06e4228539fed0cd264c1a.jpg
+    │   ├── Tlight-67-_png_jpg.rf.bf40637f18418feafbb9097cdb07ad31.jpg
+    │   ├── Tlight-671-_png_jpg.rf.0de3597d678bf94e461d0517f6b2b72d.jpg
+    │   ├── Tlight-675-_png_jpg.rf.dfe919e90733749f3a73604f62cf96f3.jpg
+    │   ├── Tlight-68-_png_jpg.rf.2fd89b87d17aa5e9430a42fe6167b037.jpg
+    │   ├── Tlight-687-_png_jpg.rf.15e1341659817160e389139a4716de8d.jpg
+    │   ├── Tlight-69-_png_jpg.rf.842f041319a450fa4d94da4b36c9525f.jpg
+    │   ├── Tlight-696-_png_jpg.rf.d49c8e06388697c170de4c2a96558287.jpg
+    │   ├── Tlight-704-_png_jpg.rf.5deb5b610b752a4b4c7cb0c030c8d898.jpg
+    │   ├── Tlight-712-_png_jpg.rf.5f850ae531fa5518f73750ec2710cf42.jpg
+    │   ├── Tlight-713-_png_jpg.rf.7f11e744ce28832237e126f4c42fe84a.jpg
+    │   ├── Tlight-721-_png_jpg.rf.b7aaa38cad2114b10805a07c06096874.jpg
+    │   ├── Tlight-723-_png_jpg.rf.b3bf49657aac631a2b1522865f44bcfd.jpg
+    │   ├── Tlight-724-_png_jpg.rf.9aff9309e2cf08321ba4aaab3bc668ce.jpg
+    │   ├── Tlight-726-_png_jpg.rf.29cc953a8022a9c8156baaafa90ef93c.jpg
+    │   ├── Tlight-728-_png_jpg.rf.2f434f8f462e98be1ed26810e7cde373.jpg
+    │   ├── Tlight-729-_png_jpg.rf.d6b48dce30d3c2c76078e41bbc387c5d.jpg
+    │   ├── Tlight-739-_png_jpg.rf.e0431d2fba0f2db2272ea51f00dc0d47.jpg
+    │   ├── Tlight-741-_png_jpg.rf.d19b0965519951bec1c0648fef011b82.jpg
+    │   ├── Tlight-742-_png_jpg.rf.572343ae265fc22480455e6d3a496c7d.jpg
+    │   ├── Tlight-75-_png_jpg.rf.fa20c8e6853914c44044f0cee076869e.jpg
+    │   ├── Tlight-750-_png_jpg.rf.ba6a9783d4e5e2d2c2faa57b7cc997c1.jpg
+    │   ├── Tlight-759-_png_jpg.rf.88d0a8e284e23c3b8b00bababeec9c6f.jpg
+    │   ├── Tlight-760-_png_jpg.rf.1ff9e8abcc731aaec000f21d62816591.jpg
+    │   ├── Tlight-761-_png_jpg.rf.7e5050537ec8b930feca0f78b1327684.jpg
+    │   ├── Tlight-767-_png_jpg.rf.a3ce60f36357774c5f2eb17ab57b590a.jpg
+    │   ├── Tlight-772-_png_jpg.rf.89b9206bce4159b0aa3c369b0d2a9be7.jpg
+    │   ├── Tlight-778-_png_jpg.rf.c301a98d5bc6941cd72acf304e753a9a.jpg
+    │   ├── Tlight-782-_png_jpg.rf.d5df730b2b85fb5844e694efbfde0658.jpg
+    │   ├── Tlight-792-_png_jpg.rf.0373c35daf6c2a7db9d1ef6fd84a9ee9.jpg
+    │   ├── Tlight-803-_png_jpg.rf.f2032adadc50e4ae2e6f1ab0722e4a0e.jpg
+    │   ├── Tlight-805-_png_jpg.rf.f1a3c7d283e64d59af15cb24e4ea5f3a.jpg
+    │   ├── Tlight-806-_png_jpg.rf.3ac33252c38407590dc3525f2d6271c5.jpg
+    │   ├── Tlight-808-_png_jpg.rf.7eafeeef8f337a7df9eb8ac6a109370e.jpg
+    │   ├── Tlight-84-_png_jpg.rf.07e6ea2082fba4e6e2ead09705136f33.jpg
+    │   ├── VID_20230313_140353_000006_jpg.rf.48ac6570e7c50a64f9531797f437c177.jpg
+    │   ├── a22_jpg.rf.c3da1453e26373b10b4f4262391b34cb.jpg
+    │   ├── images-15-_jpg.rf.9a7a2abfb0fda2836698d40268171838.jpg
+    │   ├── images-18-_jpg.rf.4e7a4ae0501cd3ac3043290ed3d85c61.jpg
+    │   ├── images-2-_jpg.rf.5a4b65630757e447737742023010956c.jpg
+    │   ├── images-23-_jpg.rf.763d5b0b55f65db6fba9e280013106db.jpg
+    │   ├── images-25-_jpg.rf.69a55b4c1e98bcfad558a090067dc79b.jpg
+    │   ├── images-26-_jpg.rf.dfbec3bc437f3700944af15bb58f8aec.jpg
+    │   ├── images-33-_jpg.rf.3c07c640b5abfdeafc0dfa1c8483879c.jpg
+    │   ├── images-6-_jpg.rf.966e98cbafe704a7969a6e48be21a79c.jpg
+    │   ├── istockphoto-919960030-612x612_jpg.rf.d2ffa3f5006761b5b244d57958712da7.jpg
+    │   ├── red-52487_1920_jpg.rf.0a00b0a3fc8ff6ca3eae91e4c92ba681.jpg
+    │   ├── red-light-29399189_jpg.rf.f95e402fcc85c52908483803e428212f.jpg
+    │   ├── redlight_jpg.rf.963f9ee7ffc9d813641127f025eddcec.jpg
+    │   ├── traffic-light-109-_jpg.rf.c5f8c06c4f17680999ad790c3cf0dc6d.jpg
+    │   ├── traffic-light-111-_jpg.rf.d755986ea1e37a7a9faaa8f40421014f.jpg
+    │   ├── traffic-light-118-_jpg.rf.3d826f6e83c4b284e83b4b6173e7a739.jpg
+    │   ├── traffic-light-12-_jpg.rf.94a53608a977bdde344d19605b88c1f7.jpg
+    │   ├── traffic-light-121-_jpg.rf.da4257949e5152716a2571af27e765a7.jpg
+    │   ├── traffic-light-135-_jpg.rf.65947cac808f54804591bbcfc2c7992e.jpg
+    │   ├── traffic-light-137-_jpg.rf.110e73277eca859ad043812ce68cc5ac.jpg
+    │   ├── traffic-light-169-_jpg.rf.ceda9ba954bb35e6aa08acd99c75a4c3.jpg
+    │   ├── traffic-light-171-_jpg.rf.8e462ddef8837adbdf40157cb8f765d4.jpg
+    │   ├── traffic-light-174-_jpg.rf.e3ce75e0853998b30196697a2b9febc0.jpg
+    │   ├── traffic-light-178-_jpg.rf.f6d65bf2fce0a702bda35b0b31bf9e3a.jpg
+    │   ├── traffic-light-179-_jpg.rf.8e9b3ac12b76efc1388627ceb1406e31.jpg
+    │   ├── traffic-light-18-_jpg.rf.a949df39e4055ff15f381a012153df48.jpg
+    │   ├── traffic-light-18-_jpg.rf.fbb7eedf2e32625146f65705dc5008b8.jpg
+    │   ├── traffic-light-182-_jpg.rf.11ef92a02d2a08e6300bcf46376bb7dc.jpg
+    │   ├── traffic-light-183-_jpg.rf.70871756f3e86b7d49d15893ef0dec42.jpg
+    │   ├── traffic-light-204-_jpg.rf.2a41c1a342adba36c5e0a3b3bf3e3a49.jpg
+    │   ├── traffic-light-204-_jpg.rf.4e941b86d2dbee80f4d72b4a62f9bc2a.jpg
+    │   ├── traffic-light-207-_jpg.rf.7528a6350332fd7a852e1e06800fdecc.jpg
+    │   ├── traffic-light-207-_jpg.rf.b74ed45ebf44c6af8c0d3c6cd13725fe.jpg
+    │   ├── traffic-light-21-_jpg.rf.f3190040d649cf947fbf386701fedf3e.jpg
+    │   ├── traffic-light-236-_jpg.rf.019e2ea79a18f500fbfeb8df43d4321d.jpg
+    │   ├── traffic-light-236-_jpg.rf.82865957224b8649f79fa733504cebc3.jpg
+    │   ├── traffic-light-247-_jpg.rf.c1f5c30575131bdd010a3880f13e920d.jpg
+    │   ├── traffic-light-248-_jpg.rf.dd30a19196df76be8268f91f90060627.jpg
+    │   ├── traffic-light-251-_jpg.rf.ccdff445acceda3414211e63464eb206.jpg
+    │   ├── traffic-light-253-_jpg.rf.43c24b30bfacfe7567fdb02c31508bfa.jpg
+    │   ├── traffic-light-257-_jpg.rf.6e4529e4ed49054fcc2674778c2b6174.jpg
+    │   ├── traffic-light-259-_jpg.rf.a47ada9b1620b35da1a668f83f269008.jpg
+    │   ├── traffic-light-261-_jpg.rf.a39a04cb49c7ef0609cd579d22239275.jpg
+    │   ├── traffic-light-280-_jpg.rf.6316b874032829ff0d506859f94237f5.jpg
+    │   ├── traffic-light-295-_jpg.rf.a9b22f4b0d27ec73e35dc42808950b0c.jpg
+    │   ├── traffic-light-302-_jpg.rf.13222a0f9ddaf81ef4f8beb3f20ddbf6.jpg
+    │   ├── traffic-light-310-_jpg.rf.756f415c38ad59fe09fc725c1c9c46f7.jpg
+    │   ├── traffic-light-315-_jpg.rf.80d936f3306afb51b4382be916b3e809.jpg
+    │   ├── traffic-light-329-_jpg.rf.50fd253508e91d3b47ca5b82ec864799.jpg
+    │   ├── traffic-light-332-_jpg.rf.c97d62fdf6ebd72d50e61708badc9521.jpg
+    │   ├── traffic-light-334-_jpg.rf.30b0cd3426d211de964738f9daba49bf.jpg
+    │   ├── traffic-light-334-_jpg.rf.d7fcbb67a878f076415dd238293408da.jpg
+    │   ├── traffic-light-345-_jpg.rf.ab693471dd26b6f5b2006f040e7e7e45.jpg
+    │   ├── traffic-light-351-_jpg.rf.e57eff38bef5ee42ff0567bc6acd2fdc.jpg
+    │   ├── traffic-light-355-_jpg.rf.430501942cf66c3db4233f6b6c504c08.jpg
+    │   ├── traffic-light-357-_jpg.rf.298021be27a32fac50614491e15294c3.jpg
+    │   ├── traffic-light-380-_jpg.rf.073b8697388ce3713f778494c1144a1d.jpg
+    │   ├── traffic-light-381-_jpg.rf.1401a9b4a14b63a37560ec5767fc583d.jpg
+    │   ├── traffic-light-381-_jpg.rf.34ad97105f088bf2dbe2e476738c9ffa.jpg
+    │   ├── traffic-light-385-_jpg.rf.5b782da0845ac9670700f96948de1923.jpg
+    │   ├── traffic-light-39-_jpg.rf.6f105cc8d33f410ac620c23abb6e6cbb.jpg
+    │   ├── traffic-light-396-_jpg.rf.39b0223fa0994b19c22a67928a5bdec5.jpg
+    │   ├── traffic-light-406-_jpg.rf.5ad9fb46b9f0e31f7c1b88407f81e14c.jpg
+    │   ├── traffic-light-415-_jpg.rf.1a043b32ed7514dfcb9ab66e18aed916.jpg
+    │   ├── traffic-light-419-_jpg.rf.f81b5d42a62453546bbf906057955aaf.jpg
+    │   ├── traffic-light-429-_jpg.rf.84af4e953845b7d330407155c7794de8.jpg
+    │   ├── traffic-light-433-_jpg.rf.8df4b77bef674fb17acb05c9cbeaacb0.jpg
+    │   ├── traffic-light-436-_jpg.rf.e40ddd51d7a5b3db1fd1f5efb5d48cf6.jpg
+    │   ├── traffic-light-445-_jpg.rf.daa26a027b7fb59460f95bd7a67e7795.jpg
+    │   ├── traffic-light-445-_jpg.rf.e777f6f4d29218eb1bbed7864c0ad0be.jpg
+    │   ├── traffic-light-446-_jpg.rf.152e8ffdd5393f561f27efbbb5530908.jpg
+    │   ├── traffic-light-45-_jpg.rf.771370d3265c4b4179d42ae8338f8345.jpg
+    │   ├── traffic-light-456-_jpg.rf.fd94aedce5245b36e32defe21988bda4.jpg
+    │   ├── traffic-light-460-_jpg.rf.c00c0de2dd7fcc8d0e3b9b2efa2514a5.jpg
+    │   ├── traffic-light-469-_jpg.rf.62717b353e2a14fd797091cf13628eb1.jpg
+    │   ├── traffic-light-480-_jpg.rf.5497718f7ad5fd300a66c6159928e833.jpg
+    │   ├── traffic-light-484-_jpg.rf.341f37db77b4d7d0989b7925b66c3fb5.jpg
+    │   ├── traffic-light-490-_jpg.rf.08ad43d0735c553206b2405a7a571baa.jpg
+    │   ├── traffic-light-5-_jpg.rf.4b447bb1071166802d754fa7709dd8b2.jpg
+    │   ├── traffic-light-501-_jpg.rf.136d6f07f848d6d4ff22719ec876e3a7.jpg
+    │   ├── traffic-light-502-_jpg.rf.f9efb799acf0b93aed32bb7287dba664.jpg
+    │   ├── traffic-light-504-_jpg.rf.7ae5d906dded2d1ebc365429abfae1d0.jpg
+    │   ├── traffic-light-505-_jpg.rf.385089ad71c1373145974fe3037c116e.jpg
+    │   ├── traffic-light-505-_jpg.rf.c2f2ae05c11b2753e090d9b01331191d.jpg
+    │   ├── traffic-light-508-_jpg.rf.0aa2bbfaddbcf244f0d3a566e849c6c4.jpg
+    │   ├── traffic-light-510-_jpg.rf.4e9108d609414510997bf5e1eb0bf86c.jpg
+    │   ├── traffic-light-510-_jpg.rf.84ef08ebfce21bac0eab7c32f73bb6d6.jpg
+    │   ├── traffic-light-511-_jpg.rf.c62b4cc0c79c664fb66b7a060025fcae.jpg
+    │   ├── traffic-light-513-_jpg.rf.47013c0cef1b3fdd2d9418bf5bf24a5f.jpg
+    │   ├── traffic-light-513-_jpg.rf.de209a242f536a2db2ba015dc6faa66a.jpg
+    │   ├── traffic-light-516-_jpg.rf.1dc1cb7ca0e41fc440b5ef10e702d111.jpg
+    │   ├── traffic-light-517-_jpg.rf.99637e08b808093526f267241a32eb7c.jpg
+    │   ├── traffic-light-517-_jpg.rf.ddae7cf96222c8499e3c4ad3f51b00e7.jpg
+    │   ├── traffic-light-52-_jpg.rf.436e722e9b3690a9e973e77119febd76.jpg
+    │   ├── traffic-light-521-_jpg.rf.e1d4326c44a34ea8bd0ffa5a0f3d4b6e.jpg
+    │   ├── traffic-light-521-_jpg.rf.e22c64b4e6c6597bcc36329803cda000.jpg
+    │   ├── traffic-light-522-_jpg.rf.1e072b149f8928231ae45c79c78aa98d.jpg
+    │   ├── traffic-light-523-_jpg.rf.56203dd353998ecaf6e400fdd4a38d70.jpg
+    │   ├── traffic-light-523-_jpg.rf.8506ef078b1093a07efc28b3b3892401.jpg
+    │   ├── traffic-light-525-_jpg.rf.489f51634d01e700f84e9aff7c64bbb6.jpg
+    │   ├── traffic-light-526-_jpg.rf.86999d1808d65974f21bf79f74482de9.jpg
+    │   ├── traffic-light-526-_jpg.rf.bf04cd3cea3b061441586081a300c991.jpg
+    │   ├── traffic-light-526-_jpg.rf.e13e0db6b18f822ca1ab6156368ae5a5.jpg
+    │   ├── traffic-light-527-_jpg.rf.3e32b07ec1a2d38aa1046418627b2ced.jpg
+    │   ├── traffic-light-527-_jpg.rf.60325bfadac36491b354557faabc47c5.jpg
+    │   ├── traffic-light-528-_jpg.rf.37fb61d25ab9aa4f45184eded3b26c31.jpg
+    │   ├── traffic-light-528-_jpg.rf.b7f5a8ab54065716c1c6270e3f16eef6.jpg
+    │   ├── traffic-light-528-_jpg.rf.cfe9b5f1915135897cd81509f378142a.jpg
+    │   ├── traffic-light-528-_jpg.rf.e61bcc82c3a9eaff0500a042be51f19b.jpg
+    │   ├── traffic-light-529-_jpg.rf.6b6c64bd0395438e49862ad2dcd274f7.jpg
+    │   ├── traffic-light-529-_jpg.rf.aa9f6a7baddc96e9f9f0e9366e5995d0.jpg
+    │   ├── traffic-light-530-_jpg.rf.3c26007dda0ded0ab4c6154cfe7a9497.jpg
+    │   ├── traffic-light-530-_jpg.rf.88481fd989c6f01d583084c027246a94.jpg
+    │   ├── traffic-light-543-_jpg.rf.8cda035033d981364024af7f34ec7499.jpg
+    │   ├── traffic-light-546-_jpg.rf.119e6fe498eb123020433695021baf7f.jpg
+    │   ├── traffic-light-546-_jpg.rf.3eb09098cce7abb8ae6b23f0541b5f31.jpg
+    │   ├── traffic-light-586-_jpg.rf.e43983abf1a58ab2ad5555fffefaf4a1.jpg
+    │   ├── traffic-light-588-_jpg.rf.862a841eb9a843044e0f2a91de0e31fa.jpg
+    │   ├── traffic-light-589-_jpg.rf.00cc4b067b33547a3ea9d9576598451b.jpg
+    │   ├── traffic-light-589-_jpg.rf.ea776a7123f6b3b34821c369af2f9062.jpg
+    │   ├── traffic-light-598-_jpg.rf.a5e0c273a0fc81c9adc5ade62c614698.jpg
+    │   ├── traffic-light-603-_jpg.rf.fa3a75f779f294fef181781569944e51.jpg
+    │   ├── traffic-light-604-_jpg.rf.30a1eccf7ca81be95823440735775bd8.jpg
+    │   ├── traffic-light-604-_jpg.rf.fc027ea7bc3cf80bbf43d3d172820ebb.jpg
+    │   ├── traffic-light-605-_jpg.rf.4d0c3ba8eb9baf654ee6f2201d39d648.jpg
+    │   ├── traffic-light-605-_jpg.rf.b8410359e910bc9f31c2420b3a222c3d.jpg
+    │   ├── traffic-light-618-_jpg.rf.1c53f8de9a30a583c56b9dc75f4aa75d.jpg
+    │   ├── traffic-light-619-_jpg.rf.5207b69f532398b7de3dd62020ab0e25.jpg
+    │   ├── traffic-light-619-_jpg.rf.6dcf70c61dd8bdbdfe51db4017073915.jpg
+    │   ├── traffic-light-619-_jpg.rf.994d7e4e744c7900e9bec4b55d6f174b.jpg
+    │   ├── traffic-light-620-_jpg.rf.6fdff7afb69d2c5aa0832d05815a88d9.jpg
+    │   ├── traffic-light-620-_jpg.rf.90ad24d4f0fa03f2800fde21cd0c517f.jpg
+    │   ├── traffic-light-621-_jpg.rf.ee9fea3b0ffe82eb7f614ff27c4bc279.jpg
+    │   ├── traffic-light-622-_jpg.rf.f15b5415d927402c00f03568f5828883.jpg
+    │   ├── traffic-light-623-_jpg.rf.78c26825a2c87beba56121f680a2175b.jpg
+    │   ├── traffic-light-627-_jpg.rf.df78291dd59e906edbd58b90aec0b856.jpg
+    │   ├── traffic-light-63-_jpg.rf.876bf30a64dcd583c5202e5517326065.jpg
+    │   ├── traffic-light-635-_jpg.rf.809a76c1903cdf104fc170cf7a98cbe4.jpg
+    │   ├── traffic-light-672-_jpg.rf.b343bd434a5f4497c7db97b7559bc6ad.jpg
+    │   ├── traffic-light-672-_jpg.rf.f8f722195e681d820ecf1ee969da70d5.jpg
+    │   ├── traffic-light-674-_jpg.rf.265f539cd7353ef68e210da7d172634d.jpg
+    │   ├── traffic-light-688-_jpg.rf.7c9f9bf839749249abd732cc37d8b8ef.jpg
+    │   ├── traffic-light-688-_jpg.rf.e8d585ba3a29001d886461644be05c9c.jpg
+    │   ├── traffic-light-69-_jpg.rf.826453d4717258b65d336d98a0cd6ce3.jpg
+    │   ├── traffic-light-697-_jpg.rf.3e56589a30189a07e245211fd2f3dc8c.jpg
+    │   ├── traffic-light-7-_jpg.rf.604eac3cd0a8ca3578b033b9bf78f6ec.jpg
+    │   ├── traffic-light-7-_jpg.rf.9f4e89ae3ed7fd373efc555172417471.jpg
+    │   ├── traffic-light-7-_jpg.rf.b97f3c686fcfe02e4af81c5a3ea1e73f.jpg
+    │   ├── traffic-light-700-_jpg.rf.0ccc1d5e367601b60803ca5eda4bf366.jpg
+    │   ├── traffic-light-700-_jpg.rf.10745497b92887ca8d675c548d9ce32e.jpg
+    │   ├── traffic-light-700-_jpg.rf.1c925b3c72d501e2918fc55dcb1444de.jpg
+    │   ├── traffic-light-702-_jpg.rf.b46448c06bd9606c5386e8c13dad1da6.jpg
+    │   ├── traffic-light-715-_jpg.rf.58948439cb5f3beaf6e5d43ae6748f91.jpg
+    │   ├── traffic-light-715-_jpg.rf.8a0b19ec1ff48f1b2c0242aeff57ffa2.jpg
+    │   ├── traffic-light-715-_jpg.rf.eebbbd0bd2fa5ea7242970d44466edab.jpg
+    │   ├── traffic-light-716-_jpg.rf.15cd37ec6be7f9f091fbc216145b5afc.jpg
+    │   ├── traffic-light-72-_jpg.rf.0b90f5d40dad6d335f5bfbeb3eabb1d0.jpg
+    │   ├── traffic-light-722-_jpg.rf.1fab852eddb52cb39e25d2315aadd7b4.jpg
+    │   ├── traffic-light-75-_jpg.rf.17a37f3b4f955bb595dca7266a9c090c.jpg
+    │   ├── traffic-light-75-_jpg.rf.7589bcc7adc0b425238919612fa10a5a.jpg
+    │   ├── traffic-light-776-_jpg.rf.f94dd71d023194e548d1d464cf3a2c9b.jpg
+    │   ├── traffic-light-78-_jpg.rf.44b397cedfc5c4f937d8af0d74798b31.jpg
+    │   ├── traffic-light-78-_jpg.rf.a328c228b8262775285a192999dcdfc0.jpg
+    │   ├── traffic-light-780-_jpg.rf.828b102aee773fd9b42c0e293f8fd9a4.jpg
+    │   ├── traffic-light-780-_jpg.rf.b6b27c31534ea113c13646c59f94a74a.jpg
+    │   ├── traffic-light-782-_jpg.rf.16f3ad3640c82a994323c1e161d90aaf.jpg
+    │   ├── traffic-light-782-_jpg.rf.ef0082a0e548ab50c82fde1c768262c6.jpg
+    │   ├── traffic-light-789-_jpg.rf.c097c1a4fc33960753cfa6b0212f6c9a.jpg
+    │   ├── traffic-light-80-_jpg.rf.4b8e27b9200c79dc786243f0913661b4.jpg
+    │   ├── traffic-light-809-_jpg.rf.c4d7415ff8ba28f457deb13a6f71b196.jpg
+    │   ├── traffic-light-811-_jpg.rf.9534a6cc89beeb9ea78f75c63a43a90e.jpg
+    │   ├── traffic-light-812-_jpg.rf.5fac13560b4ceafe6aeed6884843ef24.jpg
+    │   ├── traffic-light-814-_jpg.rf.8bc6a6649e427f7adc2e0ceb6934dff1.jpg
+    │   ├── traffic-light-815-_jpg.rf.228b07c1657a60db7d22d9f66bf72df3.jpg
+    │   ├── traffic-light-815-_jpg.rf.4aad1f93ec80df862c5a7bb9048fcbe2.jpg
+    │   ├── traffic-light-818-_jpg.rf.2870595a8c7bb29bb57203656aa80340.jpg
+    │   ├── traffic-light-818-_jpg.rf.cc2a534034530c7494ec558857de9f6b.jpg
+    │   ├── traffic-light-818-_jpg.rf.d671c626db1844b39e7dc3584d3bc01f.jpg
+    │   ├── traffic-light-82-_jpg.rf.585537613ed9b13953e347710aceedf5.jpg
+    │   ├── traffic-light-82-_jpg.rf.f096bac48e5ec02dcadbf6ccbc10b71f.jpg
+    │   ├── traffic-light-826-_jpg.rf.061393a9ec513c504afa671ac33bb809.jpg
+    │   ├── traffic-light-826-_jpg.rf.96f96bedf6725cdca351956e35029100.jpg
+    │   ├── traffic-light-826-_jpg.rf.a0d93e64b063dff4ec04d3ae2bd588b8.jpg
+    │   ├── traffic-light-829-_jpg.rf.606f7bbd3485c0dfa7e10661e55220a1.jpg
+    │   ├── traffic-light-829-_jpg.rf.f0e08b049dc7d705141b8ca07c4e50bc.jpg
+    │   ├── traffic-light-835-_jpg.rf.efed1fa555f847e7ef2d647de42e5b03.jpg
+    │   ├── traffic-light-90-_jpg.rf.218ea82d959f343308ee8ba110969fb4.jpg
+    │   ├── traffic-light-929-_jpg.rf.847860661250114b9c2ec2e38f066bec.jpg
+    │   ├── traffic-light-93-_jpg.rf.df826c1dc679f9638e2d67c29ce3ae6e.jpg
+    │   ├── traffic-light-96-_jpg.rf.12bafd508cf8c9df6380050e02b2cf8f.jpg
+    │   ├── traffic-light-96-_jpg.rf.9d4a59a712d72a42159642d05efbed17.jpg
+    │   ├── traffic-light-99-_jpg.rf.a246b52bab63ef718ff38fdd91b01ca9.jpg
+    │   ├── traffic-light-red-blue-sky-background-129686955_jpg.rf.a6260bfc73563e6e963763536aeb5894.jpg
+    │   ├── trafficlight102_png_jpg.rf.cad764fb8c42c809b2dbc6cbce468191.jpg
+    │   ├── trafficlight10_png_jpg.rf.77d4aba3e1d14db7cddab16192423ac8.jpg
+    │   ├── trafficlight11_png_jpg.rf.9130fe8583f6dcd27a2fc41cd4f3798e.jpg
+    │   ├── trafficlight123_png_jpg.rf.0a7a1c721db83d77e5f93bb932cc987e.jpg
+    │   ├── trafficlight135_png_jpg.rf.3c6de6d8d63bf0ff7c79c48561b9b7f1.jpg
+    │   ├── trafficlight149_png_jpg.rf.8eeacd0f9bb4c4c28494e5ffc21cffc9.jpg
+    │   ├── trafficlight154_png_jpg.rf.27857572279f1eac4f68f4e09fb12382.jpg
+    │   ├── trafficlight157_png_jpg.rf.f2fbb278064a19910810538bc2893360.jpg
+    │   ├── trafficlight160_png_jpg.rf.c9e9baa83cc6ede7a2e45cfe33801ca2.jpg
+    │   ├── trafficlight167_png_jpg.rf.5b7034e8d2d8b60f4ac8d328981dca92.jpg
+    │   ├── trafficlight168_png_jpg.rf.0b15ad62b136940724239bbb22485df0.jpg
+    │   ├── trafficlight170_png_jpg.rf.b0b813d1b160ce6eb6cb6ea28a55e194.jpg
+    │   ├── trafficlight173_png_jpg.rf.bb555ce44e52cbbdd38b0f741822e5b9.jpg
+    │   ├── trafficlight180_png_jpg.rf.0ed52b2a98f755334f565f2e98e35c31.jpg
+    │   ├── trafficlight191_png_jpg.rf.d1fbce6880bd02849ec5c1e167f76dae.jpg
+    │   ├── trafficlight194_png_jpg.rf.a025c7a59e6e753e7d2348f80e2b82cf.jpg
+    │   ├── trafficlight195_png_jpg.rf.30b82557c6f7e7af579191c59aef8727.jpg
+    │   ├── trafficlight201_png_jpg.rf.106ebcd2b369a2789a8fe76bd24e6c68.jpg
+    │   ├── trafficlight24_png_jpg.rf.99747953c30fdf1735b42e011bdc712d.jpg
+    │   ├── trafficlight25_png_jpg.rf.ca3df07da1a9141f5b29ef2b8fe1e8a4.jpg
+    │   ├── trafficlight2_png_jpg.rf.2c1862bcb6a0fa989248fbc2cf6c86f3.jpg
+    │   ├── trafficlight33_png_jpg.rf.068d8dbe6fde2af7a1b073abfa82563b.jpg
+    │   ├── trafficlight34_png_jpg.rf.479c54267731088f538a2ce0abbec418.jpg
+    │   ├── trafficlight41_png_jpg.rf.49d26b6d0dcec0104d7d93ab74781204.jpg
+    │   ├── trafficlight42_png_jpg.rf.729cd2782294268ec85d9d9fb808c039.jpg
+    │   └── vec1677605687_png_jpg.rf.d702c8b2557c098b5943141363f5c6b2.jpg
+    └── labels
+        ├── 1106653_jpg.rf.f9c96fc6777fa90b4264c62fd36f19d6.txt
+        ├── 136_png_jpg.rf.c9776f42e972452f78eab56d079bb44a.txt
+        ├── 155_png_jpg.rf.6854e2924b2c628fb57315279844fba8.txt
+        ├── 166_png_jpg.rf.c2ad5818ea8aacf480e8a230a15d59aa.txt
+        ├── 175_png_jpg.rf.0308f7e5127616d068ac4c7d22c4ffe5.txt
+        ├── 179_png_jpg.rf.4ab63c49fd8c243283d0191aeba016d0.txt
+        ├── 179_png_jpg.rf.76f324489e85aa08e0c3f5ea8d855907.txt
+        ├── 184_png_jpg.rf.4f06be5554207b7670c25ed628d7ade1.txt
+        ├── 345562662-gallery_jpg.rf.806908a8b06ca5f05f7ca759477dce26.txt
+        ├── 84cee1006a4fcf16a7893a1e463632df2e354a7f2b_jpg.rf.258b8e5480fd01eba9c7616f6a5b19f1.txt
+        ├── 94_jpg.rf.40bb71712dcab6d79c1a19c4e0c420ea.txt
+        ├── IMG_2702_jpg.rf.1f04f50955c45572ee5742500a2d1062.txt
+        ├── Screenshot-2022-05-18-012935_png_jpg.rf.0b424e5b2e77a8180d8b5e2e1f284045.txt
+        ├── Screenshot-2023-02-27-023756_jpg.rf.558fa2067a2ebd4342b7e3dd777946c4.txt
+        ├── Tlight-533-_png_jpg.rf.6d9d8900ed59cf71416cb209f976c62f.txt
+        ├── Tlight-542-_png_jpg.rf.e3153b5dcb5ada8eaf3f41ef77a35b0a.txt
+        ├── Tlight-547-_png_jpg.rf.9d30b87a96646b73e3a865735fb61055.txt
+        ├── Tlight-55-_png_jpg.rf.af52dd4abb8b370241c3f038033f2eb9.txt
+        ├── Tlight-551-_png_jpg.rf.8e98ab01859e5520fef11f57ab664a51.txt
+        ├── Tlight-558-_png_jpg.rf.803a90f1136c33712deb7e0579f847fc.txt
+        ├── Tlight-565-_png_jpg.rf.0390a67b991b8e1d2731d11dc0532099.txt
+        ├── Tlight-566-_png_jpg.rf.7dc99a5cbc8c6e57db80a60f6406b8ea.txt
+        ├── Tlight-570-_png_jpg.rf.1eb0e87c31c4d3f09c338bed18e1a8d8.txt
+        ├── Tlight-571-_png_jpg.rf.9fb21d2d54c133b876a9068b4fd8759a.txt
+        ├── Tlight-572-_png_jpg.rf.82bd78c03eaf062ae1ae3f5dc1994143.txt
+        ├── Tlight-577-_png_jpg.rf.acc5050bd531e5221057e409cf63929b.txt
+        ├── Tlight-58-_png_jpg.rf.15d40de7a809ec7ef3616d664d272ace.txt
+        ├── Tlight-583-_png_jpg.rf.bf5633a4db06fd0111065c0b20179ec5.txt
+        ├── Tlight-584-_png_jpg.rf.8143c7188b96caacb89f5acac7dbfd73.txt
+        ├── Tlight-586-_png_jpg.rf.f362130c7a2195564b220d19783a44bc.txt
+        ├── Tlight-587-_png_jpg.rf.433088385c7c0732ef553018b20686b1.txt
+        ├── Tlight-590-_png_jpg.rf.9c7fa422a8edd915eced922215d3a6c6.txt
+        ├── Tlight-601-_png_jpg.rf.3c9ada3eac4fae4a80d4b64fd71940ea.txt
+        ├── Tlight-604-_png_jpg.rf.ede20da2dc106d5fdc236270c0016adc.txt
+        ├── Tlight-607-_png_jpg.rf.76034397f7540020032f9f75e6078246.txt
+        ├── Tlight-608-_png_jpg.rf.5bc5ee188c190e9a98cfcb2996aa896f.txt
+        ├── Tlight-614-_png_jpg.rf.7434f3d6ed592426d9f83c1cc10880f6.txt
+        ├── Tlight-621-_png_jpg.rf.2b6aa30b6cbeeff4cb756fe130bdbde2.txt
+        ├── Tlight-625-_png_jpg.rf.22256e71b09a0493188e081188a7e34b.txt
+        ├── Tlight-630-_png_jpg.rf.37487a9d53908ba678c304a08768d03e.txt
+        ├── Tlight-632-_png_jpg.rf.fc896c68fdb43067d13ec1b91534ff44.txt
+        ├── Tlight-644-_png_jpg.rf.9af69955d2ff8ed6b10bde3659fbf9c5.txt
+        ├── Tlight-65-_png_jpg.rf.ad560c6d1f5d529ecb1056efebdf3eb0.txt
+        ├── Tlight-656-_png_jpg.rf.a4492a02206b1bd106bc295d49804843.txt
+        ├── Tlight-657-_png_jpg.rf.791ca595e766df51ed240ac19aa77efe.txt
+        ├── Tlight-658-_png_jpg.rf.a070e9a1dce29ee796c54ff9e8d5ab1b.txt
+        ├── Tlight-659-_png_jpg.rf.e848202e0f509fa4c4a481806972f5c2.txt
+        ├── Tlight-662-_png_jpg.rf.bcda0c586c06e4228539fed0cd264c1a.txt
+        ├── Tlight-67-_png_jpg.rf.bf40637f18418feafbb9097cdb07ad31.txt
+        ├── Tlight-671-_png_jpg.rf.0de3597d678bf94e461d0517f6b2b72d.txt
+        ├── Tlight-675-_png_jpg.rf.dfe919e90733749f3a73604f62cf96f3.txt
+        ├── Tlight-68-_png_jpg.rf.2fd89b87d17aa5e9430a42fe6167b037.txt
+        ├── Tlight-687-_png_jpg.rf.15e1341659817160e389139a4716de8d.txt
+        ├── Tlight-69-_png_jpg.rf.842f041319a450fa4d94da4b36c9525f.txt
+        ├── Tlight-696-_png_jpg.rf.d49c8e06388697c170de4c2a96558287.txt
+        ├── Tlight-704-_png_jpg.rf.5deb5b610b752a4b4c7cb0c030c8d898.txt
+        ├── Tlight-712-_png_jpg.rf.5f850ae531fa5518f73750ec2710cf42.txt
+        ├── Tlight-713-_png_jpg.rf.7f11e744ce28832237e126f4c42fe84a.txt
+        ├── Tlight-721-_png_jpg.rf.b7aaa38cad2114b10805a07c06096874.txt
+        ├── Tlight-723-_png_jpg.rf.b3bf49657aac631a2b1522865f44bcfd.txt
+        ├── Tlight-724-_png_jpg.rf.9aff9309e2cf08321ba4aaab3bc668ce.txt
+        ├── Tlight-726-_png_jpg.rf.29cc953a8022a9c8156baaafa90ef93c.txt
+        ├── Tlight-728-_png_jpg.rf.2f434f8f462e98be1ed26810e7cde373.txt
+        ├── Tlight-729-_png_jpg.rf.d6b48dce30d3c2c76078e41bbc387c5d.txt
+        ├── Tlight-739-_png_jpg.rf.e0431d2fba0f2db2272ea51f00dc0d47.txt
+        ├── Tlight-741-_png_jpg.rf.d19b0965519951bec1c0648fef011b82.txt
+        ├── Tlight-742-_png_jpg.rf.572343ae265fc22480455e6d3a496c7d.txt
+        ├── Tlight-75-_png_jpg.rf.fa20c8e6853914c44044f0cee076869e.txt
+        ├── Tlight-750-_png_jpg.rf.ba6a9783d4e5e2d2c2faa57b7cc997c1.txt
+        ├── Tlight-759-_png_jpg.rf.88d0a8e284e23c3b8b00bababeec9c6f.txt
+        ├── Tlight-760-_png_jpg.rf.1ff9e8abcc731aaec000f21d62816591.txt
+        ├── Tlight-761-_png_jpg.rf.7e5050537ec8b930feca0f78b1327684.txt
+        ├── Tlight-767-_png_jpg.rf.a3ce60f36357774c5f2eb17ab57b590a.txt
+        ├── Tlight-772-_png_jpg.rf.89b9206bce4159b0aa3c369b0d2a9be7.txt
+        ├── Tlight-778-_png_jpg.rf.c301a98d5bc6941cd72acf304e753a9a.txt
+        ├── Tlight-782-_png_jpg.rf.d5df730b2b85fb5844e694efbfde0658.txt
+        ├── Tlight-792-_png_jpg.rf.0373c35daf6c2a7db9d1ef6fd84a9ee9.txt
+        ├── Tlight-803-_png_jpg.rf.f2032adadc50e4ae2e6f1ab0722e4a0e.txt
+        ├── Tlight-805-_png_jpg.rf.f1a3c7d283e64d59af15cb24e4ea5f3a.txt
+        ├── Tlight-806-_png_jpg.rf.3ac33252c38407590dc3525f2d6271c5.txt
+        ├── Tlight-808-_png_jpg.rf.7eafeeef8f337a7df9eb8ac6a109370e.txt
+        ├── Tlight-84-_png_jpg.rf.07e6ea2082fba4e6e2ead09705136f33.txt
+        ├── VID_20230313_140353_000006_jpg.rf.48ac6570e7c50a64f9531797f437c177.txt
+        ├── a22_jpg.rf.c3da1453e26373b10b4f4262391b34cb.txt
+        ├── images-15-_jpg.rf.9a7a2abfb0fda2836698d40268171838.txt
+        ├── images-18-_jpg.rf.4e7a4ae0501cd3ac3043290ed3d85c61.txt
+        ├── images-2-_jpg.rf.5a4b65630757e447737742023010956c.txt
+        ├── images-23-_jpg.rf.763d5b0b55f65db6fba9e280013106db.txt
+        ├── images-25-_jpg.rf.69a55b4c1e98bcfad558a090067dc79b.txt
+        ├── images-26-_jpg.rf.dfbec3bc437f3700944af15bb58f8aec.txt
+        ├── images-33-_jpg.rf.3c07c640b5abfdeafc0dfa1c8483879c.txt
+        ├── images-6-_jpg.rf.966e98cbafe704a7969a6e48be21a79c.txt
+        ├── istockphoto-919960030-612x612_jpg.rf.d2ffa3f5006761b5b244d57958712da7.txt
+        ├── red-52487_1920_jpg.rf.0a00b0a3fc8ff6ca3eae91e4c92ba681.txt
+        ├── red-light-29399189_jpg.rf.f95e402fcc85c52908483803e428212f.txt
+        ├── redlight_jpg.rf.963f9ee7ffc9d813641127f025eddcec.txt
+        ├── traffic-light-109-_jpg.rf.c5f8c06c4f17680999ad790c3cf0dc6d.txt
+        ├── traffic-light-111-_jpg.rf.d755986ea1e37a7a9faaa8f40421014f.txt
+        ├── traffic-light-118-_jpg.rf.3d826f6e83c4b284e83b4b6173e7a739.txt
+        ├── traffic-light-12-_jpg.rf.94a53608a977bdde344d19605b88c1f7.txt
+        ├── traffic-light-121-_jpg.rf.da4257949e5152716a2571af27e765a7.txt
+        ├── traffic-light-135-_jpg.rf.65947cac808f54804591bbcfc2c7992e.txt
+        ├── traffic-light-137-_jpg.rf.110e73277eca859ad043812ce68cc5ac.txt
+        ├── traffic-light-169-_jpg.rf.ceda9ba954bb35e6aa08acd99c75a4c3.txt
+        ├── traffic-light-171-_jpg.rf.8e462ddef8837adbdf40157cb8f765d4.txt
+        ├── traffic-light-174-_jpg.rf.e3ce75e0853998b30196697a2b9febc0.txt
+        ├── traffic-light-178-_jpg.rf.f6d65bf2fce0a702bda35b0b31bf9e3a.txt
+        ├── traffic-light-179-_jpg.rf.8e9b3ac12b76efc1388627ceb1406e31.txt
+        ├── traffic-light-18-_jpg.rf.a949df39e4055ff15f381a012153df48.txt
+        ├── traffic-light-18-_jpg.rf.fbb7eedf2e32625146f65705dc5008b8.txt
+        ├── traffic-light-182-_jpg.rf.11ef92a02d2a08e6300bcf46376bb7dc.txt
+        ├── traffic-light-183-_jpg.rf.70871756f3e86b7d49d15893ef0dec42.txt
+        ├── traffic-light-204-_jpg.rf.2a41c1a342adba36c5e0a3b3bf3e3a49.txt
+        ├── traffic-light-204-_jpg.rf.4e941b86d2dbee80f4d72b4a62f9bc2a.txt
+        ├── traffic-light-207-_jpg.rf.7528a6350332fd7a852e1e06800fdecc.txt
+        ├── traffic-light-207-_jpg.rf.b74ed45ebf44c6af8c0d3c6cd13725fe.txt
+        ├── traffic-light-21-_jpg.rf.f3190040d649cf947fbf386701fedf3e.txt
+        ├── traffic-light-236-_jpg.rf.019e2ea79a18f500fbfeb8df43d4321d.txt
+        ├── traffic-light-236-_jpg.rf.82865957224b8649f79fa733504cebc3.txt
+        ├── traffic-light-247-_jpg.rf.c1f5c30575131bdd010a3880f13e920d.txt
+        ├── traffic-light-248-_jpg.rf.dd30a19196df76be8268f91f90060627.txt
+        ├── traffic-light-251-_jpg.rf.ccdff445acceda3414211e63464eb206.txt
+        ├── traffic-light-253-_jpg.rf.43c24b30bfacfe7567fdb02c31508bfa.txt
+        ├── traffic-light-257-_jpg.rf.6e4529e4ed49054fcc2674778c2b6174.txt
+        ├── traffic-light-259-_jpg.rf.a47ada9b1620b35da1a668f83f269008.txt
+        ├── traffic-light-261-_jpg.rf.a39a04cb49c7ef0609cd579d22239275.txt
+        ├── traffic-light-280-_jpg.rf.6316b874032829ff0d506859f94237f5.txt
+        ├── traffic-light-295-_jpg.rf.a9b22f4b0d27ec73e35dc42808950b0c.txt
+        ├── traffic-light-302-_jpg.rf.13222a0f9ddaf81ef4f8beb3f20ddbf6.txt
+        ├── traffic-light-310-_jpg.rf.756f415c38ad59fe09fc725c1c9c46f7.txt
+        ├── traffic-light-315-_jpg.rf.80d936f3306afb51b4382be916b3e809.txt
+        ├── traffic-light-329-_jpg.rf.50fd253508e91d3b47ca5b82ec864799.txt
+        ├── traffic-light-332-_jpg.rf.c97d62fdf6ebd72d50e61708badc9521.txt
+        ├── traffic-light-334-_jpg.rf.30b0cd3426d211de964738f9daba49bf.txt
+        ├── traffic-light-334-_jpg.rf.d7fcbb67a878f076415dd238293408da.txt
+        ├── traffic-light-345-_jpg.rf.ab693471dd26b6f5b2006f040e7e7e45.txt
+        ├── traffic-light-351-_jpg.rf.e57eff38bef5ee42ff0567bc6acd2fdc.txt
+        ├── traffic-light-355-_jpg.rf.430501942cf66c3db4233f6b6c504c08.txt
+        ├── traffic-light-357-_jpg.rf.298021be27a32fac50614491e15294c3.txt
+        ├── traffic-light-380-_jpg.rf.073b8697388ce3713f778494c1144a1d.txt
+        ├── traffic-light-381-_jpg.rf.1401a9b4a14b63a37560ec5767fc583d.txt
+        ├── traffic-light-381-_jpg.rf.34ad97105f088bf2dbe2e476738c9ffa.txt
+        ├── traffic-light-385-_jpg.rf.5b782da0845ac9670700f96948de1923.txt
+        ├── traffic-light-39-_jpg.rf.6f105cc8d33f410ac620c23abb6e6cbb.txt
+        ├── traffic-light-396-_jpg.rf.39b0223fa0994b19c22a67928a5bdec5.txt
+        ├── traffic-light-406-_jpg.rf.5ad9fb46b9f0e31f7c1b88407f81e14c.txt
+        ├── traffic-light-415-_jpg.rf.1a043b32ed7514dfcb9ab66e18aed916.txt
+        ├── traffic-light-419-_jpg.rf.f81b5d42a62453546bbf906057955aaf.txt
+        ├── traffic-light-429-_jpg.rf.84af4e953845b7d330407155c7794de8.txt
+        ├── traffic-light-433-_jpg.rf.8df4b77bef674fb17acb05c9cbeaacb0.txt
+        ├── traffic-light-436-_jpg.rf.e40ddd51d7a5b3db1fd1f5efb5d48cf6.txt
+        ├── traffic-light-445-_jpg.rf.daa26a027b7fb59460f95bd7a67e7795.txt
+        ├── traffic-light-445-_jpg.rf.e777f6f4d29218eb1bbed7864c0ad0be.txt
+        ├── traffic-light-446-_jpg.rf.152e8ffdd5393f561f27efbbb5530908.txt
+        ├── traffic-light-45-_jpg.rf.771370d3265c4b4179d42ae8338f8345.txt
+        ├── traffic-light-456-_jpg.rf.fd94aedce5245b36e32defe21988bda4.txt
+        ├── traffic-light-460-_jpg.rf.c00c0de2dd7fcc8d0e3b9b2efa2514a5.txt
+        ├── traffic-light-469-_jpg.rf.62717b353e2a14fd797091cf13628eb1.txt
+        ├── traffic-light-480-_jpg.rf.5497718f7ad5fd300a66c6159928e833.txt
+        ├── traffic-light-484-_jpg.rf.341f37db77b4d7d0989b7925b66c3fb5.txt
+        ├── traffic-light-490-_jpg.rf.08ad43d0735c553206b2405a7a571baa.txt
+        ├── traffic-light-5-_jpg.rf.4b447bb1071166802d754fa7709dd8b2.txt
+        ├── traffic-light-501-_jpg.rf.136d6f07f848d6d4ff22719ec876e3a7.txt
+        ├── traffic-light-502-_jpg.rf.f9efb799acf0b93aed32bb7287dba664.txt
+        ├── traffic-light-504-_jpg.rf.7ae5d906dded2d1ebc365429abfae1d0.txt
+        ├── traffic-light-505-_jpg.rf.385089ad71c1373145974fe3037c116e.txt
+        ├── traffic-light-505-_jpg.rf.c2f2ae05c11b2753e090d9b01331191d.txt
+        ├── traffic-light-508-_jpg.rf.0aa2bbfaddbcf244f0d3a566e849c6c4.txt
+        ├── traffic-light-510-_jpg.rf.4e9108d609414510997bf5e1eb0bf86c.txt
+        ├── traffic-light-510-_jpg.rf.84ef08ebfce21bac0eab7c32f73bb6d6.txt
+        ├── traffic-light-511-_jpg.rf.c62b4cc0c79c664fb66b7a060025fcae.txt
+        ├── traffic-light-513-_jpg.rf.47013c0cef1b3fdd2d9418bf5bf24a5f.txt
+        ├── traffic-light-513-_jpg.rf.de209a242f536a2db2ba015dc6faa66a.txt
+        ├── traffic-light-516-_jpg.rf.1dc1cb7ca0e41fc440b5ef10e702d111.txt
+        ├── traffic-light-517-_jpg.rf.99637e08b808093526f267241a32eb7c.txt
+        ├── traffic-light-517-_jpg.rf.ddae7cf96222c8499e3c4ad3f51b00e7.txt
+        ├── traffic-light-52-_jpg.rf.436e722e9b3690a9e973e77119febd76.txt
+        ├── traffic-light-521-_jpg.rf.e1d4326c44a34ea8bd0ffa5a0f3d4b6e.txt
+        ├── traffic-light-521-_jpg.rf.e22c64b4e6c6597bcc36329803cda000.txt
+        ├── traffic-light-522-_jpg.rf.1e072b149f8928231ae45c79c78aa98d.txt
+        ├── traffic-light-523-_jpg.rf.56203dd353998ecaf6e400fdd4a38d70.txt
+        ├── traffic-light-523-_jpg.rf.8506ef078b1093a07efc28b3b3892401.txt
+        ├── traffic-light-525-_jpg.rf.489f51634d01e700f84e9aff7c64bbb6.txt
+        ├── traffic-light-526-_jpg.rf.86999d1808d65974f21bf79f74482de9.txt
+        ├── traffic-light-526-_jpg.rf.bf04cd3cea3b061441586081a300c991.txt
+        ├── traffic-light-526-_jpg.rf.e13e0db6b18f822ca1ab6156368ae5a5.txt
+        ├── traffic-light-527-_jpg.rf.3e32b07ec1a2d38aa1046418627b2ced.txt
+        ├── traffic-light-527-_jpg.rf.60325bfadac36491b354557faabc47c5.txt
+        ├── traffic-light-528-_jpg.rf.37fb61d25ab9aa4f45184eded3b26c31.txt
+        ├── traffic-light-528-_jpg.rf.b7f5a8ab54065716c1c6270e3f16eef6.txt
+        ├── traffic-light-528-_jpg.rf.cfe9b5f1915135897cd81509f378142a.txt
+        ├── traffic-light-528-_jpg.rf.e61bcc82c3a9eaff0500a042be51f19b.txt
+        ├── traffic-light-529-_jpg.rf.6b6c64bd0395438e49862ad2dcd274f7.txt
+        ├── traffic-light-529-_jpg.rf.aa9f6a7baddc96e9f9f0e9366e5995d0.txt
+        ├── traffic-light-530-_jpg.rf.3c26007dda0ded0ab4c6154cfe7a9497.txt
+        ├── traffic-light-530-_jpg.rf.88481fd989c6f01d583084c027246a94.txt
+        ├── traffic-light-543-_jpg.rf.8cda035033d981364024af7f34ec7499.txt
+        ├── traffic-light-546-_jpg.rf.119e6fe498eb123020433695021baf7f.txt
+        ├── traffic-light-546-_jpg.rf.3eb09098cce7abb8ae6b23f0541b5f31.txt
+        ├── traffic-light-586-_jpg.rf.e43983abf1a58ab2ad5555fffefaf4a1.txt
+        ├── traffic-light-588-_jpg.rf.862a841eb9a843044e0f2a91de0e31fa.txt
+        ├── traffic-light-589-_jpg.rf.00cc4b067b33547a3ea9d9576598451b.txt
+        ├── traffic-light-589-_jpg.rf.ea776a7123f6b3b34821c369af2f9062.txt
+        ├── traffic-light-598-_jpg.rf.a5e0c273a0fc81c9adc5ade62c614698.txt
+        ├── traffic-light-603-_jpg.rf.fa3a75f779f294fef181781569944e51.txt
+        ├── traffic-light-604-_jpg.rf.30a1eccf7ca81be95823440735775bd8.txt
+        ├── traffic-light-604-_jpg.rf.fc027ea7bc3cf80bbf43d3d172820ebb.txt
+        ├── traffic-light-605-_jpg.rf.4d0c3ba8eb9baf654ee6f2201d39d648.txt
+        ├── traffic-light-605-_jpg.rf.b8410359e910bc9f31c2420b3a222c3d.txt
+        ├── traffic-light-618-_jpg.rf.1c53f8de9a30a583c56b9dc75f4aa75d.txt
+        ├── traffic-light-619-_jpg.rf.5207b69f532398b7de3dd62020ab0e25.txt
+        ├── traffic-light-619-_jpg.rf.6dcf70c61dd8bdbdfe51db4017073915.txt
+        ├── traffic-light-619-_jpg.rf.994d7e4e744c7900e9bec4b55d6f174b.txt
+        ├── traffic-light-620-_jpg.rf.6fdff7afb69d2c5aa0832d05815a88d9.txt
+        ├── traffic-light-620-_jpg.rf.90ad24d4f0fa03f2800fde21cd0c517f.txt
+        ├── traffic-light-621-_jpg.rf.ee9fea3b0ffe82eb7f614ff27c4bc279.txt
+        ├── traffic-light-622-_jpg.rf.f15b5415d927402c00f03568f5828883.txt
+        ├── traffic-light-623-_jpg.rf.78c26825a2c87beba56121f680a2175b.txt
+        ├── traffic-light-627-_jpg.rf.df78291dd59e906edbd58b90aec0b856.txt
+        ├── traffic-light-63-_jpg.rf.876bf30a64dcd583c5202e5517326065.txt
+        ├── traffic-light-635-_jpg.rf.809a76c1903cdf104fc170cf7a98cbe4.txt
+        ├── traffic-light-672-_jpg.rf.b343bd434a5f4497c7db97b7559bc6ad.txt
+        ├── traffic-light-672-_jpg.rf.f8f722195e681d820ecf1ee969da70d5.txt
+        ├── traffic-light-674-_jpg.rf.265f539cd7353ef68e210da7d172634d.txt
+        ├── traffic-light-688-_jpg.rf.7c9f9bf839749249abd732cc37d8b8ef.txt
+        ├── traffic-light-688-_jpg.rf.e8d585ba3a29001d886461644be05c9c.txt
+        ├── traffic-light-69-_jpg.rf.826453d4717258b65d336d98a0cd6ce3.txt
+        ├── traffic-light-697-_jpg.rf.3e56589a30189a07e245211fd2f3dc8c.txt
+        ├── traffic-light-7-_jpg.rf.604eac3cd0a8ca3578b033b9bf78f6ec.txt
+        ├── traffic-light-7-_jpg.rf.9f4e89ae3ed7fd373efc555172417471.txt
+        ├── traffic-light-7-_jpg.rf.b97f3c686fcfe02e4af81c5a3ea1e73f.txt
+        ├── traffic-light-700-_jpg.rf.0ccc1d5e367601b60803ca5eda4bf366.txt
+        ├── traffic-light-700-_jpg.rf.10745497b92887ca8d675c548d9ce32e.txt
+        ├── traffic-light-700-_jpg.rf.1c925b3c72d501e2918fc55dcb1444de.txt
+        ├── traffic-light-702-_jpg.rf.b46448c06bd9606c5386e8c13dad1da6.txt
+        ├── traffic-light-715-_jpg.rf.58948439cb5f3beaf6e5d43ae6748f91.txt
+        ├── traffic-light-715-_jpg.rf.8a0b19ec1ff48f1b2c0242aeff57ffa2.txt
+        ├── traffic-light-715-_jpg.rf.eebbbd0bd2fa5ea7242970d44466edab.txt
+        ├── traffic-light-716-_jpg.rf.15cd37ec6be7f9f091fbc216145b5afc.txt
+        ├── traffic-light-72-_jpg.rf.0b90f5d40dad6d335f5bfbeb3eabb1d0.txt
+        ├── traffic-light-722-_jpg.rf.1fab852eddb52cb39e25d2315aadd7b4.txt
+        ├── traffic-light-75-_jpg.rf.17a37f3b4f955bb595dca7266a9c090c.txt
+        ├── traffic-light-75-_jpg.rf.7589bcc7adc0b425238919612fa10a5a.txt
+        ├── traffic-light-776-_jpg.rf.f94dd71d023194e548d1d464cf3a2c9b.txt
+        ├── traffic-light-78-_jpg.rf.44b397cedfc5c4f937d8af0d74798b31.txt
+        ├── traffic-light-78-_jpg.rf.a328c228b8262775285a192999dcdfc0.txt
+        ├── traffic-light-780-_jpg.rf.828b102aee773fd9b42c0e293f8fd9a4.txt
+        ├── traffic-light-780-_jpg.rf.b6b27c31534ea113c13646c59f94a74a.txt
+        ├── traffic-light-782-_jpg.rf.16f3ad3640c82a994323c1e161d90aaf.txt
+        ├── traffic-light-782-_jpg.rf.ef0082a0e548ab50c82fde1c768262c6.txt
+        ├── traffic-light-789-_jpg.rf.c097c1a4fc33960753cfa6b0212f6c9a.txt
+        ├── traffic-light-80-_jpg.rf.4b8e27b9200c79dc786243f0913661b4.txt
+        ├── traffic-light-809-_jpg.rf.c4d7415ff8ba28f457deb13a6f71b196.txt
+        ├── traffic-light-811-_jpg.rf.9534a6cc89beeb9ea78f75c63a43a90e.txt
+        ├── traffic-light-812-_jpg.rf.5fac13560b4ceafe6aeed6884843ef24.txt
+        ├── traffic-light-814-_jpg.rf.8bc6a6649e427f7adc2e0ceb6934dff1.txt
+        ├── traffic-light-815-_jpg.rf.228b07c1657a60db7d22d9f66bf72df3.txt
+        ├── traffic-light-815-_jpg.rf.4aad1f93ec80df862c5a7bb9048fcbe2.txt
+        ├── traffic-light-818-_jpg.rf.2870595a8c7bb29bb57203656aa80340.txt
+        ├── traffic-light-818-_jpg.rf.cc2a534034530c7494ec558857de9f6b.txt
+        ├── traffic-light-818-_jpg.rf.d671c626db1844b39e7dc3584d3bc01f.txt
+        ├── traffic-light-82-_jpg.rf.585537613ed9b13953e347710aceedf5.txt
+        ├── traffic-light-82-_jpg.rf.f096bac48e5ec02dcadbf6ccbc10b71f.txt
+        ├── traffic-light-826-_jpg.rf.061393a9ec513c504afa671ac33bb809.txt
+        ├── traffic-light-826-_jpg.rf.96f96bedf6725cdca351956e35029100.txt
+        ├── traffic-light-826-_jpg.rf.a0d93e64b063dff4ec04d3ae2bd588b8.txt
+        ├── traffic-light-829-_jpg.rf.606f7bbd3485c0dfa7e10661e55220a1.txt
+        ├── traffic-light-829-_jpg.rf.f0e08b049dc7d705141b8ca07c4e50bc.txt
+        ├── traffic-light-835-_jpg.rf.efed1fa555f847e7ef2d647de42e5b03.txt
+        ├── traffic-light-90-_jpg.rf.218ea82d959f343308ee8ba110969fb4.txt
+        ├── traffic-light-929-_jpg.rf.847860661250114b9c2ec2e38f066bec.txt
+        ├── traffic-light-93-_jpg.rf.df826c1dc679f9638e2d67c29ce3ae6e.txt
+        ├── traffic-light-96-_jpg.rf.12bafd508cf8c9df6380050e02b2cf8f.txt
+        ├── traffic-light-96-_jpg.rf.9d4a59a712d72a42159642d05efbed17.txt
+        ├── traffic-light-99-_jpg.rf.a246b52bab63ef718ff38fdd91b01ca9.txt
+        ├── traffic-light-red-blue-sky-background-129686955_jpg.rf.a6260bfc73563e6e963763536aeb5894.txt
+        ├── trafficlight102_png_jpg.rf.cad764fb8c42c809b2dbc6cbce468191.txt
+        ├── trafficlight10_png_jpg.rf.77d4aba3e1d14db7cddab16192423ac8.txt
+        ├── trafficlight11_png_jpg.rf.9130fe8583f6dcd27a2fc41cd4f3798e.txt
+        ├── trafficlight123_png_jpg.rf.0a7a1c721db83d77e5f93bb932cc987e.txt
+        ├── trafficlight135_png_jpg.rf.3c6de6d8d63bf0ff7c79c48561b9b7f1.txt
+        ├── trafficlight149_png_jpg.rf.8eeacd0f9bb4c4c28494e5ffc21cffc9.txt
+        ├── trafficlight154_png_jpg.rf.27857572279f1eac4f68f4e09fb12382.txt
+        ├── trafficlight157_png_jpg.rf.f2fbb278064a19910810538bc2893360.txt
+        ├── trafficlight160_png_jpg.rf.c9e9baa83cc6ede7a2e45cfe33801ca2.txt
+        ├── trafficlight167_png_jpg.rf.5b7034e8d2d8b60f4ac8d328981dca92.txt
+        ├── trafficlight168_png_jpg.rf.0b15ad62b136940724239bbb22485df0.txt
+        ├── trafficlight170_png_jpg.rf.b0b813d1b160ce6eb6cb6ea28a55e194.txt
+        ├── trafficlight173_png_jpg.rf.bb555ce44e52cbbdd38b0f741822e5b9.txt
+        ├── trafficlight180_png_jpg.rf.0ed52b2a98f755334f565f2e98e35c31.txt
+        ├── trafficlight191_png_jpg.rf.d1fbce6880bd02849ec5c1e167f76dae.txt
+        ├── trafficlight194_png_jpg.rf.a025c7a59e6e753e7d2348f80e2b82cf.txt
+        ├── trafficlight195_png_jpg.rf.30b82557c6f7e7af579191c59aef8727.txt
+        ├── trafficlight201_png_jpg.rf.106ebcd2b369a2789a8fe76bd24e6c68.txt
+        ├── trafficlight24_png_jpg.rf.99747953c30fdf1735b42e011bdc712d.txt
+        ├── trafficlight25_png_jpg.rf.ca3df07da1a9141f5b29ef2b8fe1e8a4.txt
+        ├── trafficlight2_png_jpg.rf.2c1862bcb6a0fa989248fbc2cf6c86f3.txt
+        ├── trafficlight33_png_jpg.rf.068d8dbe6fde2af7a1b073abfa82563b.txt
+        ├── trafficlight34_png_jpg.rf.479c54267731088f538a2ce0abbec418.txt
+        ├── trafficlight41_png_jpg.rf.49d26b6d0dcec0104d7d93ab74781204.txt
+        ├── trafficlight42_png_jpg.rf.729cd2782294268ec85d9d9fb808c039.txt
+        └── vec1677605687_png_jpg.rf.d702c8b2557c098b5943141363f5c6b2.txt
+
+10 directories, 2151 files
