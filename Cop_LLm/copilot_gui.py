@@ -29,14 +29,13 @@ def send_message():
     user_input = entry.get()
     if not user_input.strip():
         return
-    update_chat("You", user_input, "user")
+    update_chat("You", user_input)
     entry.delete(0, tk.END)
     threading.Thread(target=get_response_from_model, args=(user_input,), daemon=True).start()
 
-def update_chat(sender, text, tag=None):
+def update_chat(sender, text):
     chat_area.config(state="normal")
-    chat_area.insert(tk.END, f"{sender}:\n", tag)
-    chat_area.insert(tk.END, f"{text}\n\n", tag)
+    chat_area.insert(tk.END, f"{sender}:\n{text}\n\n")
     chat_area.config(state="disabled")
     chat_area.yview(tk.END)
 
@@ -47,12 +46,15 @@ def get_response_from_model(prompt):
             json={"model": OLLAMA_MODEL_NAME, "prompt": prompt, "stream": False}
         )
         reply = response.json().get("response", "").strip()
-        root.after(0, update_chat, "Copilot", reply, "bot")
+        root.after(0, update_chat, "Copilot", reply)
     except Exception as e:
-        root.after(0, update_chat, "Error", str(e), "error")
+        root.after(0, update_chat, "Error", str(e))
 
 def initial_message():
-    get_response_from_model("Start the conversation as a driving assistant as defined in your system prompt.")
+    # Aquí empieza la conversación de verdad, no la descripción
+    get_response_from_model(
+        "Hello! I'm ready to help a user prepare their trip. Let's begin the full assistant conversation as instructed, step by step, starting with the welcome and asking if the user is ready."
+    )
 
 # Inicia el modelo si no está activo
 start_model_if_not_running()
@@ -64,14 +66,9 @@ root.geometry("800x600")
 root.configure(bg="#f5f5f5")
 
 # Área de chat
-chat_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, font=("Helvetica", 14), bg="white")
+chat_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, font=("Helvetica", 14), bg="white", fg="black")
 chat_area.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
 chat_area.config(state="disabled")
-
-# Definir estilos de texto
-chat_area.tag_config("user", foreground="blue")
-chat_area.tag_config("bot", foreground="green")
-chat_area.tag_config("error", foreground="red")
 
 # Zona de entrada
 input_frame = tk.Frame(root, bg="#f5f5f5")
