@@ -7,6 +7,34 @@ import threading
 
 OLLAMA_MODEL_NAME = "copilot-llm"
 
+conversation_state = {
+    "step": 0,
+    "car_model": None,
+    "tire_condition": None,
+    "tire_pressure": None,
+    "season": None,
+    "weather": None,
+    "road_type": None
+}
+
+questions = [
+    "What is your car's make and model?",
+    "What is the current condition of your tires?",
+    "What is the current tire pressure?",
+    "What season are we currently in?",
+    "What is the weather like today?",
+    "What kind of road will you drive on, and how long is the trip?"
+]
+
+field_keys = [
+    "car_model",
+    "tire_condition",
+    "tire_pressure",
+    "season",
+    "weather",
+    "road_type"
+]
+
 def start_model_if_not_running():
     try:
         requests.post(
@@ -31,7 +59,14 @@ def send_message():
         return
     update_chat("You", user_input)
     entry.delete(0, tk.END)
-    threading.Thread(target=get_response_from_model, args=(user_input,), daemon=True).start()
+
+    step = conversation_state["step"]
+    if step < len(field_keys):
+        conversation_state[field_keys[step]] = user_input
+        conversation_state["step"] += 1
+        ask_next_question()
+    else:
+        threading.Thread(target=send_summary_to_model, daemon=True).start()
 
 def update_chat(sender, text):
     chat_area.config(state="normal")
@@ -39,11 +74,26 @@ def update_chat(sender, text):
     chat_area.config(state="disabled")
     chat_area.yview(tk.END)
 
-def get_response_from_model(prompt):
+def ask_next_question():
+    step = conversation_state["step"]
+    if step < len(questions):
+        update_chat("Copilot", questions[step])
+    else:
+        update_chat("Copilot", "Thanks! Let me analyze your info and give you a summary.")
+        threading.Thread(target=send_summary_to_model, daemon=True).start()
+
+def send_summary_to_model():
+    summary = (
+        f"The user is driving a {conversation_state['car_model']}. "
+        f"The tires are in '{conversation_state['tire_condition']}' condition with a pressure of {conversation_state['tire_pressure']}. "
+        f"The season is {conversation_state['season']} and the weather is {conversation_state['weather']}. "
+        f"The trip will be on {conversation_state['road_type']}. "
+        "Based on this, give your final advice."
+    )
     try:
         response = requests.post(
             "http://localhost:11434/api/generate",
-            json={"model": OLLAMA_MODEL_NAME, "prompt": prompt, "stream": False}
+            json={"model": OLLAMA_MODEL_NAME, "prompt": summary, "stream": False}
         )
         reply = response.json().get("response", "").strip()
         root.after(0, update_chat, "Copilot", reply)
@@ -51,17 +101,14 @@ def get_response_from_model(prompt):
         root.after(0, update_chat, "Error", str(e))
 
 def initial_message():
-    # Aquí empieza la conversación de verdad, no la descripción
-    get_response_from_model(
-        "Hello! I'm ready to help a user prepare their trip. Let's begin the full assistant conversation as instructed, step by step, starting with the welcome and asking if the user is ready."
-    )
+    update_chat("Copilot", "Hello! I’ll ask you a few questions to help prepare your trip safely. Are you ready?")
 
 # Inicia el modelo si no está activo
 start_model_if_not_running()
 
 # Crear la ventana principal
 root = tk.Tk()
-root.title("🚗 Copilot LLM")
+root.title("🚗 Copilot LLM (Guided Mode)")
 root.geometry("800x600")
 root.configure(bg="#f5f5f5")
 
@@ -81,7 +128,7 @@ entry.bind("<Return>", lambda e: send_message())
 send_button = tk.Button(input_frame, text="Send", font=("Helvetica", 14, "bold"), bg="#4CAF50", fg="white", command=send_message)
 send_button.pack(side=tk.RIGHT, ipadx=10, ipady=4)
 
-# Lanzar primer mensaje del modelo en un hilo
+# Lanzar mensaje inicial
 threading.Thread(target=initial_message, daemon=True).start()
 
 # Lanzar interfaz
