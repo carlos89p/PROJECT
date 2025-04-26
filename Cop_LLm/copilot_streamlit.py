@@ -3,6 +3,8 @@ import requests
 import subprocess
 import time
 
+# streamlit run copilot_streamlit.py
+
 # Configuración inicial
 OLLAMA_MODEL_NAME = "copilot-llm"
 
@@ -112,8 +114,8 @@ start_model_if_not_running()
 
 # Título e introducción
 st.set_page_config(page_title="🚗 Copilot LLM (Streamlit Version)", page_icon="🚗")
-st.title("🚗 Copilot LLM (Guided Mode)")
-st.caption("Your personal driving preparation assistant powered by Copilot-LLM.")
+st.title("🚗 Car Copilot LLM")
+st.caption("Your personal driving preparation assistant powered by Copilot-LLM. Using a Mistral model.")
 
 # 👇 ATENCIÓN: Agregar el mensaje de bienvenida ANTES de pintar nada
 if st.session_state.step == 0 and not st.session_state.conversation:
