@@ -115,7 +115,12 @@ st.set_page_config(page_title="🚗 Copilot LLM (Streamlit Version)", page_icon=
 st.title("🚗 Copilot LLM (Guided Mode)")
 st.caption("Your personal driving preparation assistant powered by Copilot-LLM.")
 
-# Mostrar conversación previa
+# 👇 ATENCIÓN: Agregar el mensaje de bienvenida ANTES de pintar nada
+if st.session_state.step == 0 and not st.session_state.conversation:
+    st.session_state.conversation.append(("Copilot", "Hello! I’ll ask you a few questions to help prepare your trip safely. Are you ready?"))
+    st.rerun()  # 👉 Fuerza recarga para que se vea ya mismo
+
+# Mostrar conversación previa (después de asegurar que el mensaje inicial existe)
 for sender, message in st.session_state.conversation:
     if sender == "You":
         st.chat_message("user").markdown(message)
@@ -123,9 +128,6 @@ for sender, message in st.session_state.conversation:
         st.chat_message("assistant").markdown(message)
 
 # Entrada del usuario
-if st.session_state.step == 0 and not st.session_state.conversation:
-    st.session_state.conversation.append(("Copilot", "Hello! I’ll ask you a few questions to help prepare your trip safely. Are you ready?"))
-
 user_message = st.chat_input("Type your message...")
 
 if user_message:
