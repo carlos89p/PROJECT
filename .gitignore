@@ -3,3 +3,5 @@ Computer_vision/archive
 Computer_vision/dataset_yolo
 Computer_vision/traffic_lights_dataset
 Computer_vision/runs
+
+*.docx
