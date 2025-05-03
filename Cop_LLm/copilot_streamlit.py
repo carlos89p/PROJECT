@@ -120,7 +120,7 @@ st.caption("Your personal driving preparation assistant powered by Copilot-LLM. 
 # 👇 ATENCIÓN: Agregar el mensaje de bienvenida ANTES de pintar nada
 if st.session_state.step == 0 and not st.session_state.conversation:
     st.session_state.conversation.append(("Copilot", "Hello! I’ll ask you a few questions to help prepare your trip safely. Are you ready?"))
-    st.rerun()  # 👉 Fuerza recarga para que se vea ya mismo
+    st.rerun()  
 
 # Mostrar conversación previa (después de asegurar que el mensaje inicial existe)
 for sender, message in st.session_state.conversation:
