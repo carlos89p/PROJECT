@@ -14,24 +14,6 @@ All components run **fully locally**, ensuring privacy and autonomy.
 
 ---
 
-## 🧩 Project Structure
-
-autonomous-driving-assistant/
-├── chatbot/ # Conversational assistant with Mistral LLM
-├── route_planner/ # Audio transcription, NER, route computation
-├── object_detection/ # YOLOv8 training and inference
-├── assets/ # Sample audio, images, route maps
-├── data/ # Graph of cities, datasets, labels
-├── requirements.txt
-├── app.py # Unified Streamlit interface (optional)
-└── README.md
-
-yaml
-Copiar
-Editar
-
----
-
 ## ⚙️ Technologies Used
 
 | Module                    | Technology                                                                 |
